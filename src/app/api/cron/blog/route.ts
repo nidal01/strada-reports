@@ -6,7 +6,7 @@ import { countWords } from "@/features/blog/word-count";
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
 
-/** Vercel Cron — günde 2 kez sıradaki konudan blog üretir (TR). */
+/** Manuel test — üretim cron'u: /api/cron/blog-pipeline (günde 1×, 2 yazı). */
 export async function GET(request: Request) {
   if (!verifyCronSecret(request)) {
     return NextResponse.json({ error: "Yetkisiz" }, { status: 401 });
