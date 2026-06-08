@@ -52,7 +52,11 @@
     "readMore": "Read more",
     "viewAll": "All posts",
     "breadcrumb": "Blog",
-    "empty": "No published posts yet."
+    "empty": "No published posts yet.",
+    "toc": "Table of contents",
+    "tocToggle": "Show table of contents",
+    "views": "{count} views",
+    "reads": "{count} reads"
   },
   "hero": {
     "integrationsLabel": "Integrates with",

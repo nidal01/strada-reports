@@ -14,6 +14,10 @@ const createSchema = z.object({
   status: z.enum(["draft", "published"]).default("draft"),
   metaTitle: z.string().nullable().optional(),
   metaDescription: z.string().nullable().optional(),
+  canonicalUrl: z.string().nullable().optional(),
+  ogImage: z.string().nullable().optional(),
+  focusKeyword: z.string().nullable().optional(),
+  robots: z.string().default("index,follow"),
   tags: z.array(z.string()).default([]),
   author: z.string().default("Strada"),
   aiGenerated: z.boolean().default(false),
@@ -44,6 +48,9 @@ export async function POST(request: Request) {
     coverImage: data.coverImage ?? null,
     metaTitle: data.metaTitle ?? null,
     metaDescription: data.metaDescription ?? null,
+    canonicalUrl: data.canonicalUrl ?? null,
+    ogImage: data.ogImage ?? null,
+    focusKeyword: data.focusKeyword ?? null,
   });
 
   return NextResponse.json({ post }, { status: 201 });

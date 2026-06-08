@@ -17,7 +17,8 @@ export default async function AdminDashboardPage() {
         <div>
           <h1 className="text-2xl font-semibold text-white">Blog Yazıları</h1>
           <p className="mt-1 text-sm text-slate-400">
-            {posts.length} yazı · {process.env.DATABASE_URL ? "Neon Postgres" : "Yerel JSON"}
+            {posts.length} yazı ·{" "}
+            {process.env.SUPABASE_URL ? "Supabase" : "Yerel JSON (demo)"}
           </p>
         </div>
         <Button asChild>
@@ -32,6 +33,8 @@ export default async function AdminDashboardPage() {
               <th className="px-4 py-3 font-medium">Başlık</th>
               <th className="hidden px-4 py-3 font-medium sm:table-cell">Dil</th>
               <th className="hidden px-4 py-3 font-medium md:table-cell">Durum</th>
+              <th className="hidden px-4 py-3 font-medium md:table-cell">Görüntülenme</th>
+              <th className="hidden px-4 py-3 font-medium lg:table-cell">Okunma</th>
               <th className="hidden px-4 py-3 font-medium lg:table-cell">Tarih</th>
               <th className="px-4 py-3 font-medium">İşlem</th>
             </tr>
@@ -39,7 +42,7 @@ export default async function AdminDashboardPage() {
           <tbody>
             {posts.length === 0 ? (
               <tr>
-                <td colSpan={5} className="px-4 py-12 text-center text-slate-500">
+                <td colSpan={7} className="px-4 py-12 text-center text-slate-500">
                   Henüz yazı yok. Yeni yazı ekleyin veya AI ile üretin.
                 </td>
               </tr>
@@ -63,6 +66,8 @@ export default async function AdminDashboardPage() {
                       {post.status === "published" ? "Yayında" : "Taslak"}
                     </Badge>
                   </td>
+                  <td className="hidden px-4 py-3 text-slate-400 md:table-cell">{post.viewCount}</td>
+                  <td className="hidden px-4 py-3 text-slate-400 lg:table-cell">{post.readCount}</td>
                   <td className="hidden px-4 py-3 text-slate-500 lg:table-cell">
                     {(post.publishedAt ?? post.createdAt).slice(0, 10)}
                   </td>

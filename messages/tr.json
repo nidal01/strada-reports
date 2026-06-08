@@ -52,7 +52,11 @@
     "readMore": "Devamını oku",
     "viewAll": "Tüm yazılar",
     "breadcrumb": "Blog",
-    "empty": "Henüz yayınlanmış yazı yok."
+    "empty": "Henüz yayınlanmış yazı yok.",
+    "toc": "İçindekiler",
+    "tocToggle": "İçindekileri göster",
+    "views": "{count} görüntülenme",
+    "reads": "{count} okunma"
   },
   "hero": {
     "integrationsLabel": "Entegre çalıştığı sistemler",

@@ -13,9 +13,15 @@ export interface BlogPost {
   status: BlogPostStatus;
   metaTitle: string | null;
   metaDescription: string | null;
+  canonicalUrl: string | null;
+  ogImage: string | null;
+  focusKeyword: string | null;
+  robots: string;
   tags: string[];
   author: string;
   aiGenerated: boolean;
+  viewCount: number;
+  readCount: number;
   publishedAt: string | null;
   createdAt: string;
   updatedAt: string;
@@ -32,6 +38,10 @@ export type BlogPostInput = Pick<
   | "status"
   | "metaTitle"
   | "metaDescription"
+  | "canonicalUrl"
+  | "ogImage"
+  | "focusKeyword"
+  | "robots"
   | "tags"
   | "author"
   | "aiGenerated"
@@ -44,4 +54,10 @@ export interface GenerateBlogInput {
   locale: Locale;
   keywords?: string[];
   publish?: boolean;
+}
+
+export interface TocHeading {
+  level: 2 | 3;
+  text: string;
+  id: string;
 }

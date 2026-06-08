@@ -18,7 +18,7 @@ async function readStore(): Promise<BlogPost[]> {
 
 async function writeStore(posts: BlogPost[]): Promise<void> {
   if (!isWritableJsonStore()) {
-    throw new Error("Blog store is read-only in production. Set DATABASE_URL.");
+    throw new Error("Blog store is read-only in production. Set SUPABASE_URL.");
   }
   await mkdir(DATA_DIR, { recursive: true });
   await writeFile(DATA_FILE, JSON.stringify(posts, null, 2), "utf-8");
@@ -80,6 +80,9 @@ export async function jsonCreatePost(input: BlogPostInput): Promise<BlogPost> {
   const post: BlogPost = {
     id: newId(),
     ...input,
+    robots: input.robots ?? "index,follow",
+    viewCount: 0,
+    readCount: 0,
     publishedAt:
       input.status === "published" ? (input.publishedAt ?? ts) : (input.publishedAt ?? null),
     createdAt: ts,
@@ -104,6 +107,8 @@ export async function jsonUpdatePost(
     ...current,
     ...input,
     id: current.id,
+    viewCount: current.viewCount,
+    readCount: current.readCount,
     createdAt: current.createdAt,
     updatedAt: ts,
     publishedAt:

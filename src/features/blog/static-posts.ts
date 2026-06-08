@@ -2,7 +2,7 @@ import type { BlogPost } from "./types";
 
 const TS = "2026-01-15T10:00:00.000Z";
 
-/** Read-only demo posts — Vercel'de DATABASE_URL yokken gösterilir. */
+/** Read-only demo posts — Vercel'de Supabase yokken gösterilir. */
 export const STATIC_DEMO_POSTS: readonly BlogPost[] = [
   {
     id: "post_demo_tr",
@@ -33,7 +33,13 @@ DIA ERP yatırımınızı güçlendirmek için üzerine modern bir raporlama kat
     metaTitle: "DIA ERP Entegrasyonu ile Finansal Raporlama | Strada",
     metaDescription:
       "DIA ERP verinizi gerçek zamanlı finansal raporlara dönüştürün. Strada ile entegrasyon, otomasyon ve yönetim raporları tek platformda.",
+    canonicalUrl: null,
+    ogImage: null,
+    focusKeyword: "DIA ERP finansal raporlama",
+    robots: "index,follow",
     tags: ["DIA ERP", "finansal raporlama", "entegrasyon"],
+    viewCount: 0,
+    readCount: 0,
     author: "Strada",
     aiGenerated: false,
     publishedAt: TS,
@@ -69,7 +75,13 @@ Amplify your DIA ERP investment with a modern reporting layer on top. Make finan
     metaTitle: "DIA ERP Integration for Financial Reporting | Strada",
     metaDescription:
       "Turn your DIA ERP data into real-time financial reports. Integration, automation and management dashboards in one platform.",
+    canonicalUrl: null,
+    ogImage: null,
+    focusKeyword: "DIA ERP financial reporting",
+    robots: "index,follow",
     tags: ["DIA ERP", "financial reporting", "integration"],
+    viewCount: 0,
+    readCount: 0,
     author: "Strada",
     aiGenerated: false,
     publishedAt: TS,
