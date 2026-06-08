@@ -61,7 +61,7 @@ export async function SolutionsGrid() {
                     <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500/15 to-sky-accent/10 text-brand-300 transition-transform duration-300 group-hover:scale-105">
                       <Icon className="size-5" />
                     </div>
-                    <span className="rounded-full border border-[var(--border)] bg-surface-2/60 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+                    <span className="rounded-full border border-[var(--border)] bg-surface-2/60 px-2.5 py-0.5 text-[11px] font-medium text-slate-400">
                       {categoryLabel}
                     </span>
                   </div>
@@ -71,8 +71,11 @@ export async function SolutionsGrid() {
                   <p className="mt-1.5 flex-1 text-sm leading-relaxed text-slate-400">
                     {content.tagline}
                   </p>
-                  <span className="mt-4 text-sm font-medium text-brand-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    {t("learnMore")} →
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-slate-500 transition-colors duration-300 group-hover:text-brand-300">
+                    {t("learnMore")}
+                    <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5">
+                      →
+                    </span>
                   </span>
                 </Link>
               </Reveal>

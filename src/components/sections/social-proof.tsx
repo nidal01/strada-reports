@@ -26,7 +26,7 @@ export function SocialProof() {
     <section className="border-y border-[var(--border)] bg-surface/40 py-16">
       <Container>
         <Reveal>
-          <p className="text-center text-sm font-medium uppercase tracking-widest text-slate-500">
+          <p className="text-center text-sm font-medium text-slate-500">
             {t("title")}
           </p>
         </Reveal>

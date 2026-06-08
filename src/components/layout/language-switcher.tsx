@@ -2,7 +2,6 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
-import { Globe } from "lucide-react";
 import { useParams } from "next/navigation";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
@@ -47,14 +46,13 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-0.5 rounded-full border border-[var(--border)] bg-white/5 p-0.5",
+        "inline-flex h-9 items-center rounded-full border border-[var(--border)] bg-white/5 p-1",
         isPending && "opacity-70",
         className,
       )}
       role="group"
       aria-label={t("switchLanguage")}
     >
-      <Globe className="ml-1.5 size-3.5 text-slate-500" aria-hidden="true" />
       {routing.locales.map((loc) => (
         <button
           key={loc}
@@ -62,10 +60,10 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           onClick={() => switchTo(loc)}
           aria-current={loc === locale ? "true" : undefined}
           className={cn(
-            "cursor-pointer rounded-full px-2.5 py-1 text-xs font-semibold uppercase transition-colors duration-200",
+            "flex h-7 cursor-pointer items-center rounded-full px-3 text-xs font-semibold uppercase transition-colors duration-200",
             loc === locale
-              ? "bg-brand-500/20 text-brand-200"
-              : "text-slate-400 hover:text-white",
+              ? "bg-[var(--surface-3)] text-foreground shadow-sm"
+              : "text-slate-400 hover:text-[var(--foreground)]",
           )}
         >
           {loc}

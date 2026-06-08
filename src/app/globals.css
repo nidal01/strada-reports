@@ -234,6 +234,13 @@
 /*  PREMIUM UTILITIES                                                  */
 /* ------------------------------------------------------------------ */
 @layer utilities {
+  /* Permanent white text for elements whose background is always coloured
+     (brand-gradient buttons, avatars). Bypasses the light-mode .text-white
+     remap so contrast stays correct in both themes. */
+  .text-on-brand {
+    color: #ffffff;
+  }
+
   /* Glassmorphism surface */
   .glass {
     background: color-mix(in oklab, var(--color-surface-2) 55%, transparent);

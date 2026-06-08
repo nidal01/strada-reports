@@ -85,7 +85,7 @@ export function Testimonials() {
                   <footer className="mt-6 flex items-center gap-3">
                     <span
                       aria-hidden="true"
-                      className="flex size-11 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600 text-sm font-semibold text-white"
+                      className="flex size-11 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600 text-sm font-semibold text-on-brand"
                     >
                       {active.author.charAt(0)}
                     </span>

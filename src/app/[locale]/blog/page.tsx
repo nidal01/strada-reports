@@ -65,7 +65,7 @@ export default async function BlogPage({ params }: Params) {
                         {post.tags.slice(0, 3).map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-full border border-[var(--border)] px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-slate-500"
+                            className="rounded-full border border-[var(--border)] px-2.5 py-0.5 text-[11px] font-medium text-slate-400"
                           >
                             {tag}
                           </span>

@@ -9,3 +9,6 @@ next-env.d.ts
 .DS_Store
 .vercel
 .data
+
+# Raw/source design assets — kept locally, not tracked or served
+/assets/source

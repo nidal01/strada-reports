@@ -55,7 +55,7 @@
     "empty": "No published posts yet."
   },
   "hero": {
-    "badge": "Fully integrated with DIA ERP",
+    "integrationsLabel": "Integrates with",
     "titleLead": "Run your company",
     "titleHighlight": "from your",
     "titleTail": "pocket",
@@ -68,7 +68,7 @@
     "metricRevenue": "Total Revenue",
     "metricCollections": "Collections",
     "metricProfit": "Net Profit",
-    "liveTag": "Live"
+    "syncTag": "Last sync · just now"
   },
   "socialProof": {
     "title": "Türkiye's manufacturing and construction leaders run on Strada",

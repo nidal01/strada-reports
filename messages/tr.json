@@ -55,7 +55,7 @@
     "empty": "Henüz yayınlanmış yazı yok."
   },
   "hero": {
-    "badge": "DIA ERP ile tam entegre",
+    "integrationsLabel": "Entegre çalıştığı sistemler",
     "titleLead": "Şirketinizi",
     "titleHighlight": "cebinizden",
     "titleTail": "yönetin",
@@ -68,7 +68,7 @@
     "metricRevenue": "Toplam Gelir",
     "metricCollections": "Tahsilat",
     "metricProfit": "Net Kâr",
-    "liveTag": "Canlı"
+    "syncTag": "Son senkron · az önce"
   },
   "socialProof": {
     "title": "Türkiye'nin üretici ve inşaat şirketleri Strada ile yönetiyor",

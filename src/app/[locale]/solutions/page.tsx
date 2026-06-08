@@ -61,7 +61,7 @@ export default async function SolutionsPage({ params }: Params) {
               >
                 {/* Copy */}
                 <Reveal className={cn(reversed && "lg:order-2")}>
-                  <span className="text-sm font-semibold uppercase tracking-widest text-brand-300">
+                  <span className="text-sm font-semibold text-brand-300">
                     {t(`sections.${key}.tag`)}
                   </span>
                   <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
@@ -91,9 +91,9 @@ export default async function SolutionsPage({ params }: Params) {
                   )}
                 >
                   <div className="flex items-center gap-1.5 border-b border-[var(--border)] bg-surface-2/60 px-4 py-2.5">
-                    <span className="size-2.5 rounded-full bg-red-400/70" />
-                    <span className="size-2.5 rounded-full bg-amber-400/70" />
-                    <span className="size-2.5 rounded-full bg-positive-400/70" />
+                    <span className="size-2.5 rounded-full bg-slate-400/40" />
+                    <span className="size-2.5 rounded-full bg-slate-400/40" />
+                    <span className="size-2.5 rounded-full bg-slate-400/40" />
                   </div>
                   <Image
                     src={SECTION_MEDIA[key].src}

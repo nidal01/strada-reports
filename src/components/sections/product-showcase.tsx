@@ -27,9 +27,9 @@ export function ProductShowcase() {
         <Reveal variants={scaleIn} className="mt-16">
           <figure className="glass-strong gradient-border overflow-hidden rounded-2xl shadow-[0_40px_120px_-30px_rgba(2,6,23,0.9)]">
             <div className="flex items-center gap-2 border-b border-[var(--border)] bg-surface-2/60 px-4 py-3">
-              <span className="size-3 rounded-full bg-red-400/70" />
-              <span className="size-3 rounded-full bg-amber-400/70" />
-              <span className="size-3 rounded-full bg-positive-400/70" />
+              <span className="size-3 rounded-full bg-slate-400/40" />
+              <span className="size-3 rounded-full bg-slate-400/40" />
+              <span className="size-3 rounded-full bg-slate-400/40" />
               <span className="ml-3 hidden rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400 sm:block">
                 app.strada.tr / finansal-raporlar
               </span>

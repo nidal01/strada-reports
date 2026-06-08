@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp, Wallet, PiggyBank, ArrowUpRight } from "lucide-react";
+import { TrendingUp, Wallet, PiggyBank, ArrowUpRight, RefreshCw } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 /**
@@ -35,16 +35,16 @@ export function HeroPanel() {
       style={{ perspective: 1200 }}
       className="glass-strong gradient-border relative w-full overflow-hidden rounded-2xl p-4 shadow-[0_40px_120px_-30px_rgba(2,6,23,0.9)] sm:p-5"
     >
-      {/* window chrome */}
+      {/* window chrome — neutral dots + quiet sync stamp (no "online" tell) */}
       <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="size-2.5 rounded-full bg-red-400/70" />
-          <span className="size-2.5 rounded-full bg-amber-400/70" />
-          <span className="size-2.5 rounded-full bg-positive-400/70" />
+        <div className="flex items-center gap-1.5">
+          <span className="size-2.5 rounded-full bg-slate-400/40" />
+          <span className="size-2.5 rounded-full bg-slate-400/40" />
+          <span className="size-2.5 rounded-full bg-slate-400/40" />
         </div>
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-positive-500/25 bg-positive-500/10 px-2.5 py-0.5 text-[0.65rem] font-medium text-positive-400">
-          <span className="size-1.5 animate-pulse rounded-full bg-positive-400" />
-          {t("liveTag")}
+        <span className="inline-flex items-center gap-1.5 text-[0.65rem] font-medium text-slate-500">
+          <RefreshCw className="size-3" />
+          {t("syncTag")}
         </span>
       </div>
 

@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Container } from "@/components/ui/container";
 import { HeroPanel } from "@/components/sections/hero-panel";
+import { IntegrationLogos } from "@/components/brand/integration-logos";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
 /**
@@ -36,16 +36,9 @@ export function Hero() {
             animate="visible"
             className="flex flex-col items-start"
           >
-            <motion.div variants={fadeUp}>
-              <Badge variant="brand">
-                <ShieldCheck className="size-3.5" />
-                {t("badge")}
-              </Badge>
-            </motion.div>
-
             <motion.h1
               variants={fadeUp}
-              className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
               {t("titleLead")}{" "}
               <span className="text-gradient">{t("titleHighlight")}</span>{" "}
@@ -74,6 +67,13 @@ export function Hero() {
             <motion.p variants={fadeUp} className="mt-6 text-sm text-slate-500">
               {t("trustNote")}
             </motion.p>
+
+            <motion.div
+              variants={fadeUp}
+              className="mt-8 w-full border-t border-[var(--border)] pt-6"
+            >
+              <IntegrationLogos />
+            </motion.div>
           </motion.div>
 
           {/* Product preview column */}

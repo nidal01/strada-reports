@@ -177,9 +177,9 @@ export default async function SolutionDetailPage({ params }: Params) {
             <Reveal delay={0.1}>
               <div className="glass-strong gradient-border relative overflow-hidden rounded-2xl shadow-[0_30px_90px_-30px_rgba(2,6,23,0.9)]">
                 <div className="flex items-center gap-1.5 border-b border-[var(--border)] bg-surface-2/60 px-4 py-2.5">
-                  <span className="size-2.5 rounded-full bg-red-400/70" />
-                  <span className="size-2.5 rounded-full bg-amber-400/70" />
-                  <span className="size-2.5 rounded-full bg-positive-400/70" />
+                  <span className="size-2.5 rounded-full bg-slate-400/40" />
+                  <span className="size-2.5 rounded-full bg-slate-400/40" />
+                  <span className="size-2.5 rounded-full bg-slate-400/40" />
                 </div>
                 <Image
                   src={solution.image.src}
