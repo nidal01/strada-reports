@@ -34,8 +34,8 @@ export default async function AdminTopicsPage() {
             Haftalık plan · Bu hafta ({weekStart}): {thisWeek.length} konu · Bekleyen: {pending}
           </p>
           <p className="mt-2 text-xs text-slate-500">
-            Gemini haftada bir 14 konu üretir. Cron günde 1 kez çalışır ve 2 yazı oluşturur (Hobby
-            plan uyumlu).
+            Gemini haftada bir 14 konu üretir. Cron günde 1 kez çalışır (Hobby + ücretsiz Gemini
+            kotası uyumlu).
           </p>
         </div>
         <GenerateWeekTopicsButton />
