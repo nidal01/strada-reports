@@ -1,8 +1,9 @@
-import { RefreshCw, BarChart3, Plug, Smartphone, ShieldCheck, type LucideIcon } from "lucide-react";
+import { RefreshCw, BarChart3, Plug, Smartphone, ShieldCheck, ArrowRight, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
+import { Logo } from "@/components/brand/logo";
 import { staggerContainer } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -26,9 +27,11 @@ const LAYOUT: ReadonlyArray<{ key: FeatureKey; span: string; feature: boolean }>
 ];
 
 /**
- * Bento-grid feature showcase. Cards share a glassmorphic surface with a
- * gradient border on hover; the lead "sync" card spans two columns and carries
- * an illustrative data-flow visual.
+ * Bento-grid feature showcase. Cards carry a B2B-corporate materiality — a
+ * subtle top-edge highlight, a tinted diffusion shadow and a refined icon
+ * well — so the grid reads with depth rather than flat panels. The lead "sync"
+ * card spans two columns and shows the real ERP→Strada integration flow with
+ * official brand marks.
  */
 export function FeaturesBento() {
   const t = useTranslations("features");
@@ -49,9 +52,8 @@ export function FeaturesBento() {
               <Reveal
                 key={key}
                 className={cn(
-                  "group relative flex flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-surface/50 p-6 transition-colors duration-300 hover:border-brand-500/30 sm:p-7",
+                  "group relative flex flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-gradient-to-b from-surface/70 to-surface/30 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05),0_24px_48px_-34px_rgba(2,6,23,0.8)] transition-[border-color,box-shadow] duration-300 hover:border-brand-500/40 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.07),0_30px_64px_-30px_rgba(37,99,235,0.32)] sm:p-7",
                   span,
-                  feature && "lg:row-span-1",
                 )}
               >
                 {/* hover glow */}
@@ -60,7 +62,7 @@ export function FeaturesBento() {
                   className="pointer-events-none absolute -right-12 -top-12 size-40 rounded-full bg-brand-600/0 blur-3xl transition-colors duration-500 group-hover:bg-brand-600/15"
                 />
 
-                <div className="flex size-11 items-center justify-center rounded-xl border border-brand-500/20 bg-brand-500/10 text-brand-300">
+                <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-b from-brand-500/20 to-brand-500/5 text-brand-300 ring-1 ring-inset ring-white/10">
                   <Icon className="size-5" />
                 </div>
 
@@ -71,8 +73,8 @@ export function FeaturesBento() {
                   {t(`items.${key}.description`)}
                 </p>
 
-                {/* lead card data-flow visual */}
-                {feature ? <SyncVisual /> : null}
+                {/* lead card: real integration flow */}
+                {feature ? <IntegrationFlow /> : null}
               </Reveal>
             );
           })}
@@ -82,19 +84,47 @@ export function FeaturesBento() {
   );
 }
 
-/** Decorative "ERP → Strada" data-flow strip for the lead bento card. */
-function SyncVisual() {
+/**
+ * Lead-card integration diagram: the source ERP systems (DIA, LOGO) flowing
+ * through an animated data bus into the Strada hub. Logos sit on white chips so
+ * each brand mark stays crisp in both light and dark themes.
+ */
+function IntegrationFlow() {
   return (
-    <div className="mt-6 flex items-center gap-3 rounded-xl border border-[var(--border)] bg-surface-2/50 p-4">
-      <span className="rounded-lg border border-[var(--border)] bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-300">
-        DIA ERP
-      </span>
-      <div className="relative h-px flex-1 overflow-hidden bg-[var(--border)]">
-        <span className="absolute inset-y-0 left-0 w-1/3 animate-[marquee_2.4s_linear_infinite] bg-gradient-to-r from-transparent via-brand-400 to-transparent" />
+    <div className="mt-6 rounded-xl border border-[var(--border)] bg-surface-2/40 p-5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]">
+      <p className="mb-4 text-[0.7rem] font-medium text-slate-500">
+        Gerçek zamanlı veri akışı
+      </p>
+      <div className="flex items-stretch gap-2 sm:gap-3 lg:gap-4">
+        {/* source ERP systems */}
+        <div className="flex flex-col justify-center gap-2.5">
+          <LogoChip src="/brand/dia.svg" alt="DIA ERP" imgClass="h-6" />
+          <LogoChip src="/brand/logo-yazilim.svg" alt="LOGO Yazılım" imgClass="h-4" />
+        </div>
+
+        {/* animated data bus */}
+        <div className="flex min-w-0 flex-1 items-center gap-1.5">
+          <div className="relative h-px flex-1 overflow-hidden bg-[var(--border)]">
+            <span className="absolute inset-y-0 left-0 w-1/2 animate-[marquee_2.4s_linear_infinite] bg-gradient-to-r from-transparent via-brand-400 to-transparent" />
+          </div>
+          <ArrowRight className="size-4 shrink-0 text-brand-400" />
+        </div>
+
+        {/* Strada hub */}
+        <div className="flex shrink-0 items-center rounded-xl border border-brand-500/40 bg-white px-3 shadow-[0_0_0_4px_rgba(59,130,246,0.08)] lg:px-5">
+          <Logo heightClass="h-5 lg:h-7" />
+        </div>
       </div>
-      <span className="rounded-lg border border-brand-500/30 bg-brand-500/10 px-3 py-1.5 text-xs font-medium text-brand-200">
-        Strada
-      </span>
+    </div>
+  );
+}
+
+/** White brand chip that keeps a coloured ERP logo crisp in any theme. */
+function LogoChip({ src, alt, imgClass }: { src: string; alt: string; imgClass: string }) {
+  return (
+    <div className="flex h-11 w-20 items-center justify-center rounded-lg border border-black/5 bg-white px-3 shadow-sm lg:w-28">
+      {/* eslint-disable-next-line @next/next/no-img-element -- small static brand mark; <img> keeps the source aspect ratio without fixed dimensions */}
+      <img src={src} alt={alt} className={`${imgClass} w-auto`} />
     </div>
   );
 }
