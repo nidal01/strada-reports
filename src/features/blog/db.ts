@@ -1,10 +1,9 @@
 import { neon } from "@neondatabase/serverless";
+import { useDatabase } from "./env";
 
 let initialized = false;
 
-export function hasDatabase(): boolean {
-  return Boolean(process.env.DATABASE_URL);
-}
+export { useDatabase as hasDatabase };
 
 export function getSql() {
   const url = process.env.DATABASE_URL;
@@ -14,7 +13,7 @@ export function getSql() {
 
 /** Idempotent schema bootstrap — safe to call on every cold start. */
 export async function ensureBlogSchema(): Promise<void> {
-  if (!hasDatabase() || initialized) return;
+  if (!useDatabase() || initialized) return;
 
   const sql = getSql();
   await sql`
