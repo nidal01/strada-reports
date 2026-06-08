@@ -1,0 +1,541 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Log in",
+    "requestDemo": "Request Demo",
+    "menu": "Menu",
+    "close": "Close",
+    "switchLanguage": "Switch language",
+    "toggleTheme": "Toggle theme",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme"
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "requestDemo": "Request Demo",
+    "talkToSales": "Talk to Sales",
+    "exploreSolutions": "Explore Solutions",
+    "learnMore": "Learn more",
+    "newBadge": "New"
+  },
+  "metadata": {
+    "home": {
+      "title": "Strada — Run your company from your pocket",
+      "description": "Unify quotes, orders and financial reporting on one platform with native DIA ERP integration. Enterprise-grade security, real-time data, flawless reports."
+    },
+    "solutions": {
+      "title": "Solutions — Integration, automation & financial reporting",
+      "description": "DIA ERP connectivity, automated data synchronization, P&L, income-expense and collections reports. Explore the Strada modules."
+    },
+    "about": {
+      "title": "About — Vision, security & compliance",
+      "description": "Strada's corporate vision, security infrastructure standards and compliance approach."
+    },
+    "contact": {
+      "title": "Request a Demo — Meet Strada",
+      "description": "Get in touch with the Strada team and schedule a live demo tailored to your company."
+    },
+    "blog": {
+      "title": "Blog — ERP, financial reporting and digital transformation",
+      "description": "Strada blog posts on DIA ERP integration, financial reporting, inventory management and enterprise digital transformation."
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Latest posts",
+    "subtitle": "Up-to-date content on ERP, financial reporting and business management.",
+    "pageTitle": "Strada Blog",
+    "pageSubtitle": "Expert content on financial reporting, DIA ERP integration and enterprise digital transformation.",
+    "readMore": "Read more",
+    "viewAll": "All posts",
+    "breadcrumb": "Blog",
+    "empty": "No published posts yet."
+  },
+  "hero": {
+    "badge": "Fully integrated with DIA ERP",
+    "titleLead": "Run your company",
+    "titleHighlight": "from your",
+    "titleTail": "pocket",
+    "subtitle": "Unify quoting, ordering and reporting on a single platform. Strada turns your ERP data into real-time financial insight.",
+    "ctaPrimary": "Request a Free Demo",
+    "ctaSecondary": "Explore Solutions",
+    "trustNote": "No setup required · 24/7 support · KVKK compliant",
+    "panelTitle": "Financial Position",
+    "panelSubtitle": "Overview of cash and bank accounts",
+    "metricRevenue": "Total Revenue",
+    "metricCollections": "Collections",
+    "metricProfit": "Net Profit",
+    "liveTag": "Live"
+  },
+  "socialProof": {
+    "title": "Türkiye's manufacturing and construction leaders run on Strada",
+    "stats": [
+      { "value": "₺8.1M+", "label": "Monthly revenue reported" },
+      { "value": "99.9%", "label": "Sync accuracy" },
+      { "value": "12+", "label": "Ready-made report modules" },
+      { "value": "24/7", "label": "Real-time data" }
+    ]
+  },
+  "features": {
+    "eyebrow": "Platform",
+    "title": "An enterprise control center that turns data into value",
+    "subtitle": "A modular, scalable financial operating system that distills scattered ERP data into one clear picture.",
+    "items": {
+      "sync": {
+        "title": "Automated Data Synchronization",
+        "description": "Cash, bank, account and inventory movements flow from DIA ERP into Strada in real time. No manual exports, copy-paste or lag."
+      },
+      "reports": {
+        "title": "Financial Reporting Modules",
+        "description": "P&L, Income, Expense, Collections and Financial Position reports in one click — boardroom-ready, presentable visuals."
+      },
+      "erp": {
+        "title": "DIA ERP Connectivity",
+        "description": "Built on top of your existing ERP investment. Goes live in minutes without disrupting your processes."
+      },
+      "mobile": {
+        "title": "Mobile Management",
+        "description": "Access quotes, requests, orders and reports from your pocket. Field teams and management always meet on the same data."
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "End-to-end encryption, role-based access and KVKK-compliant infrastructure. Your data stays under your control."
+      }
+    }
+  },
+  "showcase": {
+    "eyebrow": "Product",
+    "title": "Your real data, real reports",
+    "subtitle": "These are screenshots from Strada's live interface. From income-expense trends to sales trajectory, account balances to profit margin — everything in one place.",
+    "alt": {
+      "main": "Strada Monthly Income–Expense Trend report: monthly bar chart with revenue, expense, net profit and profit-margin metrics",
+      "sales": "Strada Sales Trend report: bar chart showing 12-month revenue trajectory",
+      "ledger": "Strada Accounts report: table of debit and credit account balances"
+    },
+    "cap": {
+      "sales": "Sales Trend · 12-month revenue trajectory",
+      "ledger": "Accounts · debit and credit balances"
+    }
+  },
+  "modules": {
+    "eyebrow": "Modules",
+    "title": "A report for every process in your business",
+    "subtitle": "From finance to production, sales to collections — Strada modules give you every view you need.",
+    "items": [
+      { "name": "Profit / Loss", "desc": "Compare the balance of income and expense." },
+      { "name": "Income Report", "desc": "Inspect revenue streams and totals." },
+      { "name": "Expense Report", "desc": "Track expense items and trends." },
+      { "name": "Collections", "desc": "Monitor receivables and collection status." },
+      { "name": "Account Report", "desc": "See customer and supplier balances." },
+      { "name": "Sales Report", "desc": "Analyze sales by customer and inventory." }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Customers",
+    "title": "Field-tested, loved by management",
+    "items": [
+      {
+        "quote": "Before Strada, collecting reports took days. Now the data in DIA lands on our management screen instantly. Our decision speed has completely changed.",
+        "author": "Mehmet Y.",
+        "role": "Finance Director",
+        "company": "İnebolu Yapı İnşaat"
+      },
+      {
+        "quote": "In a ready-mix concrete operation, seeing sales per customer and product in one table is priceless. Collections tracking alone paid for the investment.",
+        "author": "Ayşe K.",
+        "role": "General Manager",
+        "company": "Boyran Beton A.Ş."
+      },
+      {
+        "quote": "The mobile side changed our team's game. A manager in the field approves a quote and finance sees it at the same moment. We reached enterprise discipline with a small team.",
+        "author": "Burak D.",
+        "role": "Operations Manager",
+        "company": "Dörtyol Limited"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Ready to turn your data into insight?",
+    "subtitle": "Let's schedule a live demo tailored to your company. In 20 minutes we'll show how Strada turns your ERP data into reports.",
+    "primary": "Request a Demo",
+    "secondary": "Talk to sales"
+  },
+  "footer": {
+    "tagline": "The enterprise reporting platform that turns your ERP data into real-time financial insight.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "solutions": "Solutions",
+      "modules": "Modules",
+      "integrations": "Integrations",
+      "security": "Security",
+      "about": "About",
+      "contact": "Contact",
+      "demo": "Request Demo",
+      "careers": "Careers",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "kvkk": "KVKK Notice"
+    },
+    "newsletterTitle": "Product updates",
+    "newsletterDesc": "Be the first to know about new modules and features.",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterCta": "Subscribe",
+    "rights": "All rights reserved.",
+    "madeIn": "Made in Türkiye"
+  },
+  "solutionsPage": {
+    "hero": {
+      "eyebrow": "Solutions",
+      "title": "The financial operating layer built on top of your ERP",
+      "subtitle": "Strada unifies integration, automated synchronization, financial reporting and ERP connectivity into one consistent platform."
+    },
+    "sections": {
+      "integrations": {
+        "tag": "Integration",
+        "title": "Connects to your existing systems",
+        "description": "Strada establishes a secure API connection with your financial systems, led by DIA ERP. No need to redesign your processes.",
+        "points": [
+          "Two-way, real-time connection with DIA ERP",
+          "Cash, bank, account, inventory and order data",
+          "Secure API keys and role-based access"
+        ]
+      },
+      "sync": {
+        "tag": "Automation",
+        "title": "Automated data synchronization",
+        "description": "Data is fed from a single source of truth. Strada syncs continuously in the background; you only ever see up-to-date, consistent results.",
+        "points": [
+          "Scheduled and on-demand synchronization",
+          "Conflict resolution and audit trail",
+          "99.9% sync accuracy"
+        ]
+      },
+      "reporting": {
+        "tag": "Reporting",
+        "title": "Financial reporting modules",
+        "description": "Every metric management wants to see, in presentation-ready visuals. From P&L to collections, every table in one click.",
+        "points": [
+          "P&L, Income, Expense, Collections, Financial Position",
+          "Sales analysis by customer and inventory",
+          "Exportable, presentable visuals"
+        ]
+      },
+      "erp": {
+        "tag": "ERP Connectivity",
+        "title": "Trusted at enterprise scale",
+        "description": "Strada doesn't replace your enterprise ERP investment — it amplifies it, adding a modern reporting experience on top of your existing workflows.",
+        "points": [
+          "Go live in minutes without disrupting processes",
+          "Role-based authorization and auditing",
+          "Scalable, multi-company architecture"
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "Making financial clarity accessible to everyone",
+      "subtitle": "Strada is a Turkish technology company that turns the scattered ERP data of manufacturing and construction firms into reliable, instant and actionable insight."
+    },
+    "vision": {
+      "title": "Our vision",
+      "body": "We believe every company, at any scale, deserves enterprise-grade financial visibility. We reduce complex ERP data to the clarity a manager can grasp at a glance."
+    },
+    "values": [
+      { "title": "Clarity", "desc": "The more complex the data, the simpler its presentation must be." },
+      { "title": "Trust", "desc": "Financial data is sacred. Security is not a feature — it's the foundation." },
+      { "title": "Speed", "desc": "Decision speed is competitive advantage. We work in real time." }
+    ],
+    "security": {
+      "eyebrow": "Security & Compliance",
+      "title": "Enterprise security infrastructure standards",
+      "subtitle": "Your data is protected at every layer of the architecture.",
+      "items": [
+        { "title": "End-to-end encryption", "desc": "TLS in transit and AES-256 at rest." },
+        { "title": "Role-based access", "desc": "Each user sees only the data they're authorized for." },
+        { "title": "KVKK compliance", "desc": "Personal data is processed per KVKK principles." },
+        { "title": "Audit trail", "desc": "Every access and change is logged." },
+        { "title": "Redundancy", "desc": "Regular backups and a disaster recovery plan." },
+        { "title": "Isolated architecture", "desc": "Data layers are separated in a multi-company structure." }
+      ]
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Let's schedule a demo tailored to your company",
+    "subtitle": "Fill in the form and our team will get back to you within 1 business day. Experience Strada with your own data in a 20-minute live session.",
+    "highlights": [
+      "Live demo tailored to your company",
+      "Setup and integration consulting",
+      "No obligation, no upfront payment"
+    ],
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your first and last name",
+      "email": "Work Email",
+      "emailPlaceholder": "name@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "phone": "Phone",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "message": "Your Message",
+      "messagePlaceholder": "Briefly describe your needs (optional)",
+      "submit": "Send Demo Request",
+      "submitting": "Sending...",
+      "successTitle": "Request received",
+      "successBody": "Thank you! Our team will get in touch with you shortly.",
+      "successReset": "Create a new request"
+    },
+    "errors": {
+      "nameMin": "Please enter your full name.",
+      "emailInvalid": "Enter a valid work email.",
+      "companyMin": "Please enter the company name.",
+      "phoneInvalid": "Enter a valid phone number."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you're looking for may have moved or never existed.",
+    "cta": "Back to home"
+  },
+  "solutionDetail": {
+    "breadcrumbSolutions": "Solutions",
+    "featuresTitle": "Key features",
+    "useCasesTitle": "Who is it for?",
+    "relatedTitle": "Related solutions",
+    "learnMore": "View details",
+    "categories": {
+      "tools": "Tool",
+      "reports": "Report"
+    },
+    "grid": {
+      "eyebrow": "All solutions",
+      "title": "Modules tailored to your business",
+      "subtitle": "From inventory management to financial reporting — every solution works in real time with your DIA ERP data."
+    }
+  },
+  "solutionContent": {
+    "stok-yonetimi": {
+      "meta": {
+        "title": "Inventory Management — Warehouse and stock tracking",
+        "description": "DIA ERP-integrated inventory management: track warehouse movements, stock levels and sales in real time. Manage your warehouse processes from a single Strada screen."
+      },
+      "title": "Inventory Management",
+      "tagline": "Track your warehouse and inventory processes",
+      "overview": "Strada Inventory Management visualises your warehouse and inventory data from DIA ERP in real time. See which product is in which warehouse, how much stock is on hand and sales velocity at a glance. No more manual report preparation.",
+      "benefits": [
+        "Track stock levels across all warehouses in real time",
+        "Analyse stock sales trends and turnover rate",
+        "Speed up procurement planning with critical stock alerts",
+        "Automatic sync with DIA ERP — no manual data entry"
+      ],
+      "features": [
+        "Warehouse-level stock view with multi-warehouse support",
+        "Stock sales report for product performance analysis",
+        "Inventory movement history and period comparison",
+        "Mobile access for on-the-go stock checks",
+        "Exportable tables and presentation-ready visuals"
+      ],
+      "useCases": [
+        "Multi-warehouse stock tracking for manufacturing and construction firms",
+        "Ready-mix concrete and building materials procurement planning",
+        "Sales teams accessing up-to-date stock information in the field"
+      ]
+    },
+    "stok-donusturucu": {
+      "meta": {
+        "title": "Stock Converter — Automatic stock code matching",
+        "description": "Automatically match stock codes across different systems. End manual mapping between supplier, customer and ERP stock codes with Strada Stock Converter."
+      },
+      "title": "Stock Converter",
+      "tagline": "Automatically match different stock codes",
+      "overview": "Different suppliers, customers or legacy systems use different stock codes. Strada Stock Converter automatically maps these codes to your DIA ERP stock cards. It eliminates data transfer errors and accelerates processes.",
+      "benefits": [
+        "Automatically match supplier and customer codes to ERP codes",
+        "Eliminate manual code conversion work",
+        "Automate repetitive tasks with bulk mapping rules",
+        "Prevent incorrect stock entries and mismatches"
+      ],
+      "features": [
+        "Flexible mapping rules and bulk import",
+        "Barcode, SKU and custom code format support",
+        "Suggestion and approval flow for unmatched codes",
+        "Two-way sync with DIA ERP stock cards",
+        "Mapping history and audit trail"
+      ],
+      "useCases": [
+        "Standardising product codes from multiple suppliers",
+        "Code mapping when migrating from legacy ERP to DIA",
+        "Automatic conversion of codes on customer order forms"
+      ]
+    },
+    "fatura-donusturucu": {
+      "meta": {
+        "title": "Invoice Converter — Import Excel invoices to ERP",
+        "description": "Import Excel invoices to DIA ERP in one click. End manual invoice entry and reduce error rates with Strada Invoice Converter."
+      },
+      "title": "Invoice Converter",
+      "tagline": "Import Excel invoices to ERP in one click",
+      "overview": "Manually entering supplier Excel invoices into ERP is a waste of time. Strada Invoice Converter reads standard Excel templates, validates rows and automatically imports them into DIA ERP. Processes that took minutes now take seconds.",
+      "benefits": [
+        "Import Excel invoices to DIA ERP in one click",
+        "Prevent incorrect entries with row-level validation",
+        "Reduce the accounting team's workload with bulk processing",
+        "Automatically match invoices to stock and account cards"
+      ],
+      "features": [
+        "Flexible Excel template support and column mapping",
+        "Pre-import preview and error report",
+        "Automatic account and stock card matching",
+        "Bulk import and transaction history",
+        "VAT and amount validation checks"
+      ],
+      "useCases": [
+        "Bulk import of hundreds of monthly supplier invoices",
+        "Fast processing of subcontractor invoices on construction projects",
+        "Freeing the accounting team from manual data entry"
+      ]
+    },
+    "gider-raporu": {
+      "meta": {
+        "title": "Expense Report — Group and analyse expense items",
+        "description": "Group all expense items by category, period and project. Turn your DIA ERP expense data into instant financial insight with Strada Expense Report."
+      },
+      "title": "Expense Report",
+      "tagline": "Group all your expense items",
+      "overview": "Don't let your expenses get lost in scattered spreadsheets. Strada Expense Report groups all expense movements from DIA ERP by category, period, project and department. Strengthen budget control with trend analysis and comparative views.",
+      "benefits": [
+        "Automatically categorise expense items",
+        "Visualise monthly and annual expense trends",
+        "Detect budget variances early",
+        "Create board-ready expense reports"
+      ],
+      "features": [
+        "Expense grouping by category, project and department",
+        "Period comparison and trend charts",
+        "Integrated view with income-expense balance",
+        "Filterable tables and detail drill-down",
+        "PDF and Excel export"
+      ],
+      "useCases": [
+        "Monthly expense analysis for finance directors",
+        "Project-based cost tracking and budget control",
+        "Ready expense summaries for board presentations"
+      ]
+    },
+    "gelir-raporu": {
+      "meta": {
+        "title": "Income Report — Track company revenue in real time",
+        "description": "Track your company revenue in real time. Strada Income Report turns your DIA ERP sales and collection data into an instant revenue flow view."
+      },
+      "title": "Income Report",
+      "tagline": "Track your company revenue in real time",
+      "overview": "Seeing your revenue flow instantly is the foundation of sound decisions. Strada Income Report consolidates sales invoices, collections and income movements from DIA ERP on one screen. Spot growth opportunities with period comparison and trend analysis.",
+      "benefits": [
+        "See all revenue sources on one screen",
+        "Analyse monthly and annual revenue trends",
+        "Track the split between collected and invoiced revenue",
+        "Make instant decisions with real-time data"
+      ],
+      "features": [
+        "Breakdown by revenue source and customer",
+        "12-month revenue trend and comparative charts",
+        "Income view integrated with collection status",
+        "Period, project and region filters",
+        "Presentation-ready visuals and export"
+      ],
+      "useCases": [
+        "Monthly revenue performance tracking for general managers",
+        "Sales team target achievement analysis",
+        "Revenue summaries for investor and stakeholder presentations"
+      ]
+    },
+    "satis-raporu": {
+      "meta": {
+        "title": "Sales Report — Regional, staff and product sales analysis",
+        "description": "Analyse sales by region, staff and product. Visualise your DIA ERP sales data with detailed breakdowns using Strada Sales Report."
+      },
+      "title": "Sales Report",
+      "tagline": "Regional, staff and product-based sales",
+      "overview": "See your sales performance from every angle. Strada Sales Report offers detailed breakdowns by region, sales rep, customer and product. Analyse which product sells where and which rep stands out — in one click.",
+      "benefits": [
+        "Compare regional and sales rep performance",
+        "See product and stock-based sales distribution",
+        "Develop targeted strategy with customer segmentation",
+        "Analyse seasonality with 12-month sales trends"
+      ],
+      "features": [
+        "Breakdowns by region, staff, customer and product",
+        "Stock sales and customer distribution charts",
+        "Period comparison and growth rate calculation",
+        "Filterable tables and sorting",
+        "Mobile access for field sales tracking"
+      ],
+      "useCases": [
+        "Sales managers evaluating team performance",
+        "Product portfolio optimisation and stock planning",
+        "Developing regional growth strategy"
+      ]
+    },
+    "siparis-raporu": {
+      "meta": {
+        "title": "Order Report — Open and pending order tracking",
+        "description": "Track open and pending orders in real time. Monitor your DIA ERP order data by status, customer and delivery with Strada Order Report."
+      },
+      "title": "Order Report",
+      "tagline": "Open and pending order tracking",
+      "overview": "Pending orders are the pulse of your operations. Strada Order Report lists open orders from DIA ERP by status, customer, delivery date and product. Spot delay risks early and improve customer satisfaction.",
+      "benefits": [
+        "See open and pending orders on one screen",
+        "Detect delivery delay risks early",
+        "Customer-based order history and status tracking",
+        "Support production and logistics planning with order data"
+      ],
+      "features": [
+        "Order status filtering: open, partial, completed",
+        "Customer and product-based order list",
+        "Delivery date and delay alerts",
+        "Stock sufficiency check via order-stock integration",
+        "Mobile notifications for instant order updates"
+      ],
+      "useCases": [
+        "Operations managers' daily order tracking",
+        "Customer relations team delivery status queries",
+        "Order prioritisation in production planning"
+      ]
+    },
+    "kar-zarar-raporu": {
+      "meta": {
+        "title": "Profit/Loss Report — Net profitability analysis",
+        "description": "Measure your company's net profitability. Strada P&L Report combines DIA ERP income and expense data for instant profit margin and financial performance views."
+      },
+      "title": "Profit/Loss Report",
+      "tagline": "Measure your company's net profitability",
+      "overview": "Your business's true performance shows in the profit and loss statement. Strada P&L Report combines all income and expense items from DIA ERP to deliver net profit, profit margin and period comparison instantly. The core metric for management decisions.",
+      "benefits": [
+        "See net profit and profit margin in real time",
+        "Compare income-expense balance across periods",
+        "Analyse seasonality with monthly profit trends",
+        "Create board-ready financial summaries"
+      ],
+      "features": [
+        "Revenue, expense, net profit and profit margin metrics",
+        "Monthly and annual P&L trend charts",
+        "Detail drill-down with income-expense breakdown",
+        "Budget vs actual comparison",
+        "PDF report and presentation mode"
+      ],
+      "useCases": [
+        "Monthly profitability analysis for finance directors",
+        "Financial summary for board meetings",
+        "Performance data for investment and growth decisions"
+      ]
+    }
+  }
+}

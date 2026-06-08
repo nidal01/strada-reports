@@ -1,0 +1,541 @@
+{
+  "nav": {
+    "solutions": "Çözümler",
+    "blog": "Blog",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "requestDemo": "Demo Talep Et",
+    "menu": "Menü",
+    "close": "Kapat",
+    "switchLanguage": "Dili değiştir",
+    "toggleTheme": "Tema değiştir",
+    "themeLight": "Açık temaya geç",
+    "themeDark": "Koyu temaya geç"
+  },
+  "common": {
+    "getStarted": "Hemen Başla",
+    "requestDemo": "Demo Talep Et",
+    "talkToSales": "Satışla Görüş",
+    "exploreSolutions": "Çözümleri Keşfet",
+    "learnMore": "Daha Fazla",
+    "newBadge": "Yeni"
+  },
+  "metadata": {
+    "home": {
+      "title": "Strada — Şirketinizi cebinizden yönetin",
+      "description": "Teklif, sipariş ve finansal raporlama süreçlerini DIA ERP entegrasyonuyla tek platformda toplayın. Kurumsal düzeyde güvenlik, gerçek zamanlı veri, kusursuz raporlar."
+    },
+    "solutions": {
+      "title": "Çözümler — Entegrasyon, otomasyon ve finansal raporlama",
+      "description": "DIA ERP bağlantısı, otomatik veri senkronizasyonu, kâr/zarar, gelir-gider ve tahsilat raporları. Strada modüllerini keşfedin."
+    },
+    "about": {
+      "title": "Hakkımızda — Vizyon, güvenlik ve uyumluluk",
+      "description": "Strada'nın kurumsal vizyonu, güvenlik altyapısı standartları ve uyumluluk yaklaşımı."
+    },
+    "contact": {
+      "title": "Demo Talep Et — Strada ile tanışın",
+      "description": "Strada ekibiyle iletişime geçin, şirketinize özel canlı demo planlayın."
+    },
+    "blog": {
+      "title": "Blog — ERP, finansal raporlama ve dijital dönüşüm",
+      "description": "DIA ERP entegrasyonu, finansal raporlama, stok yönetimi ve kurumsal dijital dönüşüm üzerine Strada blog yazıları."
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Son yazılar",
+    "subtitle": "ERP, finansal raporlama ve işletme yönetimi üzerine güncel içerikler.",
+    "pageTitle": "Strada Blog",
+    "pageSubtitle": "Finansal raporlama, DIA ERP entegrasyonu ve kurumsal dijital dönüşüm üzerine uzman içerikler.",
+    "readMore": "Devamını oku",
+    "viewAll": "Tüm yazılar",
+    "breadcrumb": "Blog",
+    "empty": "Henüz yayınlanmış yazı yok."
+  },
+  "hero": {
+    "badge": "DIA ERP ile tam entegre",
+    "titleLead": "Şirketinizi",
+    "titleHighlight": "cebinizden",
+    "titleTail": "yönetin",
+    "subtitle": "Teklif, sipariş ve raporlama süreçlerini tek platformda birleştirin. Strada, ERP verilerinizi gerçek zamanlı finansal içgörülere dönüştürür.",
+    "ctaPrimary": "Ücretsiz Demo Talep Et",
+    "ctaSecondary": "Çözümleri Keşfet",
+    "trustNote": "Kurulum gerektirmez · 7/24 destek · KVKK uyumlu",
+    "panelTitle": "Finansal Durum",
+    "panelSubtitle": "Kasa ve banka hesaplarına genel bakış",
+    "metricRevenue": "Toplam Gelir",
+    "metricCollections": "Tahsilat",
+    "metricProfit": "Net Kâr",
+    "liveTag": "Canlı"
+  },
+  "socialProof": {
+    "title": "Türkiye'nin üretici ve inşaat şirketleri Strada ile yönetiyor",
+    "stats": [
+      { "value": "₺8,1M+", "label": "Aylık raporlanan ciro" },
+      { "value": "%99,9", "label": "Senkronizasyon doğruluğu" },
+      { "value": "12+", "label": "Hazır rapor modülü" },
+      { "value": "7/24", "label": "Gerçek zamanlı veri" }
+    ]
+  },
+  "features": {
+    "eyebrow": "Platform",
+    "title": "Verinizden değer üreten kurumsal bir kontrol merkezi",
+    "subtitle": "ERP'nizin dağınık verisini tek bir net tabloya indirgeyen, modüler ve ölçeklenebilir bir finansal işletim sistemi.",
+    "items": {
+      "sync": {
+        "title": "Otomatik Veri Senkronizasyonu",
+        "description": "DIA ERP'deki kasa, banka, cari ve stok hareketleri Strada'ya gerçek zamanlı akar. Manuel aktarım, kopyala-yapıştır ve gecikme yok."
+      },
+      "reports": {
+        "title": "Finansal Raporlama Modülleri",
+        "description": "Kâr/Zarar, Gelir, Gider, Tahsilat ve Finansal Durum raporları tek tıkla. Yöneticiye hazır, sunulabilir görseller."
+      },
+      "erp": {
+        "title": "DIA ERP Bağlantısı",
+        "description": "Var olan ERP yatırımınızın üzerine kurulur. Süreçlerinizi bozmadan, dakikalar içinde devreye girer."
+      },
+      "mobile": {
+        "title": "Mobil Yönetim",
+        "description": "Teklif, talep, sipariş ve raporlara cebinizden erişin. Saha ekibiniz ve yönetim her an aynı veride buluşur."
+      },
+      "security": {
+        "title": "Kurumsal Güvenlik",
+        "description": "Uçtan uca şifreleme, rol bazlı erişim ve KVKK uyumlu altyapı. Veriniz, sizin kontrolünüzde kalır."
+      }
+    }
+  },
+  "showcase": {
+    "eyebrow": "Ürün",
+    "title": "Gerçek veriniz, gerçek raporlar",
+    "subtitle": "Ekran görüntüleri Strada'nın canlı arayüzünden. Gelir-gider trendinden satış seyrine, cari bakiyelerinden kâr marjına kadar her şey tek yerde.",
+    "alt": {
+      "main": "Strada Aylık Gelir–Gider Trendi raporu: gelir, gider, net kâr ve kâr marjı metrikleri ile aylık bar grafiği",
+      "sales": "Strada Satış Trendi raporu: 12 aylık gelir seyrini gösteren bar grafiği",
+      "ledger": "Strada Tüm Cariler raporu: borçlu ve alacaklı cari hesaplar tablosu"
+    },
+    "cap": {
+      "sales": "Satış Trendi · 12 aylık gelir seyri",
+      "ledger": "Tüm Cariler · borç ve alacak bakiyeleri"
+    }
+  },
+  "modules": {
+    "eyebrow": "Modüller",
+    "title": "İşinizin her sürecine bir rapor",
+    "subtitle": "Finanstan üretime, satıştan tahsilata — Strada modülleri ihtiyaç duyduğunuz tüm görünümü sağlar.",
+    "items": [
+      { "name": "Kâr / Zarar", "desc": "Gelir ve gider dengesini karşılaştırın." },
+      { "name": "Gelir Raporu", "desc": "Gelir akışlarını ve toplamları inceleyin." },
+      { "name": "Gider Raporu", "desc": "Gider kalemlerini ve trendleri takip edin." },
+      { "name": "Tahsilat", "desc": "Alacaklar ve tahsilat durumunu izleyin." },
+      { "name": "Cari Raporu", "desc": "Müşteri ve tedarikçi bakiyelerini görün." },
+      { "name": "Satış Raporu", "desc": "Stok ve müşteri bazlı satışları analiz edin." }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Müşterilerimiz",
+    "title": "Sahada test edilmiş, yönetim tarafından sevilen",
+    "items": [
+      {
+        "quote": "Strada'dan önce raporları toplamak günler alıyordu. Artık DIA'daki veri anında yönetim ekranımıza düşüyor. Karar hızımız tamamen değişti.",
+        "author": "Mehmet Y.",
+        "role": "Finans Direktörü",
+        "company": "İnebolu Yapı İnşaat"
+      },
+      {
+        "quote": "Hazır beton operasyonunda her müşteri ve stok bazında satışı tek tabloda görmek paha biçilemez. Tahsilat takibi başlı başına yatırımı geri ödedi.",
+        "author": "Ayşe K.",
+        "role": "Genel Müdür",
+        "company": "Boyran Beton A.Ş."
+      },
+      {
+        "quote": "Mobil tarafı ekibimizin oyununu değiştirdi. Sahadaki yönetici teklifi onaylıyor, finans aynı anda görüyor. Kurumsal disiplini küçük ekiple yakaladık.",
+        "author": "Burak D.",
+        "role": "Operasyon Müdürü",
+        "company": "Dörtyol Limited"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Verinizi içgörüye çevirmeye hazır mısınız?",
+    "subtitle": "Şirketinize özel canlı bir demo planlayalım. 20 dakikada Strada'nın ERP verinizi nasıl raporlara dönüştürdüğünü gösterelim.",
+    "primary": "Demo Talep Et",
+    "secondary": "Satış ekibiyle görüş"
+  },
+  "footer": {
+    "tagline": "ERP verinizi gerçek zamanlı finansal içgörüye dönüştüren kurumsal raporlama platformu.",
+    "product": "Ürün",
+    "company": "Kurumsal",
+    "legal": "Yasal",
+    "links": {
+      "solutions": "Çözümler",
+      "modules": "Modüller",
+      "integrations": "Entegrasyonlar",
+      "security": "Güvenlik",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "demo": "Demo Talep Et",
+      "careers": "Kariyer",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Şartları",
+      "kvkk": "KVKK Aydınlatma Metni"
+    },
+    "newsletterTitle": "Ürün güncellemeleri",
+    "newsletterDesc": "Yeni modüller ve özelliklerden ilk siz haberdar olun.",
+    "newsletterPlaceholder": "E-posta adresiniz",
+    "newsletterCta": "Abone Ol",
+    "rights": "Tüm hakları saklıdır.",
+    "madeIn": "Türkiye'de geliştirildi"
+  },
+  "solutionsPage": {
+    "hero": {
+      "eyebrow": "Çözümler",
+      "title": "ERP'nizin üzerine kurulan finansal işletim katmanı",
+      "subtitle": "Strada; entegrasyon, otomatik senkronizasyon, finansal raporlama ve ERP bağlantısını tek, tutarlı bir platformda birleştirir."
+    },
+    "sections": {
+      "integrations": {
+        "tag": "Entegrasyon",
+        "title": "Var olan sistemlerinize bağlanır",
+        "description": "Strada, DIA ERP başta olmak üzere finansal sistemlerinizle güvenli API bağlantısı kurar. Süreçlerinizi yeniden tasarlamanıza gerek kalmaz.",
+        "points": [
+          "DIA ERP ile çift yönlü, gerçek zamanlı bağlantı",
+          "Kasa, banka, cari, stok ve sipariş verisi",
+          "Güvenli API anahtarı ve rol bazlı erişim"
+        ]
+      },
+      "sync": {
+        "tag": "Otomasyon",
+        "title": "Otomatik veri senkronizasyonu",
+        "description": "Veri tek bir doğruluk kaynağından beslenir. Strada arka planda sürekli senkronize eder; siz yalnızca güncel ve tutarlı sonuçları görürsünüz.",
+        "points": [
+          "Planlı ve anlık senkronizasyon",
+          "Çakışma çözümleme ve denetim izi",
+          "%99,9 senkronizasyon doğruluğu"
+        ]
+      },
+      "reporting": {
+        "tag": "Raporlama",
+        "title": "Finansal raporlama modülleri",
+        "description": "Yöneticinin görmek istediği her metrik, sunuma hazır görsellerle. Kâr/zarardan tahsilata kadar tüm tablolar tek tıkla.",
+        "points": [
+          "Kâr/Zarar, Gelir, Gider, Tahsilat, Finansal Durum",
+          "Müşteri ve stok bazlı satış analizleri",
+          "Dışa aktarılabilir, sunulabilir görseller"
+        ]
+      },
+      "erp": {
+        "tag": "ERP Bağlantısı",
+        "title": "Kurumsal ölçekte güvenilir",
+        "description": "Strada, kurumsal ERP yatırımınızı değiştirmez — onu güçlendirir. Mevcut iş akışlarınızın üzerine modern bir raporlama deneyimi ekler.",
+        "points": [
+          "Süreç bozmadan dakikalar içinde devreye alma",
+          "Rol bazlı yetkilendirme ve denetim",
+          "Ölçeklenebilir, çok şirketli mimari"
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Hakkımızda",
+      "title": "Finansal netliği herkes için erişilebilir kılıyoruz",
+      "subtitle": "Strada, üretici ve inşaat şirketlerinin dağınık ERP verisini güvenilir, anlık ve eyleme dönüştürülebilir içgörülere çeviren bir Türk teknoloji şirketidir."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "body": "Her ölçekten şirketin, kurumsal düzeyde finansal görünürlüğe sahip olması gerektiğine inanıyoruz. Karmaşık ERP verisini, yöneticinin tek bakışta anlayacağı netliğe indiriyoruz."
+    },
+    "values": [
+      { "title": "Netlik", "desc": "Veri ne kadar karmaşıksa, sunumu o kadar sade olmalı." },
+      { "title": "Güven", "desc": "Finansal veri kutsaldır. Güvenlik bir özellik değil, temeldir." },
+      { "title": "Hız", "desc": "Karar hızı rekabet avantajıdır. Gerçek zamanlı çalışırız." }
+    ],
+    "security": {
+      "eyebrow": "Güvenlik & Uyumluluk",
+      "title": "Kurumsal güvenlik altyapısı standartları",
+      "subtitle": "Veriniz, mimarinin her katmanında korunur.",
+      "items": [
+        { "title": "Uçtan uca şifreleme", "desc": "Aktarım ve depolama sırasında TLS ve AES-256 şifreleme." },
+        { "title": "Rol bazlı erişim", "desc": "Her kullanıcı yalnızca yetkili olduğu veriyi görür." },
+        { "title": "KVKK uyumluluğu", "desc": "Kişisel veriler KVKK ilkelerine uygun işlenir." },
+        { "title": "Denetim izi", "desc": "Her erişim ve değişiklik kayıt altına alınır." },
+        { "title": "Yedeklilik", "desc": "Düzenli yedekleme ve felaket kurtarma planı." },
+        { "title": "İzole mimari", "desc": "Çok şirketli yapıda veri katmanları ayrıştırılır." }
+      ]
+    }
+  },
+  "contactPage": {
+    "eyebrow": "İletişim",
+    "title": "Şirketinize özel bir demo planlayalım",
+    "subtitle": "Formu doldurun, ekibimiz 1 iş günü içinde size dönsün. 20 dakikalık canlı oturumda Strada'yı kendi verinizle deneyimleyin.",
+    "highlights": [
+      "Şirketinize özel canlı demo",
+      "Kurulum ve entegrasyon danışmanlığı",
+      "Yükümlülük yok, ön ödeme yok"
+    ],
+    "form": {
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "email": "İş E-postası",
+      "emailPlaceholder": "ad@sirket.com",
+      "company": "Şirket",
+      "companyPlaceholder": "Şirketinizin adı",
+      "phone": "Telefon",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "message": "Mesajınız",
+      "messagePlaceholder": "İhtiyacınızı kısaca anlatın (opsiyonel)",
+      "submit": "Demo Talebini Gönder",
+      "submitting": "Gönderiliyor...",
+      "successTitle": "Talebiniz alındı",
+      "successBody": "Teşekkürler! Ekibimiz en kısa sürede sizinle iletişime geçecek.",
+      "successReset": "Yeni talep oluştur"
+    },
+    "errors": {
+      "nameMin": "Lütfen adınızı ve soyadınızı girin.",
+      "emailInvalid": "Geçerli bir iş e-postası girin.",
+      "companyMin": "Lütfen şirket adını girin.",
+      "phoneInvalid": "Geçerli bir telefon numarası girin."
+    }
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "subtitle": "Aradığınız sayfa taşınmış veya hiç var olmamış olabilir.",
+    "cta": "Ana sayfaya dön"
+  },
+  "solutionDetail": {
+    "breadcrumbSolutions": "Çözümler",
+    "featuresTitle": "Temel özellikler",
+    "useCasesTitle": "Kimler için?",
+    "relatedTitle": "İlgili çözümler",
+    "learnMore": "Detayları gör",
+    "categories": {
+      "tools": "Araç",
+      "reports": "Rapor"
+    },
+    "grid": {
+      "eyebrow": "Tüm çözümler",
+      "title": "İşinize özel modüller",
+      "subtitle": "Stok yönetiminden finansal raporlamaya — her çözüm DIA ERP verinizle gerçek zamanlı çalışır."
+    }
+  },
+  "solutionContent": {
+    "stok-yonetimi": {
+      "meta": {
+        "title": "Stok Yönetimi — Depo ve envanter takibi",
+        "description": "DIA ERP ile entegre stok yönetimi: depo hareketleri, envanter seviyeleri ve stok satışlarını gerçek zamanlı izleyin. Strada ile depo süreçlerinizi tek ekrandan yönetin."
+      },
+      "title": "Stok Yönetimi",
+      "tagline": "Depo ve envanter süreçlerinizi izleyin",
+      "overview": "Strada Stok Yönetimi, DIA ERP'deki depo ve envanter verilerinizi anlık olarak görselleştirir. Hangi ürünün hangi depoda, ne kadar stokta olduğunu ve satış hızını tek bakışta görün. Manuel rapor hazırlamaya son.",
+      "benefits": [
+        "Tüm depolarınızdaki stok seviyelerini gerçek zamanlı takip edin",
+        "Stok satış trendlerini ve dönüş hızını analiz edin",
+        "Kritik stok uyarılarıyla tedarik planlamasını hızlandırın",
+        "DIA ERP ile otomatik senkronizasyon — manuel veri girişi yok"
+      ],
+      "features": [
+        "Depo bazlı stok görünümü ve çoklu depo desteği",
+        "Stok satışları raporu ile ürün performans analizi",
+        "Envanter hareket geçmişi ve dönemsel karşılaştırma",
+        "Mobil erişim ile sahadan anlık stok kontrolü",
+        "Dışa aktarılabilir tablolar ve sunuma hazır görseller"
+      ],
+      "useCases": [
+        "Üretim ve inşaat firmalarında çoklu depo stok takibi",
+        "Hazır beton ve yapı malzemesi tedarik planlaması",
+        "Satış ekibinin sahada güncel stok bilgisine erişimi"
+      ]
+    },
+    "stok-donusturucu": {
+      "meta": {
+        "title": "Stok Dönüştürücü — Otomatik stok kodu eşleştirme",
+        "description": "Farklı sistemlerdeki stok kodlarını otomatik eşleştirin. Strada Stok Dönüştürücü ile tedarikçi, müşteri ve ERP stok kodları arasında manuel eşleştirmeye son verin."
+      },
+      "title": "Stok Dönüştürücü",
+      "tagline": "Farklı stok kodlarını otomatik eşleştirin",
+      "overview": "Farklı tedarikçiler, müşteriler veya eski sistemler farklı stok kodları kullanır. Strada Stok Dönüştürücü, bu kodları otomatik olarak DIA ERP stok kartlarınızla eşleştirir. Veri aktarım hatalarını ortadan kaldırır, süreçleri hızlandırır.",
+      "benefits": [
+        "Tedarikçi ve müşteri stok kodlarını ERP kodlarıyla otomatik eşleştirin",
+        "Manuel kod çevirme işlemini ortadan kaldırın",
+        "Toplu eşleştirme kuralları ile tekrarlayan işleri otomatikleştirin",
+        "Hatalı stok girişlerini ve uyumsuzlukları önleyin"
+      ],
+      "features": [
+        "Esnek eşleştirme kuralları ve toplu import",
+        "Barkod, SKU ve özel kod formatı desteği",
+        "Eşleşmeyen kodlar için öneri ve onay akışı",
+        "DIA ERP stok kartlarıyla çift yönlü senkronizasyon",
+        "Eşleştirme geçmişi ve denetim izi"
+      ],
+      "useCases": [
+        "Çoklu tedarikçiden gelen farklı ürün kodlarının standartlaştırılması",
+        "Eski ERP'den DIA'ya geçişte kod eşleştirme",
+        "Müşteri sipariş formlarındaki kodların otomatik çevrilmesi"
+      ]
+    },
+    "fatura-donusturucu": {
+      "meta": {
+        "title": "Fatura Dönüştürücü — Excel faturaları ERP'ye aktarın",
+        "description": "Excel formatındaki faturaları tek tıkla DIA ERP'ye aktarın. Strada Fatura Dönüştürücü ile manuel fatura girişine son verin, hata oranını düşürün."
+      },
+      "title": "Fatura Dönüştürücü",
+      "tagline": "Excel faturaları tek tıkla ERP'ye aktarın",
+      "overview": "Tedarikçilerden gelen Excel faturalarını tek tek ERP'ye girmek zaman kaybıdır. Strada Fatura Dönüştürücü, standart Excel şablonlarını okur, satırları doğrular ve DIA ERP'ye otomatik aktarır. Dakikalar süren işlemler saniyelere iner.",
+      "benefits": [
+        "Excel faturalarını tek tıkla DIA ERP'ye aktarın",
+        "Satır bazlı doğrulama ile hatalı girişleri önleyin",
+        "Toplu fatura işleme ile muhasebe ekibinin yükünü azaltın",
+        "Fatura-stok-cari eşleştirmesini otomatik yapın"
+      ],
+      "features": [
+        "Esnek Excel şablon desteği ve sütun eşleştirme",
+        "Aktarım öncesi önizleme ve hata raporu",
+        "Cari hesap ve stok kartı otomatik eşleştirme",
+        "Toplu aktarım ve işlem geçmişi",
+        "KDV ve tutar doğrulama kontrolleri"
+      ],
+      "useCases": [
+        "Aylık yüzlerce tedarikçi faturasının toplu aktarımı",
+        "İnşaat projelerinde alt yüklenici faturalarının hızlı işlenmesi",
+        "Muhasebe ekibinin manuel veri girişinden kurtulması"
+      ]
+    },
+    "gider-raporu": {
+      "meta": {
+        "title": "Gider Raporu — Masraf kalemlerini gruplayın ve analiz edin",
+        "description": "Tüm masraf kalemlerinizi kategori, dönem ve proje bazında gruplayın. Strada Gider Raporu ile DIA ERP gider verilerinizi anlık finansal içgörülere dönüştürün."
+      },
+      "title": "Gider Raporu",
+      "tagline": "Tüm masraf kalemlerinizi gruplayın",
+      "overview": "Giderleriniz dağınık tablolarda kaybolmasın. Strada Gider Raporu, DIA ERP'deki tüm masraf hareketlerini kategori, dönem, proje ve departman bazında gruplar. Trend analizi ve karşılaştırmalı görünümlerle bütçe kontrolünü güçlendirin.",
+      "benefits": [
+        "Masraf kalemlerini otomatik kategorilere ayırın",
+        "Aylık ve yıllık gider trendlerini görselleştirin",
+        "Bütçe sapmalarını erken tespit edin",
+        "Yönetim kuruluna sunulabilir raporlar oluşturun"
+      ],
+      "features": [
+        "Kategori, proje ve departman bazlı gider gruplama",
+        "Dönemsel karşılaştırma ve trend grafikleri",
+        "Gelir-gider dengesi ile entegre görünüm",
+        "Filtrelenebilir tablolar ve detay drill-down",
+        "PDF ve Excel dışa aktarım"
+      ],
+      "useCases": [
+        "Finans direktörlerinin aylık gider analizi",
+        "Proje bazlı maliyet takibi ve bütçe kontrolü",
+        "Yönetim kurulu sunumları için hazır gider özetleri"
+      ]
+    },
+    "gelir-raporu": {
+      "meta": {
+        "title": "Gelir Raporu — Şirket gelirlerinizi güncel izleyin",
+        "description": "Şirket gelirlerinizi gerçek zamanlı takip edin. Strada Gelir Raporu, DIA ERP satış ve tahsilat verilerinizi anlık gelir akışı görünümüne dönüştürür."
+      },
+      "title": "Gelir Raporu",
+      "tagline": "Şirket gelirlerinizi güncel izleyin",
+      "overview": "Gelir akışınızı anlık görmek, doğru kararların temelidir. Strada Gelir Raporu, DIA ERP'deki satış faturaları, tahsilatlar ve gelir hareketlerini tek ekranda toplar. Dönemsel karşılaştırma ve trend analiziyle büyüme fırsatlarını yakalayın.",
+      "benefits": [
+        "Tüm gelir kaynaklarını tek ekranda görün",
+        "Aylık ve yıllık gelir trendlerini analiz edin",
+        "Tahsilat ve faturalanmış gelir ayrımını takip edin",
+        "Gerçek zamanlı veri ile anlık karar alın"
+      ],
+      "features": [
+        "Gelir kaynağı ve müşteri bazlı kırılım",
+        "12 aylık gelir trendi ve karşılaştırmalı grafikler",
+        "Tahsilat durumu ile entegre gelir görünümü",
+        "Dönem, proje ve bölge filtreleri",
+        "Sunuma hazır görseller ve dışa aktarım"
+      ],
+      "useCases": [
+        "Genel müdürlerin aylık gelir performans takibi",
+        "Satış ekibinin hedef gerçekleşme analizi",
+        "Yatırımcı ve paydaş sunumları için gelir özetleri"
+      ]
+    },
+    "satis-raporu": {
+      "meta": {
+        "title": "Satış Raporu — Bölge, personel ve ürün bazlı satış analizi",
+        "description": "Bölge, personel ve ürün bazlı satışlarınızı analiz edin. Strada Satış Raporu ile DIA ERP satış verilerinizi detaylı kırılımlarla görselleştirin."
+      },
+      "title": "Satış Raporu",
+      "tagline": "Bölge, personel ve ürün bazlı satışlar",
+      "overview": "Satış performansınızı her açıdan görün. Strada Satış Raporu; bölge, satış temsilcisi, müşteri ve ürün bazında detaylı kırılımlar sunar. Hangi ürünün nerede sattığını, hangi temsilcinin öne çıktığını tek tıkla analiz edin.",
+      "benefits": [
+        "Bölge ve satış temsilcisi performansını karşılaştırın",
+        "Ürün ve stok bazlı satış dağılımını görün",
+        "Müşteri segmentasyonu ile hedefli strateji geliştirin",
+        "12 aylık satış trendi ile mevsimsellik analizi yapın"
+      ],
+      "features": [
+        "Bölge, personel, müşteri ve ürün bazlı kırılımlar",
+        "Stok satışları ve müşteri dağılımı grafikleri",
+        "Dönemsel karşılaştırma ve büyüme oranı hesaplama",
+        "Filtrelenebilir tablolar ve sıralama",
+        "Mobil erişim ile sahadan satış takibi"
+      ],
+      "useCases": [
+        "Satış müdürlerinin ekip performans değerlendirmesi",
+        "Ürün portföyü optimizasyonu ve stok planlaması",
+        "Bölgesel büyüme stratejisi geliştirme"
+      ]
+    },
+    "siparis-raporu": {
+      "meta": {
+        "title": "Sipariş Raporu — Açık ve bekleyen sipariş takibi",
+        "description": "Açık ve bekleyen siparişlerinizi gerçek zamanlı izleyin. Strada Sipariş Raporu ile DIA ERP sipariş verilerinizi durum, müşteri ve teslimat bazında takip edin."
+      },
+      "title": "Sipariş Raporu",
+      "tagline": "Açık ve bekleyen sipariş takibi",
+      "overview": "Bekleyen siparişler operasyonunuzun nabzıdır. Strada Sipariş Raporu, DIA ERP'deki açık siparişleri durum, müşteri, teslimat tarihi ve ürün bazında listeler. Gecikme risklerini erken görün, müşteri memnuniyetini artırın.",
+      "benefits": [
+        "Açık ve bekleyen siparişleri tek ekranda görün",
+        "Teslimat gecikme risklerini erken tespit edin",
+        "Müşteri bazlı sipariş geçmişi ve durum takibi",
+        "Üretim ve lojistik planlamasını sipariş verisiyle destekleyin"
+      ],
+      "features": [
+        "Sipariş durumu filtreleme: açık, kısmi, tamamlanan",
+        "Müşteri ve ürün bazlı sipariş listesi",
+        "Teslimat tarihi ve gecikme uyarıları",
+        "Sipariş-stok entegrasyonu ile stok yeterlilik kontrolü",
+        "Mobil bildirimler ile anlık sipariş güncellemeleri"
+      ],
+      "useCases": [
+        "Operasyon müdürlerinin günlük sipariş takibi",
+        "Müşteri ilişkileri ekibinin teslimat durumu sorgulaması",
+        "Üretim planlamasında sipariş önceliklendirme"
+      ]
+    },
+    "kar-zarar-raporu": {
+      "meta": {
+        "title": "Kâr/Zarar Raporu — Net karlılık analizi",
+        "description": "Şirketinizin net karlılığını ölçün. Strada Kâr/Zarar Raporu, DIA ERP gelir ve gider verilerinizi birleştirerek anlık kâr marjı ve finansal performans görünümü sunar."
+      },
+      "title": "Kâr/Zarar Raporu",
+      "tagline": "Şirketinizin net karlılığını ölçün",
+      "overview": "İşletmenizin gerçek performansı kâr/zarar tablosunda görünür. Strada Kâr/Zarar Raporu, DIA ERP'deki tüm gelir ve gider kalemlerini birleştirerek net kâr, kâr marjı ve dönemsel karşılaştırmayı anlık sunar. Yönetim kararlarının temel metriği.",
+      "benefits": [
+        "Net kâr ve kâr marjını gerçek zamanlı görün",
+        "Gelir-gider dengesini dönemsel karşılaştırın",
+        "Aylık kâr trendi ile mevsimsellik analizi yapın",
+        "Yönetim kuruluna sunulabilir finansal özetler oluşturun"
+      ],
+      "features": [
+        "Gelir, gider, net kâr ve kâr marjı metrikleri",
+        "Aylık ve yıllık kâr/zarar trend grafikleri",
+        "Gelir-gider kırılımı ile detay drill-down",
+        "Bütçe vs gerçekleşen karşılaştırması",
+        "PDF rapor ve sunum modu"
+      ],
+      "useCases": [
+        "Finans direktörlerinin aylık kârlılık analizi",
+        "Yönetim kurulu toplantıları için finansal özet",
+        "Yatırım ve büyüme kararları için performans verisi"
+      ]
+    }
+  }
+}
