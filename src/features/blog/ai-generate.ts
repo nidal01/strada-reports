@@ -1,29 +1,17 @@
 import type { Locale } from "@/i18n/routing";
-import { slugify } from "./slug";
+import { callGemini, parseGeminiJson } from "./gemini";
 import { createPost } from "./posts";
-import type { BlogPost, GenerateBlogInput } from "./types";
+import { fetchStockImage } from "./stock-image";
+import { markTopicUsed, pickNextPendingTopic } from "./topics";
+import { slugify } from "./slug";
+import { countWords, MIN_BLOG_WORDS } from "./word-count";
+import type { BlogPost, BlogTopic, GenerateBlogInput } from "./types";
 
-const TOPICS_TR = [
-  "DIA ERP entegrasyonu ile finansal raporlama",
-  "Kâr/zarar raporunu yönetime sunmanın en iyi yolları",
-  "Stok yönetimi ve envanter optimizasyonu",
-  "İnşaat sektöründe dijital dönüşüm",
-  "Gerçek zamanlı finansal veri ile karar alma",
-  "Excel faturalarını ERP'ye otomatik aktarma",
-  "Satış raporları ile bölgesel büyüme stratejisi",
-  "KOBİ'ler için kurumsal raporlama araçları",
-] as const;
-
-const TOPICS_EN = [
-  "Financial reporting with DIA ERP integration",
-  "How to present P&L reports to management",
-  "Inventory management and optimisation",
-  "Digital transformation in construction",
-  "Data-driven decision making with real-time finance",
-  "Automating Excel invoice imports to ERP",
-  "Regional growth strategy with sales reports",
-  "Enterprise reporting tools for SMBs",
-] as const;
+const SYSTEM = `Sen Strada için B2B SaaS içerik yazarısın.
+Strada, DIA ERP entegrasyonlu kurumsal finansal raporlama platformudur.
+Profesyonel, SEO odaklı, bilgilendirici blog yazıları üretirsin.
+Strada'yı doğal şekilde öner; aşırı reklam yapma.
+Yanıtın yalnızca geçerli JSON olmalı.`;
 
 interface GeneratedArticle {
   title: string;
@@ -31,104 +19,124 @@ interface GeneratedArticle {
   content: string;
   metaTitle: string;
   metaDescription: string;
+  focusKeyword: string;
   tags: string[];
-}
-
-async function callOpenAI(prompt: string): Promise<string> {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    throw new Error("OPENAI_API_KEY tanımlı değil");
-  }
-
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: process.env.OPENAI_MODEL ?? "gpt-4o-mini",
-      temperature: 0.7,
-      response_format: { type: "json_object" },
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are a B2B SaaS content writer for Strada, an enterprise financial reporting platform integrated with DIA ERP in Turkey. Write professional, SEO-friendly blog posts. Always respond with valid JSON only.",
-        },
-        { role: "user", content: prompt },
-      ],
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`OpenAI API hatası: ${res.status} ${err}`);
-  }
-
-  const data = (await res.json()) as {
-    choices: Array<{ message: { content: string } }>;
-  };
-  return data.choices[0]?.message?.content ?? "";
+  imageQuery?: string;
 }
 
 function buildPrompt(topic: string, locale: Locale, keywords: string[]): string {
-  const lang = locale === "tr" ? "Turkish" : "English";
-  const kw = keywords.length ? `Keywords: ${keywords.join(", ")}.` : "";
+  const lang = locale === "tr" ? "Türkçe" : "English";
+  const kw = keywords.length ? keywords.join(", ") : topic;
 
-  return `Write a blog post in ${lang} about: "${topic}".
-${kw}
-Target audience: finance directors, operations managers and CEOs of manufacturing/construction companies in Turkey.
-Mention Strada naturally as a solution (ERP reporting, DIA integration, financial dashboards) without being overly promotional.
+  return `${lang} dilinde aşağıdaki konuda blog yazısı yaz:
 
-Return JSON with this exact shape:
+Konu: "${topic}"
+Anahtar kelimeler: ${kw}
+
+Gereksinimler:
+- content: Markdown formatında EN AZ ${MIN_BLOG_WORDS} kelime (zorunlu)
+- En az 5 adet ## ana başlık ve altında ### alt başlıklar kullan
+- Giriş paragrafı, somut örnekler, madde işaretli listeler ve sonuç bölümü olsun
+- Hedef kitle: Türkiye'deki üretim, inşaat ve dağıtım şirketlerinin CFO/COO/CEO'ları
+- DIA ERP, finansal raporlama, stok yönetimi ve dijital dönüşüm bağlamında yaz
+- Strada'yı çözüm olarak doğal biçimde 1-2 kez an
+
+JSON formatı:
 {
-  "title": "string (max 80 chars)",
-  "excerpt": "string (max 200 chars)",
-  "content": "string (markdown, 800-1200 words, use ## headings and bullet lists)",
-  "metaTitle": "string (SEO title, max 60 chars)",
-  "metaDescription": "string (SEO description, max 155 chars)",
-  "tags": ["tag1", "tag2", "tag3"]
+  "title": "string (max 80 karakter)",
+  "excerpt": "string (max 220 karakter)",
+  "content": "string (markdown, min ${MIN_BLOG_WORDS} kelime)",
+  "metaTitle": "string (SEO başlık, max 60 karakter)",
+  "metaDescription": "string (SEO açıklama, max 155 karakter)",
+  "focusKeyword": "string (birincil anahtar kelime)",
+  "tags": ["tag1", "tag2", "tag3", "tag4"],
+  "imageQuery": "string (İngilizce stok fotoğraf arama terimi)"
 }`;
 }
 
 function parseGenerated(raw: string): GeneratedArticle {
-  const parsed = JSON.parse(raw) as GeneratedArticle;
+  const parsed = parseGeminiJson<GeneratedArticle>(raw);
   if (!parsed.title || !parsed.content) {
-    throw new Error("AI yanıtı geçersiz");
+    throw new Error("Gemini yanıtı geçersiz");
   }
   return parsed;
 }
 
-/** Generate and optionally publish a blog post via OpenAI. */
-export async function generateBlogPost(input: GenerateBlogInput): Promise<BlogPost> {
-  const raw = await callOpenAI(buildPrompt(input.topic, input.locale, input.keywords ?? []));
-  const article = parseGenerated(raw);
-  const slug = slugify(article.title);
+async function generateArticle(
+  topic: string,
+  locale: Locale,
+  keywords: string[],
+): Promise<GeneratedArticle> {
+  let lastError: Error | null = null;
 
-  return createPost({
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const prompt =
+      attempt === 0
+        ? buildPrompt(topic, locale, keywords)
+        : `${buildPrompt(topic, locale, keywords)}\n\nÖNEMLİ: Önceki deneme ${MIN_BLOG_WORDS} kelimenin altındaydı. Bu sefer kesinlikle en az ${MIN_BLOG_WORDS} kelime yaz.`;
+
+    const raw = await callGemini(prompt, SYSTEM);
+    const article = parseGenerated(raw);
+    const words = countWords(article.content);
+
+    if (words >= MIN_BLOG_WORDS) return article;
+    lastError = new Error(`Yazı çok kısa: ${words} kelime (min ${MIN_BLOG_WORDS})`);
+  }
+
+  throw lastError ?? new Error("Blog yazısı üretilemedi");
+}
+
+/** Gemini ile blog yazısı üretir, stok görsel ekler ve kaydeder. */
+export async function generateBlogPost(input: GenerateBlogInput): Promise<BlogPost> {
+  const keywords = input.keywords ?? [];
+  const article = await generateArticle(input.topic, input.locale, keywords);
+
+  const imageQuery = input.imageQuery ?? article.imageQuery ?? keywords[0] ?? input.topic;
+  const coverImage = await fetchStockImage(imageQuery);
+
+  const slug = slugify(article.title);
+  const post = await createPost({
     slug,
     locale: input.locale,
     title: article.title,
     excerpt: article.excerpt,
     content: article.content,
-    coverImage: null,
+    coverImage,
     status: input.publish ? "published" : "draft",
     metaTitle: article.metaTitle,
     metaDescription: article.metaDescription,
     canonicalUrl: null,
-    ogImage: null,
-    focusKeyword: input.keywords?.[0] ?? null,
+    ogImage: coverImage,
+    focusKeyword: article.focusKeyword ?? keywords[0] ?? null,
     robots: "index,follow",
     tags: article.tags,
     author: "Strada",
     aiGenerated: true,
   });
+
+  if (input.topicId) {
+    await markTopicUsed(input.topicId, post.id);
+  }
+
+  return post;
 }
 
-/** Pick a rotating topic for scheduled cron generation. */
-export function pickCronTopic(locale: Locale): string {
-  const topics = locale === "tr" ? TOPICS_TR : TOPICS_EN;
-  const index = new Date().getUTCDay() % topics.length;
-  return topics[index] ?? topics[0]!;
+/** Cron: sıradaki bekleyen konudan yayınlanmış blog üretir. */
+export async function generateBlogFromQueue(locale: Locale = "tr"): Promise<{
+  post: BlogPost;
+  topic: BlogTopic;
+} | null> {
+  const topic = await pickNextPendingTopic(locale);
+  if (!topic) return null;
+
+  const post = await generateBlogPost({
+    topic: topic.title,
+    locale: topic.locale,
+    keywords: topic.keywords,
+    imageQuery: topic.imageQuery ?? undefined,
+    publish: true,
+    topicId: topic.id,
+  });
+
+  return { post, topic };
 }

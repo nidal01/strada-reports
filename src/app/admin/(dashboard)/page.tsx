@@ -21,9 +21,14 @@ export default async function AdminDashboardPage() {
             {process.env.SUPABASE_URL ? "Supabase" : "Yerel JSON (demo)"}
           </p>
         </div>
-        <Button asChild>
-          <Link href="/admin/posts/new">+ Yeni Yazı</Link>
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button asChild variant="ghost">
+            <Link href="/admin/topics">Konu Planı</Link>
+          </Button>
+          <Button asChild>
+            <Link href="/admin/posts/new">+ Yeni Yazı</Link>
+          </Button>
+        </div>
       </div>
 
       <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)]">

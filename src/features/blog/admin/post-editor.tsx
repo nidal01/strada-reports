@@ -147,9 +147,9 @@ export function PostEditor({ post }: { post?: BlogPost }) {
 
       {/* AI generator */}
       <div className="rounded-2xl border border-brand-500/20 bg-brand-500/5 p-6">
-        <h2 className="text-lg font-semibold text-white">AI ile Yazı Üret</h2>
+        <h2 className="text-lg font-semibold text-white">AI ile Yazı Üret (Gemini)</h2>
         <p className="mt-1 text-sm text-slate-400">
-          Konu girin, OpenAI otomatik blog yazısı oluştursun. Taslak olarak kaydedilir.
+          Konu girin, Gemini en az 1500 kelimelik blog yazısı ve stok görseli oluştursun.
         </p>
         <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Input

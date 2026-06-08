@@ -49,11 +49,39 @@ export type BlogPostInput = Pick<
   publishedAt?: string | null;
 };
 
+export type BlogTopicStatus = "pending" | "used" | "skipped";
+
+export interface BlogTopic {
+  id: string;
+  title: string;
+  locale: Locale;
+  keywords: string[];
+  imageQuery: string | null;
+  status: BlogTopicStatus;
+  scheduledDate: string | null;
+  weekStart: string;
+  postId: string | null;
+  notes: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export type BlogTopicInput = Pick<
+  BlogTopic,
+  "title" | "locale" | "keywords" | "imageQuery" | "weekStart"
+> & {
+  status?: BlogTopicStatus;
+  scheduledDate?: string | null;
+  notes?: string | null;
+};
+
 export interface GenerateBlogInput {
   topic: string;
   locale: Locale;
   keywords?: string[];
+  imageQuery?: string;
   publish?: boolean;
+  topicId?: string;
 }
 
 export interface TocHeading {

@@ -3,8 +3,12 @@
   "buildCommand": "npm run build",
   "crons": [
     {
+      "path": "/api/cron/blog-topics",
+      "schedule": "0 5 * * 1"
+    },
+    {
       "path": "/api/cron/blog",
-      "schedule": "0 9 * * 1"
+      "schedule": "0 7,19 * * *"
     }
   ]
 }
