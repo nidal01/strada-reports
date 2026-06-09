@@ -13,7 +13,7 @@ const POSTS_PER_RUN = Math.min(
   2,
 );
 
-/** Vercel Cron (Hobby: günde 1 kez, 14:10 TR / 11:10 UTC) — Pazartesi konu planı + blog yazısı. */
+/** Vercel Cron (Hobby: günde 1 kez, 14:35 TR / 11:35 UTC) — Pazartesi konu planı + blog yazısı. */
 export async function GET(request: Request) {
   if (!verifyCronSecret(request)) {
     return NextResponse.json({ error: "Yetkisiz" }, { status: 401 });

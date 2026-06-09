@@ -4,7 +4,7 @@
   "crons": [
     {
       "path": "/api/cron/blog-pipeline",
-      "schedule": "10 11 * * *"
+      "schedule": "35 11 * * *"
     }
   ]
 }
