@@ -190,6 +190,8 @@
     "newsletterDesc": "Be the first to know about new modules and features.",
     "newsletterPlaceholder": "Your email address",
     "newsletterCta": "Subscribe",
+    "newsletterSuccess": "You're subscribed. Thank you!",
+    "newsletterError": "Subscription failed. Please try again.",
     "rights": "All rights reserved.",
     "madeIn": "Made in Türkiye"
   },
@@ -295,7 +297,8 @@
       "submitting": "Sending...",
       "successTitle": "Request received",
       "successBody": "Thank you! Our team will get in touch with you shortly.",
-      "successReset": "Create a new request"
+      "successReset": "Create a new request",
+      "submitError": "Could not send your request. Please try again or email us directly."
     },
     "errors": {
       "nameMin": "Please enter your full name.",

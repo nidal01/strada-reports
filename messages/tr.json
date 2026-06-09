@@ -190,6 +190,8 @@
     "newsletterDesc": "Yeni modüller ve özelliklerden ilk siz haberdar olun.",
     "newsletterPlaceholder": "E-posta adresiniz",
     "newsletterCta": "Abone Ol",
+    "newsletterSuccess": "Aboneliğiniz alındı. Teşekkürler!",
+    "newsletterError": "Abonelik gönderilemedi. Lütfen tekrar deneyin.",
     "rights": "Tüm hakları saklıdır.",
     "madeIn": "Türkiye'de geliştirildi"
   },
@@ -295,7 +297,8 @@
       "submitting": "Gönderiliyor...",
       "successTitle": "Talebiniz alındı",
       "successBody": "Teşekkürler! Ekibimiz en kısa sürede sizinle iletişime geçecek.",
-      "successReset": "Yeni talep oluştur"
+      "successReset": "Yeni talep oluştur",
+      "submitError": "Gönderilemedi. Lütfen tekrar deneyin veya bize doğrudan e-posta yazın."
     },
     "errors": {
       "nameMin": "Lütfen adınızı ve soyadınızı girin.",

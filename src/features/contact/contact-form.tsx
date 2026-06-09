@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "framer-motion";
 import { Check, Loader2, AlertCircle } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,13 +17,14 @@ import {
 
 /**
  * Demo-request form. Client-side validation via Zod + React Hook Form, with an
- * animated success state. The submit handler simulates a network round-trip;
- * swap `fakeSubmit` for a server action / API route in production.
+ * animated success state wired to `/api/contact`.
  */
 export function ContactForm() {
+  const locale = useLocale();
   const t = useTranslations("contactPage.form");
   const tErr = useTranslations("contactPage.errors");
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const schema = createContactSchema({
     nameMin: tErr("nameMin"),
@@ -42,15 +43,26 @@ export function ContactForm() {
     mode: "onBlur",
   });
 
-  async function onSubmit(_values: ContactFormValues) {
-    // Simulated async submission — replace with a server action.
-    await new Promise((r) => setTimeout(r, 1100));
+  async function onSubmit(values: ContactFormValues) {
+    setSubmitError(null);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...values, locale }),
+    });
+
+    if (!res.ok) {
+      setSubmitError(t("submitError"));
+      return;
+    }
+
     setSubmitted(true);
   }
 
   function handleReset() {
     reset();
     setSubmitted(false);
+    setSubmitError(null);
   }
 
   return (
@@ -142,6 +154,13 @@ export function ContactForm() {
                 {...register("message")}
               />
             </Field>
+
+            {submitError ? (
+              <p className="flex items-center gap-1.5 text-sm text-red-400" role="alert">
+                <AlertCircle className="size-4 shrink-0" />
+                {submitError}
+              </p>
+            ) : null}
 
             <Button type="submit" size="lg" disabled={isSubmitting} className="mt-1 w-full sm:w-auto sm:self-start">
               {isSubmitting ? (
