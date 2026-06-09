@@ -97,7 +97,7 @@ export default async function SolutionsPage({ params }: Params) {
                   </div>
                   <Image
                     src={SECTION_MEDIA[key].src}
-                    alt={`${t(`sections.${key}.title`)} — Strada`}
+                    alt={`${t(`sections.${key}.title`)} — Strada Reports`}
                     width={SECTION_MEDIA[key].w}
                     height={SECTION_MEDIA[key].h}
                     sizes="(max-width: 1024px) 100vw, 560px"

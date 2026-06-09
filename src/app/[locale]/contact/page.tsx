@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Check, Mail, Phone } from "lucide-react";
+import { Check, Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/motion/reveal";
@@ -57,6 +57,10 @@ export default async function ContactPage({ params }: Params) {
                   <Phone className="size-4 text-brand-300" />
                   {siteConfig.phone}
                 </a>
+                <p className="inline-flex items-start gap-3 text-slate-300">
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-brand-300" />
+                  <span>{siteConfig.address}</span>
+                </p>
               </div>
             </Reveal>
 

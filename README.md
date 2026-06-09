@@ -1,8 +1,8 @@
-# Strada — Kurumsal Finansal Raporlama Platformu
+# Strada Reports — Kurumsal Finansal Raporlama Platformu
 
 Ultra-premium, kurumsal düzeyde, yüksek dönüşümlü pazarlama sitesi. **strada.tr** —
-DIA ERP entegrasyonu ile teklif, sipariş ve finansal raporlama süreçlerini tek
-platformda toplayan SaaS ürününün web platformu.
+Strada markasının DIA ERP entegrasyonlu **Strada Reports** ürünü için web platformu.
+Teklif, sipariş ve finansal raporlama süreçlerini tek platformda toplayan SaaS çözümü.
 
 ## Tech Stack
 
@@ -64,7 +64,7 @@ public/brand · public/product  # logo + ürün görselleri
 ## Tasarım Sistemi
 
 - **Estetik:** Deep-slate OLED zemin (`#020617`) + luminous elektrik-mavi marka
-  aksanı (Strada logosundan türetildi) + zümrüt "pozitif veri" ikincil rengi.
+  aksanı (Strada marka logosundan türetildi) + zümrüt "pozitif veri" ikincil rengi.
 - **Tokenlar:** `globals.css` içinde `@theme` (renkler, radii, easing, z-index).
 - **Utilities:** `.glass`, `.glass-strong`, `.gradient-border`, `.text-gradient`,
   `.glow-brand`, `.bg-grid`, `.bg-dots`, `.shimmer`, `.mask-radial-faded`.

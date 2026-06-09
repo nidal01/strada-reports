@@ -5,8 +5,8 @@ import type { BlogTopic, BlogTopicInput } from "./types";
 
 const TOPICS_PER_WEEK = 14; // günde 2 yazı × 7 gün
 
-const SYSTEM = `Sen Strada adlı B2B SaaS platformu için içerik stratejisti olarak çalışıyorsun.
-Strada: DIA ERP entegrasyonlu kurumsal finansal raporlama, stok yönetimi, fatura dönüştürücü ve yönetim panelleri sunar.
+const SYSTEM = `Sen Strada markasının Strada Reports ürünü için içerik stratejisti olarak çalışıyorsun.
+Strada Reports: DIA ERP entegrasyonlu kurumsal finansal raporlama, stok yönetimi, fatura dönüştürücü ve yönetim panelleri sunar.
 Hedef kitle: Türkiye'deki üretim, inşaat ve dağıtım şirketlerinin finans/operasyon yöneticileri.
 Yanıtlarını yalnızca geçerli JSON olarak ver.`;
 

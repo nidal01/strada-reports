@@ -58,9 +58,9 @@ const demos = [
     title: "DIA ERP Entegrasyonu ile Finansal Raporlama Nasıl Dönüşür?",
     excerpt:
       "ERP verinizi manuel tablolardan kurtarın. DIA entegrasyonu ile gerçek zamanlı finansal raporlama süreçlerini keşfedin.",
-    content: `## ERP Verisi Neden Dağınık Kalır?\n\nÇoğu şirket, DIA ERP'de doğru veriyi tutar ancak yönetime sunarken Excel'e döner.\n\n## Strada ile Gerçek Zamanlı Senkronizasyon\n\nStrada, DIA ERP'deki hareketleri otomatik çeker.\n\n### Temel Faydalar\n\n- **Anlık görünürlük**\n- **Hata azaltma**\n- **Hızlı karar**`,
+    content: `## ERP Verisi Neden Dağınık Kalır?\n\nÇoğu şirket, DIA ERP'de doğru veriyi tutar ancak yönetime sunarken Excel'e döner.\n\n## Strada Reports ile Gerçek Zamanlı Senkronizasyon\n\nStrada Reports, DIA ERP'deki hareketleri otomatik çeker.\n\n### Temel Faydalar\n\n- **Anlık görünürlük**\n- **Hata azaltma**\n- **Hızlı karar**`,
     status: "published",
-    meta_title: "DIA ERP Entegrasyonu ile Finansal Raporlama | Strada",
+    meta_title: "DIA ERP Entegrasyonu ile Finansal Raporlama | Strada Reports",
     meta_description: "DIA ERP verinizi gerçek zamanlı finansal raporlara dönüştürün.",
     tags: ["DIA ERP", "finansal raporlama", "entegrasyon"],
     author: "Strada",

@@ -183,7 +183,7 @@ export default async function SolutionDetailPage({ params }: Params) {
                 </div>
                 <Image
                   src={solution.image.src}
-                  alt={`${content.title} — Strada`}
+                  alt={`${content.title} — Strada Reports`}
                   width={solution.image.w}
                   height={solution.image.h}
                   sizes="(max-width: 1024px) 100vw, 560px"

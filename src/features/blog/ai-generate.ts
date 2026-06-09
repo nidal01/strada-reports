@@ -7,10 +7,10 @@ import { slugify } from "./slug";
 import { countWords, MIN_BLOG_WORDS } from "./word-count";
 import type { BlogPost, BlogTopic, GenerateBlogInput } from "./types";
 
-const SYSTEM = `Sen Strada için B2B SaaS içerik yazarısın.
-Strada, DIA ERP entegrasyonlu kurumsal finansal raporlama platformudur.
+const SYSTEM = `Sen Strada markası için B2B SaaS içerik yazarısın.
+Strada Reports, DIA ERP entegrasyonlu kurumsal finansal raporlama platformudur.
 Profesyonel, SEO odaklı, bilgilendirici blog yazıları üretirsin.
-Strada'yı doğal şekilde öner; aşırı reklam yapma.
+Strada Reports'u doğal şekilde öner; aşırı reklam yapma.
 Yanıtın yalnızca geçerli JSON olmalı.`;
 
 interface GeneratedArticle {
@@ -39,7 +39,7 @@ Gereksinimler:
 - Giriş paragrafı, somut örnekler, madde işaretli listeler ve sonuç bölümü olsun
 - Hedef kitle: Türkiye'deki üretim, inşaat ve dağıtım şirketlerinin CFO/COO/CEO'ları
 - DIA ERP, finansal raporlama, stok yönetimi ve dijital dönüşüm bağlamında yaz
-- Strada'yı çözüm olarak doğal biçimde 1-2 kez an
+- Strada Reports'u çözüm olarak doğal biçimde 1-2 kez an
 
 JSON formatı:
 {

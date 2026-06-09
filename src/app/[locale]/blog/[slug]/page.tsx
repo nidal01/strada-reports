@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link, getPathname } from "@/i18n/navigation";
@@ -100,25 +101,23 @@ export default async function BlogPostPage({ params }: Params) {
     <>
       <BlogPostTracker postId={post.id} />
 
-      <Container className="pt-28 sm:pt-32">
-        <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-          <ol className="flex flex-wrap items-center gap-2">
-            <li>
-              <Link href="/blog" className="transition-colors hover:text-brand-300">
-                {t("breadcrumb")}
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li className="text-slate-300" aria-current="page">
-              {post.title}
-            </li>
-          </ol>
-        </nav>
-      </Container>
-
       <article className="pb-16 sm:pb-20">
-        <Container>
-          <div className="mx-auto max-w-5xl lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[240px_minmax(0,1fr)]">
+        <Container className="pt-28 sm:pt-32">
+          <nav aria-label="Breadcrumb" className="mb-10 text-sm text-slate-500 sm:mb-14">
+            <ol className="flex flex-wrap items-center gap-2">
+              <li>
+                <Link href="/blog" className="transition-colors hover:text-brand-300">
+                  {t("breadcrumb")}
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="line-clamp-1 text-slate-300" aria-current="page">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
+
+          <div className="mx-auto max-w-5xl lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-12 xl:grid-cols-[240px_minmax(0,1fr)]">
             <BlogTableOfContents
               headings={headings}
               labels={{ title: t("toc"), toggle: t("tocToggle") }}
@@ -146,13 +145,27 @@ export default async function BlogPostPage({ params }: Params) {
                   ) : null}
                 </div>
 
-                <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
                   {post.title}
                 </h1>
-                <p className="mt-4 text-lg leading-relaxed text-slate-400">{post.excerpt}</p>
+                <p className="mt-5 text-lg leading-relaxed text-slate-400">{post.excerpt}</p>
+
+                {post.coverImage ? (
+                  <figure className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)] bg-surface/40">
+                    <Image
+                      src={post.coverImage}
+                      alt={post.title}
+                      width={1200}
+                      height={675}
+                      className="aspect-[16/9] w-full object-cover"
+                      sizes="(max-width: 1024px) 100vw, 768px"
+                      priority
+                    />
+                  </figure>
+                ) : null}
 
                 {post.tags.length > 0 ? (
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-8 flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
                       <span
                         key={tag}
@@ -165,9 +178,9 @@ export default async function BlogPostPage({ params }: Params) {
                 ) : null}
               </Reveal>
 
-              <Reveal delay={0.1} className="mt-12">
+              <div className="mt-10 border-t border-[var(--border)] pt-10 sm:mt-12 sm:pt-12">
                 <BlogMarkdown content={post.content} headings={headings} />
-              </Reveal>
+              </div>
             </div>
           </div>
         </Container>

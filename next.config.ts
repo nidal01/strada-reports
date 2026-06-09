@@ -8,7 +8,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [],
+    remotePatterns: [
+      { protocol: "https", hostname: "images.pexels.com", pathname: "/photos/**" },
+    ],
   },
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],

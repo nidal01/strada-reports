@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} — Finansal Raporlama Platformu`,
-    short_name: siteConfig.name,
+    name: `${siteConfig.productName} — Finansal Raporlama Platformu`,
+    short_name: siteConfig.productName,
     description:
       "ERP verinizi gerçek zamanlı finansal içgörüye dönüştüren kurumsal raporlama platformu.",
     start_url: "/",

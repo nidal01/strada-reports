@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "packageManager": "npm@10.9.2",
-  "description": "Strada — Kurumsal finansal raporlama ve DIA ERP entegrasyon platformu",
+  "description": "Strada Reports — Kurumsal finansal raporlama ve DIA ERP entegrasyon platformu",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

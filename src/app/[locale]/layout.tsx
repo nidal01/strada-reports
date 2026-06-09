@@ -38,22 +38,22 @@ export async function generateMetadata({
     metadataBase: new URL(siteConfig.url),
     title: {
       default: t("title"),
-      template: `%s · ${siteConfig.name}`,
+      template: `%s · ${siteConfig.productName}`,
     },
     description: t("description"),
-    applicationName: siteConfig.name,
+    applicationName: siteConfig.productName,
     alternates: {
       canonical: locale === routing.defaultLocale ? "/" : `/${locale}`,
       languages: { tr: "/", en: "/en" },
     },
     openGraph: {
       type: "website",
-      siteName: siteConfig.name,
+      siteName: siteConfig.productName,
       title: t("title"),
       description: t("description"),
       url: siteConfig.url,
       locale: locale === "tr" ? "tr_TR" : "en_US",
-      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.productName }],
     },
     twitter: {
       card: "summary_large_image",

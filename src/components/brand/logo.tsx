@@ -19,7 +19,7 @@ export function Logo({ className, heightClass = "h-8", priority = false }: LogoP
   return (
     <Image
       src={logoSrc}
-      alt="Strada reports"
+      alt="Strada Reports"
       priority={priority}
       sizes="200px"
       className={cn("w-auto", heightClass, className)}

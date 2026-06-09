@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Linkedin, Instagram } from "lucide-react";
+import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/logo";
 import { Container } from "@/components/ui/container";
@@ -61,6 +61,26 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
               {t("tagline")}
             </p>
+            <div className="mt-4 flex max-w-sm flex-col gap-3 text-sm text-slate-500">
+              <p className="flex items-start gap-2.5 leading-relaxed">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-brand-300" aria-hidden="true" />
+                <span>{siteConfig.address}</span>
+              </p>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="inline-flex items-center gap-2.5 transition-colors hover:text-white"
+              >
+                <Mail className="size-4 shrink-0 text-brand-300" aria-hidden="true" />
+                {siteConfig.email}
+              </a>
+              <a
+                href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                className="inline-flex items-center gap-2.5 transition-colors hover:text-white"
+              >
+                <Phone className="size-4 shrink-0 text-brand-300" aria-hidden="true" />
+                {siteConfig.phone}
+              </a>
+            </div>
 
             <div className="mt-8 max-w-sm">
               <h3 className="text-sm font-semibold text-white">{t("newsletterTitle")}</h3>

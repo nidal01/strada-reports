@@ -15,9 +15,9 @@ export const STATIC_DEMO_POSTS: readonly BlogPost[] = [
 
 Çoğu şirket, DIA ERP'de doğru veriyi tutar ancak yönetime sunarken Excel'e döner. Bu süreç hem yavaş hem de hataya açıktır.
 
-## Strada ile Gerçek Zamanlı Senkronizasyon
+## Strada Reports ile Gerçek Zamanlı Senkronizasyon
 
-Strada, DIA ERP'deki kasa, banka, cari ve stok hareketlerini otomatik olarak çeker. Manuel aktarım, kopyala-yapıştır ve gecikme ortadan kalkar.
+Strada Reports, DIA ERP'deki kasa, banka, cari ve stok hareketlerini otomatik olarak çeker. Manuel aktarım, kopyala-yapıştır ve gecikme ortadan kalkar.
 
 ### Temel Faydalar
 
@@ -27,12 +27,12 @@ Strada, DIA ERP'deki kasa, banka, cari ve stok hareketlerini otomatik olarak çe
 
 ## Sonuç
 
-DIA ERP yatırımınızı güçlendirmek için üzerine modern bir raporlama katmanı ekleyin. Strada ile finansal netliği herkes için erişilebilir kılın.`,
+DIA ERP yatırımınızı güçlendirmek için üzerine modern bir raporlama katmanı ekleyin. Strada Reports ile finansal netliği herkes için erişilebilir kılın.`,
     coverImage: null,
     status: "published",
-    metaTitle: "DIA ERP Entegrasyonu ile Finansal Raporlama | Strada",
+    metaTitle: "DIA ERP Entegrasyonu ile Finansal Raporlama | Strada Reports",
     metaDescription:
-      "DIA ERP verinizi gerçek zamanlı finansal raporlara dönüştürün. Strada ile entegrasyon, otomasyon ve yönetim raporları tek platformda.",
+      "DIA ERP verinizi gerçek zamanlı finansal raporlara dönüştürün. Strada Reports ile entegrasyon, otomasyon ve yönetim raporları tek platformda.",
     canonicalUrl: null,
     ogImage: null,
     focusKeyword: "DIA ERP finansal raporlama",
@@ -57,9 +57,9 @@ DIA ERP yatırımınızı güçlendirmek için üzerine modern bir raporlama kat
 
 Most companies keep accurate data in DIA ERP but revert to Excel when presenting to management. This process is slow and error-prone.
 
-## Real-Time Sync with Strada
+## Real-Time Sync with Strada Reports
 
-Strada automatically pulls cash, bank, account and inventory movements from DIA ERP. Manual transfers, copy-paste and delays disappear.
+Strada Reports automatically pulls cash, bank, account and inventory movements from DIA ERP. Manual transfers, copy-paste and delays disappear.
 
 ### Key Benefits
 
@@ -69,10 +69,10 @@ Strada automatically pulls cash, bank, account and inventory movements from DIA 
 
 ## Conclusion
 
-Amplify your DIA ERP investment with a modern reporting layer on top. Make financial clarity accessible to everyone with Strada.`,
+Amplify your DIA ERP investment with a modern reporting layer on top. Make financial clarity accessible to everyone with Strada Reports.`,
     coverImage: null,
     status: "published",
-    metaTitle: "DIA ERP Integration for Financial Reporting | Strada",
+    metaTitle: "DIA ERP Integration for Financial Reporting | Strada Reports",
     metaDescription:
       "Turn your DIA ERP data into real-time financial reports. Integration, automation and management dashboards in one platform.",
     canonicalUrl: null,
