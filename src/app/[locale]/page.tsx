@@ -8,6 +8,9 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { BlogPreview } from "@/components/sections/blog-preview";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
+/** Blog önizlemesi Supabase'den canlı çekilsin (SSG önbelleğine takılmasın). */
+export const dynamic = "force-dynamic";
+
 /**
  * Home — the Enterprise Gateway landing page.
  * Section order follows the recommended conversion flow:
