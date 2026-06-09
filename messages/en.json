@@ -23,8 +23,8 @@
   },
   "metadata": {
     "home": {
-      "title": "Strada Reports — Run your company from your pocket",
-      "description": "Unify quotes, orders and financial reporting on one platform with native DIA ERP integration. Enterprise-grade security, real-time data, flawless reports."
+      "title": "Strada Reports — The shortest path from data to decision",
+      "description": "Turn ERP data into financial reports, profitability analysis and management dashboards. DIA ERP integration, AI assistant and mobile reporting."
     },
     "solutions": {
       "title": "Solutions — Integration, automation & financial reporting",
@@ -59,14 +59,15 @@
     "reads": "{count} reads"
   },
   "hero": {
+    "eyebrow": "Strada Reports",
     "integrationsLabel": "Integrates with",
-    "titleLead": "Run your company",
-    "titleHighlight": "from your",
-    "titleTail": "pocket",
-    "subtitle": "Unify quoting, ordering and reporting on a single platform. Strada Reports turns your ERP data into real-time financial insight.",
+    "titleLead": "The shortest path",
+    "titleHighlight": "from data",
+    "titleTail": "to decision",
+    "subtitle": "Bring your critical business data into one hub. From financial reports to profitability analysis, receivable risk to production performance — turn scattered ERP data into instant, accurate and actionable reports.",
     "ctaPrimary": "Request a Free Demo",
-    "ctaSecondary": "Explore Solutions",
-    "trustNote": "No setup required · 24/7 support · KVKK compliant",
+    "ctaSecondary": "Explore Report Modules",
+    "trustNote": "Zero-effort ERP integration · DIA & Logo · KVKK compliant",
     "panelTitle": "Financial Position",
     "panelSubtitle": "Overview of cash and bank accounts",
     "metricRevenue": "Total Revenue",
@@ -75,45 +76,45 @@
     "syncTag": "Last sync · just now"
   },
   "socialProof": {
-    "title": "Türkiye's manufacturing and construction leaders run on Strada Reports",
+    "title": "Manufacturing and construction firms achieve financial visibility with Strada Reports",
     "stats": [
       { "value": "₺8.1M+", "label": "Monthly revenue reported" },
-      { "value": "99.9%", "label": "Sync accuracy" },
+      { "value": "99.9%", "label": "Report data accuracy" },
       { "value": "12+", "label": "Ready-made report modules" },
-      { "value": "24/7", "label": "Real-time data" }
+      { "value": "24/7", "label": "Live reporting" }
     ]
   },
   "features": {
-    "eyebrow": "Platform",
-    "title": "An enterprise control center that turns data into value",
-    "subtitle": "A modular, scalable financial operating system that distills scattered ERP data into one clear picture.",
+    "eyebrow": "Reporting Platform",
+    "title": "Not more data — more control",
+    "subtitle": "Strada Reports unifies financial visibility, operational control and production tracking in one reporting layer. Because today, advantage goes to those who manage data better — not those who produce more of it.",
     "items": {
       "sync": {
-        "title": "Automated Data Synchronization",
-        "description": "Cash, bank, account and inventory movements flow from DIA ERP into Strada Reports in real time. No manual exports, copy-paste or lag."
+        "title": "Zero-Effort Integration",
+        "description": "Invoices, orders, production and financial movements flow from your ERP into Strada Reports automatically. No setup hassle, no copy-paste — entering data twice is history."
       },
       "reports": {
-        "title": "Financial Reporting Modules",
-        "description": "P&L, Income, Expense, Collections and Financial Position reports in one click — boardroom-ready, presentable visuals."
+        "title": "Financial Visibility",
+        "description": "See revenue, expense, receivable risk, sales performance and profitability in one place. Financial decisions based on live reports — not last month's spreadsheets."
       },
       "erp": {
-        "title": "DIA ERP Connectivity",
-        "description": "Built on top of your existing ERP investment. Goes live in minutes without disrupting your processes."
+        "title": "On Top of Your ERP, With Your ERP",
+        "description": "Strada Reports is not an ERP and does not replace yours. It reads your data, turns it into meaningful reports and writes documents back to your ERP."
       },
       "mobile": {
-        "title": "Mobile Management",
-        "description": "Access quotes, requests, orders and reports from your pocket. Field teams and management always meet on the same data."
+        "title": "Reports in Your Pocket",
+        "description": "See P&L, profitability, receivable risk and sales performance wherever you are. The moment of decision won't wait for you to get back to the office."
       },
       "security": {
-        "title": "Enterprise Security",
-        "description": "End-to-end encryption, role-based access and KVKK-compliant infrastructure. Your data stays under your control."
+        "title": "Talk to Your Data with AI",
+        "description": "Ask \"Why did profitability drop this month?\" — the AI assistant scans your data and explains in plain language. Reading a report is one thing; understanding it is another."
       }
     }
   },
   "showcase": {
-    "eyebrow": "Product",
-    "title": "Your real data, real reports",
-    "subtitle": "These are screenshots from Strada Reports' live interface. From income-expense trends to sales trajectory, account balances to profit margin — everything in one place.",
+    "eyebrow": "Live Reports",
+    "title": "Your real data, instant reports",
+    "subtitle": "Screenshots from Strada Reports' live interface. From income-expense trends to sales trajectory, account balances to profit margin — every metric management needs in one place.",
     "alt": {
       "main": "Strada Reports Monthly Income–Expense Trend report: monthly bar chart with revenue, expense, net profit and profit-margin metrics",
       "sales": "Strada Reports Sales Trend report: bar chart showing 12-month revenue trajectory",
@@ -125,16 +126,16 @@
     }
   },
   "modules": {
-    "eyebrow": "Modules",
-    "title": "A report for every process in your business",
-    "subtitle": "From finance to production, sales to collections — Strada Reports modules give you every view you need.",
+    "eyebrow": "Report Modules",
+    "title": "A ready-made report for every process",
+    "subtitle": "From finance to production, sales to collections — modular reports that turn scattered ERP data into a shared management language.",
     "items": [
-      { "name": "Profit / Loss", "desc": "Compare the balance of income and expense." },
-      { "name": "Income Report", "desc": "Inspect revenue streams and totals." },
-      { "name": "Expense Report", "desc": "Track expense items and trends." },
-      { "name": "Collections", "desc": "Monitor receivables and collection status." },
-      { "name": "Account Report", "desc": "See customer and supplier balances." },
-      { "name": "Sales Report", "desc": "Analyze sales by customer and inventory." }
+      { "name": "Profit / Loss", "desc": "Net profit, margin and period comparison." },
+      { "name": "Income Report", "desc": "Revenue sources, trends and collection split." },
+      { "name": "Expense Report", "desc": "Expense items, budget variance and trends." },
+      { "name": "Collections", "desc": "Receivable risk and collection performance." },
+      { "name": "Account Report", "desc": "Debit and credit account balances." },
+      { "name": "Sales Report", "desc": "Regional, product and customer breakdowns." }
     ]
   },
   "testimonials": {
@@ -162,13 +163,13 @@
     ]
   },
   "ctaBanner": {
-    "title": "Ready to turn your data into insight?",
-    "subtitle": "Let's schedule a live demo tailored to your company. In 20 minutes we'll show how Strada Reports turns your ERP data into reports.",
+    "title": "Ready to go from data to decision?",
+    "subtitle": "Let's schedule a live demo tailored to your company. In 20 minutes we'll show how Strada Reports turns your ERP data into instant, accurate and actionable reports.",
     "primary": "Request a Demo",
     "secondary": "Talk to sales"
   },
   "footer": {
-    "tagline": "The enterprise reporting platform that turns your ERP data into real-time financial insight.",
+    "tagline": "The shortest path from data to decision. Enterprise reporting and ERP integration platform.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -195,48 +196,48 @@
   "solutionsPage": {
     "hero": {
       "eyebrow": "Solutions",
-      "title": "The financial operating layer built on top of your ERP",
-      "subtitle": "Strada Reports unifies integration, automated synchronization, financial reporting and ERP connectivity into one consistent platform."
+      "title": "The reporting layer that makes your ERP data visible",
+      "subtitle": "Strada Reports unifies scattered systems in one visibility layer. From finance to sales, production to service — every critical metric reported on one platform."
     },
     "sections": {
       "integrations": {
         "tag": "Integration",
-        "title": "Connects to your existing systems",
-        "description": "Strada Reports establishes a secure API connection with your financial systems, led by DIA ERP. No need to redesign your processes.",
+        "title": "Zero-effort ERP connectivity",
+        "description": "Ready, seamless integration with DIA and Logo ERP. Entering data twice is history — your ERP talks, your reports stay current.",
         "points": [
           "Two-way, real-time connection with DIA ERP",
-          "Cash, bank, account, inventory and order data",
-          "Secure API keys and role-based access"
+          "Invoices, orders, production and finance flow automatically",
+          "Documents created in Strada write back to ERP"
         ]
       },
       "sync": {
-        "tag": "Automation",
-        "title": "Automated data synchronization",
-        "description": "Data is fed from a single source of truth. Strada Reports syncs continuously in the background; you only ever see up-to-date, consistent results.",
+        "tag": "Visibility",
+        "title": "All processes on one platform",
+        "description": "As businesses grow, systems drift apart. Strada Reports turns finance, sales, production and service data into a shared management language.",
         "points": [
-          "Scheduled and on-demand synchronization",
-          "Conflict resolution and audit trail",
-          "99.9% sync accuracy"
+          "One hub instead of scattered screens",
+          "Cross-department reporting language",
+          "Instant, consistent data flow"
         ]
       },
       "reporting": {
         "tag": "Reporting",
-        "title": "Financial reporting modules",
-        "description": "Every metric management wants to see, in presentation-ready visuals. From P&L to collections, every table in one click.",
+        "title": "Financial visibility and profitability analysis",
+        "description": "See which customers and products drive revenue, where costs concentrate and what real profitability looks like. Manage healthy growth — not just high turnover.",
         "points": [
-          "P&L, Income, Expense, Collections, Financial Position",
-          "Sales analysis by customer and inventory",
-          "Exportable, presentable visuals"
+          "P&L, Income, Expense, Collections and Financial Position",
+          "Receivable risk and sales performance breakdowns",
+          "Presentation-ready, exportable reports"
         ]
       },
       "erp": {
-        "tag": "ERP Connectivity",
-        "title": "Trusted at enterprise scale",
-        "description": "Strada Reports doesn't replace your enterprise ERP investment — it amplifies it, adding a modern reporting experience on top of your existing workflows.",
+        "tag": "ERP Layer",
+        "title": "Doesn't replace — amplifies",
+        "description": "Strada Reports makes ERP data more visible, meaningful and manageable. Both systems work as one — seamlessly.",
         "points": [
-          "Go live in minutes without disrupting processes",
-          "Role-based authorization and auditing",
-          "Scalable, multi-company architecture"
+          "Reporting layer without changing your ERP investment",
+          "Write quotes and orders back to ERP",
+          "Custom dashboards and pivot analysis tools"
         ]
       }
     }
@@ -244,12 +245,12 @@
   "aboutPage": {
     "hero": {
       "eyebrow": "About",
-      "title": "Making financial clarity accessible to everyone",
-      "subtitle": "Strada is a Turkish technology company that turns the scattered ERP data of manufacturing and construction firms into reliable, instant and actionable insight."
+      "title": "The shortest path from data to decision",
+      "subtitle": "Strada is a Turkish technology company that turns scattered ERP data from manufacturing and construction firms into reliable, instant and actionable reports."
     },
     "vision": {
       "title": "Our vision",
-      "body": "We believe every company, at any scale, deserves enterprise-grade financial visibility. We reduce complex ERP data to the clarity a manager can grasp at a glance."
+      "body": "Businesses don't need more reports — they need to understand existing data faster and decide with confidence. Strada Reports closes that gap."
     },
     "values": [
       { "title": "Clarity", "desc": "The more complex the data, the simpler its presentation must be." },
@@ -273,10 +274,10 @@
   "contactPage": {
     "eyebrow": "Contact",
     "title": "Let's schedule a demo tailored to your company",
-    "subtitle": "Fill in the form and our team will get back to you within 1 business day. Experience Strada Reports with your own data in a 20-minute live session.",
+    "subtitle": "Fill in the form and our team will get back to you within 1 business day. See Strada Reports with your own data in a 20-minute live session.",
     "highlights": [
-      "Live demo tailored to your company",
-      "Setup and integration consulting",
+      "Live financial reporting demo",
+      "Zero-effort ERP integration consulting",
       "No obligation, no upfront payment"
     ],
     "form": {

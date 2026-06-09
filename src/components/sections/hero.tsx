@@ -36,6 +36,13 @@ export function Hero() {
             animate="visible"
             className="flex flex-col items-start"
           >
+            <motion.p
+              variants={fadeUp}
+              className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand-300"
+            >
+              {t("eyebrow")}
+            </motion.p>
+
             <motion.h1
               variants={fadeUp}
               className="text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"

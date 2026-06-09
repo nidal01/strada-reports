@@ -1,4 +1,4 @@
-import { RefreshCw, BarChart3, Plug, Smartphone, ShieldCheck, ArrowRight, type LucideIcon } from "lucide-react";
+import { RefreshCw, BarChart3, Plug, Smartphone, Sparkles, ArrowRight, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -14,7 +14,7 @@ const ICONS: Record<FeatureKey, LucideIcon> = {
   reports: BarChart3,
   erp: Plug,
   mobile: Smartphone,
-  security: ShieldCheck,
+  security: Sparkles,
 };
 
 /** Bento layout: each entry maps to a grid span on large screens. */

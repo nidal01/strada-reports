@@ -23,8 +23,8 @@
   },
   "metadata": {
     "home": {
-      "title": "Strada Reports — Şirketinizi cebinizden yönetin",
-      "description": "Teklif, sipariş ve finansal raporlama süreçlerini DIA ERP entegrasyonuyla tek platformda toplayın. Kurumsal düzeyde güvenlik, gerçek zamanlı veri, kusursuz raporlar."
+      "title": "Strada Reports — Veriden karara giden en kısa yol",
+      "description": "ERP verinizi finansal raporlara, kârlılık analizine ve yönetim panellerine dönüştürün. DIA ERP entegrasyonu, yapay zekâ asistanı ve mobil raporlama."
     },
     "solutions": {
       "title": "Çözümler — Entegrasyon, otomasyon ve finansal raporlama",
@@ -59,14 +59,15 @@
     "reads": "{count} okunma"
   },
   "hero": {
+    "eyebrow": "Strada Reports",
     "integrationsLabel": "Entegre çalıştığı sistemler",
-    "titleLead": "Şirketinizi",
-    "titleHighlight": "cebinizden",
-    "titleTail": "yönetin",
-    "subtitle": "Teklif, sipariş ve raporlama süreçlerini tek platformda birleştirin. Strada Reports, ERP verilerinizi gerçek zamanlı finansal içgörülere dönüştürür.",
+    "titleLead": "Veriden",
+    "titleHighlight": "karara giden",
+    "titleTail": "en kısa yol",
+    "subtitle": "İşletmenizin kritik verilerini tek merkezde toplayın. Finansal raporlardan kârlılık analizine, cari risklerden üretim performansına — dağınık ERP verinizi anlık, doğru ve yönetilebilir raporlara dönüştürün.",
     "ctaPrimary": "Ücretsiz Demo Talep Et",
-    "ctaSecondary": "Çözümleri Keşfet",
-    "trustNote": "Kurulum gerektirmez · 7/24 destek · KVKK uyumlu",
+    "ctaSecondary": "Rapor Modüllerini Keşfet",
+    "trustNote": "Sıfır eforla ERP entegrasyonu · DIA & Logo · KVKK uyumlu",
     "panelTitle": "Finansal Durum",
     "panelSubtitle": "Kasa ve banka hesaplarına genel bakış",
     "metricRevenue": "Toplam Gelir",
@@ -75,45 +76,45 @@
     "syncTag": "Son senkron · az önce"
   },
   "socialProof": {
-    "title": "Türkiye'nin üretici ve inşaat şirketleri Strada Reports ile yönetiyor",
+    "title": "Üretici ve inşaat şirketleri finansal görünürlüklerini Strada Reports ile sağlıyor",
     "stats": [
       { "value": "₺8,1M+", "label": "Aylık raporlanan ciro" },
-      { "value": "%99,9", "label": "Senkronizasyon doğruluğu" },
+      { "value": "%99,9", "label": "Rapor verisi doğruluğu" },
       { "value": "12+", "label": "Hazır rapor modülü" },
-      { "value": "7/24", "label": "Gerçek zamanlı veri" }
+      { "value": "7/24", "label": "Anlık raporlama" }
     ]
   },
   "features": {
-    "eyebrow": "Platform",
-    "title": "Verinizden değer üreten kurumsal bir kontrol merkezi",
-    "subtitle": "ERP'nizin dağınık verisini tek bir net tabloya indirgeyen, modüler ve ölçeklenebilir bir finansal işletim sistemi.",
+    "eyebrow": "Raporlama Platformu",
+    "title": "Daha fazla veri değil, daha fazla kontrol",
+    "subtitle": "Strada Reports; finansal görünürlüğü, operasyonel kontrolü, üretim ve stok takibini tek raporlama katmanında birleştirir. Çünkü avantajı, daha çok veri üretenler değil, veriyi daha iyi yönetenler kazanır.",
     "items": {
       "sync": {
-        "title": "Otomatik Veri Senkronizasyonu",
-        "description": "DIA ERP'deki kasa, banka, cari ve stok hareketleri Strada Reports'a gerçek zamanlı akar. Manuel aktarım, kopyala-yapıştır ve gecikme yok."
+        "title": "Sıfır Eforla Entegrasyon",
+        "description": "ERP'nizdeki faturalar, siparişler, üretim ve finans hareketleri Strada Reports'a otomatik akar. Kurulum derdi yok, kopyala-yapıştır yok — veriyi iki kez girmek tarihte kaldı."
       },
       "reports": {
-        "title": "Finansal Raporlama Modülleri",
-        "description": "Kâr/Zarar, Gelir, Gider, Tahsilat ve Finansal Durum raporları tek tıkla. Yöneticiye hazır, sunulabilir görseller."
+        "title": "Finansal Görünürlük",
+        "description": "Gelir, gider, cari risk, satış performansı ve kârlılık göstergelerini aynı çatı altında görün. Finansal kararlar geçmişe değil, güncel raporlara dayanır."
       },
       "erp": {
-        "title": "DIA ERP Bağlantısı",
-        "description": "Var olan ERP yatırımınızın üzerine kurulur. Süreçlerinizi bozmadan, dakikalar içinde devreye girer."
+        "title": "ERP'nizin Üstünde, ERP'nizle Birlikte",
+        "description": "Strada Reports bir ERP değildir; ERP'nizin yerine geçmez. Veriyi okur, anlamlı raporlara dönüştürür ve hazırladığınız belgeleri ERP'nize geri yazar."
       },
       "mobile": {
-        "title": "Mobil Yönetim",
-        "description": "Teklif, talep, sipariş ve raporlara cebinizden erişin. Saha ekibiniz ve yönetim her an aynı veride buluşur."
+        "title": "Raporlar Cebinizde",
+        "description": "Gelir-gider tablonuzu, kârlılığınızı, cari risklerinizi ve satış performansınızı nerede olursanız olun anlık görün. Karar anı sizi ofiste beklemez."
       },
       "security": {
-        "title": "Kurumsal Güvenlik",
-        "description": "Uçtan uca şifreleme, rol bazlı erişim ve KVKK uyumlu altyapı. Veriniz, sizin kontrolünüzde kalır."
+        "title": "Yapay Zekâ ile Veriyle Konuşun",
+        "description": "\"Bu ay kârlılığım neden düştü?\" diye sorun; yapay zekâ verilerinizi tarar, yanıtı sade bir dille açıklar. Rapor okumak ayrı, anlamak ayrı."
       }
     }
   },
   "showcase": {
-    "eyebrow": "Ürün",
-    "title": "Gerçek veriniz, gerçek raporlar",
-    "subtitle": "Ekran görüntüleri Strada Reports'un canlı arayüzünden. Gelir-gider trendinden satış seyrine, cari bakiyelerinden kâr marjına kadar her şey tek yerde.",
+    "eyebrow": "Canlı Raporlar",
+    "title": "Gerçek veriniz, anında rapor",
+    "subtitle": "Strada Reports'un canlı arayüzünden ekran görüntüleri. Gelir-gider trendinden satış seyrine, cari bakiyelerinden kâr marjına — yönetimin ihtiyaç duyduğu tüm metrikler tek yerde.",
     "alt": {
       "main": "Strada Reports Aylık Gelir–Gider Trendi raporu: gelir, gider, net kâr ve kâr marjı metrikleri ile aylık bar grafiği",
       "sales": "Strada Reports Satış Trendi raporu: 12 aylık gelir seyrini gösteren bar grafiği",
@@ -125,16 +126,16 @@
     }
   },
   "modules": {
-    "eyebrow": "Modüller",
-    "title": "İşinizin her sürecine bir rapor",
-    "subtitle": "Finanstan üretime, satıştan tahsilata — Strada Reports modülleri ihtiyaç duyduğunuz tüm görünümü sağlar.",
+    "eyebrow": "Rapor Modülleri",
+    "title": "Her süreç için hazır rapor",
+    "subtitle": "Finanstan üretime, satıştan tahsilata — dağınık ERP verinizi ortak bir yönetim diline dönüştüren modüler raporlar.",
     "items": [
-      { "name": "Kâr / Zarar", "desc": "Gelir ve gider dengesini karşılaştırın." },
-      { "name": "Gelir Raporu", "desc": "Gelir akışlarını ve toplamları inceleyin." },
-      { "name": "Gider Raporu", "desc": "Gider kalemlerini ve trendleri takip edin." },
-      { "name": "Tahsilat", "desc": "Alacaklar ve tahsilat durumunu izleyin." },
-      { "name": "Cari Raporu", "desc": "Müşteri ve tedarikçi bakiyelerini görün." },
-      { "name": "Satış Raporu", "desc": "Stok ve müşteri bazlı satışları analiz edin." }
+      { "name": "Kâr / Zarar", "desc": "Net kâr, kâr marjı ve dönemsel karşılaştırma." },
+      { "name": "Gelir Raporu", "desc": "Gelir kaynakları, trendler ve tahsilat ayrımı." },
+      { "name": "Gider Raporu", "desc": "Masraf kalemleri, bütçe sapması ve trend analizi." },
+      { "name": "Tahsilat", "desc": "Alacak riskleri ve tahsilat performansı." },
+      { "name": "Cari Raporu", "desc": "Borçlu ve alacaklı cari bakiyeleri." },
+      { "name": "Satış Raporu", "desc": "Bölge, ürün ve müşteri bazlı satış kırılımları." }
     ]
   },
   "testimonials": {
@@ -162,13 +163,13 @@
     ]
   },
   "ctaBanner": {
-    "title": "Verinizi içgörüye çevirmeye hazır mısınız?",
-    "subtitle": "Şirketinize özel canlı bir demo planlayalım. 20 dakikada Strada Reports'un ERP verinizi nasıl raporlara dönüştürdüğünü gösterelim.",
+    "title": "Veriden karara geçmeye hazır mısınız?",
+    "subtitle": "Şirketinize özel canlı bir demo planlayalım. 20 dakikada Strada Reports'un ERP verinizi nasıl anlık, doğru ve yönetilebilir raporlara dönüştürdüğünü gösterelim.",
     "primary": "Demo Talep Et",
     "secondary": "Satış ekibiyle görüş"
   },
   "footer": {
-    "tagline": "ERP verinizi gerçek zamanlı finansal içgörüye dönüştüren kurumsal raporlama platformu.",
+    "tagline": "Veriden karara giden en kısa yol. Kurumsal raporlama ve ERP entegrasyon platformu.",
     "product": "Ürün",
     "company": "Kurumsal",
     "legal": "Yasal",
@@ -195,48 +196,48 @@
   "solutionsPage": {
     "hero": {
       "eyebrow": "Çözümler",
-      "title": "ERP'nizin üzerine kurulan finansal işletim katmanı",
-      "subtitle": "Strada Reports; entegrasyon, otomatik senkronizasyon, finansal raporlama ve ERP bağlantısını tek, tutarlı bir platformda birleştirir."
+      "title": "ERP verinizi görünür kılan raporlama katmanı",
+      "subtitle": "Strada Reports dağınık sistemleri ortak bir görünürlük katmanında birleştirir. Finanstan satışa, üretimden servise — tüm kritik veriyi tek platformda raporlar."
     },
     "sections": {
       "integrations": {
         "tag": "Entegrasyon",
-        "title": "Var olan sistemlerinize bağlanır",
-        "description": "Strada Reports, DIA ERP başta olmak üzere finansal sistemlerinizle güvenli API bağlantısı kurar. Süreçlerinizi yeniden tasarlamanıza gerek kalmaz.",
+        "title": "Sıfır eforla ERP bağlantısı",
+        "description": "DIA ve Logo gibi yaygın ERP'lerle hazır, kesintisiz entegrasyon. Veriyi iki kez girmek tarihte kaldı — ERP'niz konuşur, raporlarınız güncel kalır.",
         "points": [
           "DIA ERP ile çift yönlü, gerçek zamanlı bağlantı",
-          "Kasa, banka, cari, stok ve sipariş verisi",
-          "Güvenli API anahtarı ve rol bazlı erişim"
+          "Fatura, sipariş, üretim ve finans verisi otomatik akar",
+          "Strada'da üretilen belgeler ERP'ye geri yazılır"
         ]
       },
       "sync": {
-        "tag": "Otomasyon",
-        "title": "Otomatik veri senkronizasyonu",
-        "description": "Veri tek bir doğruluk kaynağından beslenir. Strada Reports arka planda sürekli senkronize eder; siz yalnızca güncel ve tutarlı sonuçları görürsünüz.",
+        "tag": "Görünürlük",
+        "title": "Tüm süreçler tek platformda",
+        "description": "İşletme büyüdükçe sistemler birbirinden kopar. Strada Reports finanstan satışa, üretimden servise kadar tüm kritik bilgiyi ortak bir yönetim diline dönüştürür.",
         "points": [
-          "Planlı ve anlık senkronizasyon",
-          "Çakışma çözümleme ve denetim izi",
-          "%99,9 senkronizasyon doğruluğu"
+          "Dağınık ekranlar yerine tek merkezden görünürlük",
+          "Departmanlar arası ortak raporlama dili",
+          "Anlık ve tutarlı veri akışı"
         ]
       },
       "reporting": {
         "tag": "Raporlama",
-        "title": "Finansal raporlama modülleri",
-        "description": "Yöneticinin görmek istediği her metrik, sunuma hazır görsellerle. Kâr/zarardan tahsilata kadar tüm tablolar tek tıkla.",
+        "title": "Finansal görünürlük ve kârlılık analizi",
+        "description": "Gelirin hangi müşteri ve üründen geldiğini, maliyetin nerede yoğunlaştığını ve gerçek kârlılığı net biçimde görün. Yüksek ciroyu değil, sağlıklı büyümeyi yönetin.",
         "points": [
-          "Kâr/Zarar, Gelir, Gider, Tahsilat, Finansal Durum",
-          "Müşteri ve stok bazlı satış analizleri",
-          "Dışa aktarılabilir, sunulabilir görseller"
+          "Kâr/Zarar, Gelir, Gider, Tahsilat ve Finansal Durum",
+          "Cari risk ve satış performansı kırılımları",
+          "Sunuma hazır, dışa aktarılabilir raporlar"
         ]
       },
       "erp": {
-        "tag": "ERP Bağlantısı",
-        "title": "Kurumsal ölçekte güvenilir",
-        "description": "Strada Reports, kurumsal ERP yatırımınızı değiştirmez — onu güçlendirir. Mevcut iş akışlarınızın üzerine modern bir raporlama deneyimi ekler.",
+        "tag": "ERP Katmanı",
+        "title": "Yerine geçmez — gücünü açığa çıkarır",
+        "description": "Strada Reports ERP'nizin ürettiği veriyi daha görünür, daha anlamlı ve daha yönetilebilir hale getirir. İki sistem tek bir sistem gibi, kesintisiz çalışır.",
         "points": [
-          "Süreç bozmadan dakikalar içinde devreye alma",
-          "Rol bazlı yetkilendirme ve denetim",
-          "Ölçeklenebilir, çok şirketli mimari"
+          "ERP yatırımınızı değiştirmeden raporlama katmanı",
+          "Teklif ve siparişleri ERP'ye geri yazma",
+          "Özel dashboard ve pivot analiz araçları"
         ]
       }
     }
@@ -244,12 +245,12 @@
   "aboutPage": {
     "hero": {
       "eyebrow": "Hakkımızda",
-      "title": "Finansal netliği herkes için erişilebilir kılıyoruz",
-      "subtitle": "Strada, üretici ve inşaat şirketlerinin dağınık ERP verisini güvenilir, anlık ve eyleme dönüştürülebilir içgörülere çeviren bir Türk teknoloji şirketidir."
+      "title": "Veriden karara giden en kısa yol",
+      "subtitle": "Strada, üretici ve inşaat şirketlerinin dağınık ERP verisini güvenilir, anlık ve eyleme dönüştürülebilir raporlara çeviren bir Türk teknoloji şirketidir."
     },
     "vision": {
       "title": "Vizyonumuz",
-      "body": "Her ölçekten şirketin, kurumsal düzeyde finansal görünürlüğe sahip olması gerektiğine inanıyoruz. Karmaşık ERP verisini, yöneticinin tek bakışta anlayacağı netliğe indiriyoruz."
+      "body": "İşletmelerin ihtiyacı yeni raporlar üretmek değil; mevcut veriyi daha iyi anlamak, daha hızlı yorumlamak ve daha doğru karar almaktır. Strada Reports bu mesafeyi kapatır."
     },
     "values": [
       { "title": "Netlik", "desc": "Veri ne kadar karmaşıksa, sunumu o kadar sade olmalı." },
@@ -273,10 +274,10 @@
   "contactPage": {
     "eyebrow": "İletişim",
     "title": "Şirketinize özel bir demo planlayalım",
-    "subtitle": "Formu doldurun, ekibimiz 1 iş günü içinde size dönsün. 20 dakikalık canlı oturumda Strada Reports'u kendi verinizle deneyimleyin.",
+    "subtitle": "Formu doldurun, ekibimiz 1 iş günü içinde size dönsün. 20 dakikalık canlı oturumda Strada Reports raporlarını kendi verinizle görün.",
     "highlights": [
-      "Şirketinize özel canlı demo",
-      "Kurulum ve entegrasyon danışmanlığı",
+      "Canlı finansal raporlama demosu",
+      "Sıfır eforla ERP entegrasyon danışmanlığı",
       "Yükümlülük yok, ön ödeme yok"
     ],
     "form": {
