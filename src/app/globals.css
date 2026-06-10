@@ -233,6 +233,80 @@
 /* ------------------------------------------------------------------ */
 /*  PREMIUM UTILITIES                                                  */
 /* ------------------------------------------------------------------ */
+@layer components {
+  /* FAQ — guaranteed contrast in dark & light themes */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    background: var(--card);
+    overflow: hidden;
+  }
+
+  .faq-item + .faq-item {
+    border-top: 1px solid var(--border);
+  }
+
+  .faq-question {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--foreground);
+    transition: color 0.2s ease;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question:hover {
+    color: var(--color-brand-400);
+  }
+
+  .faq-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+
+  @media (min-width: 640px) {
+    .faq-question {
+      font-size: 1.0625rem;
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+    }
+  }
+}
+
 @layer utilities {
   /* Permanent white text for elements whose background is always coloured
      (brand-gradient buttons, avatars). Bypasses the light-mode .text-white

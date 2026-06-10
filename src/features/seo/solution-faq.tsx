@@ -32,7 +32,7 @@ export async function SolutionFaq({ slug }: SolutionFaqProps) {
         title={faq.title}
         subtitle={faq.subtitle}
         items={faq.items}
-        className="border-t border-[var(--border)] bg-surface/20"
+        className="border-t border-[var(--border)]"
       />
     </>
   );
