@@ -13,6 +13,7 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/sections/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { CtaBanner } from "@/components/sections/cta-banner";
+import { PageFaq } from "@/features/seo/faq-section";
 import { Reveal } from "@/components/motion/reveal";
 import { staggerContainer } from "@/lib/motion";
 
@@ -123,6 +124,7 @@ export default async function AboutPage({ params }: Params) {
         </Container>
       </section>
 
+      <PageFaq page="about" />
       <CtaBanner />
     </>
   );

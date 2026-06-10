@@ -5,7 +5,11 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/motion/reveal";
 import { ContactForm } from "@/features/contact/contact-form";
+import { PageFaq } from "@/features/seo/faq-section";
+import { JsonLdScript, contactPageSchema } from "@/features/seo/json-ld";
 import { siteConfig } from "@/lib/site";
+import { getPathname } from "@/i18n/navigation";
+import type { Locale } from "@/i18n/routing";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -21,9 +25,14 @@ export default async function ContactPage({ params }: Params) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "contactPage" });
   const highlights = t.raw("highlights") as readonly string[];
+  const pageUrl = `${siteConfig.url}${getPathname({
+    locale: locale as Locale,
+    href: "/contact",
+  })}`;
 
   return (
     <>
+      <JsonLdScript data={contactPageSchema(pageUrl)} />
       <PageHero eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
       <section className="pb-12 sm:pb-20">
@@ -71,6 +80,8 @@ export default async function ContactPage({ params }: Params) {
           </div>
         </Container>
       </section>
+
+      <PageFaq page="contact" />
     </>
   );
 }

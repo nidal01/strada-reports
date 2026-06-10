@@ -545,5 +545,317 @@
         "Yatırım ve büyüme kararları için performans verisi"
       ]
     }
+  },
+  "faq": {
+    "home": {
+      "eyebrow": "Sık Sorulan Sorular",
+      "title": "Strada Reports hakkında merak edilenler",
+      "subtitle": "Finansal raporlama, ERP entegrasyonu ve demo süreciyle ilgili en çok sorulan soruların yanıtları.",
+      "items": [
+        {
+          "question": "Strada Reports nedir?",
+          "answer": "Strada Reports, DIA ERP ve benzeri sistemlerdeki iş verinizi otomatik okuyup kâr/zarar, gelir, gider, tahsilat, cari, satış ve stok raporlarına dönüştüren kurumsal bir finansal raporlama platformudur. ERP'nizin yerine geçmez; üzerinde çalışan bir raporlama katmanıdır."
+        },
+        {
+          "question": "Strada Reports bir ERP mi?",
+          "answer": "Hayır. Strada Reports bir ERP değildir ve mevcut ERP yatırımınızı değiştirmenizi gerektirmez. ERP'nizdeki veriyi okur, anlamlı raporlara dönüştürür ve hazırladığınız belgeleri ERP'ye geri yazabilir."
+        },
+        {
+          "question": "Hangi ERP sistemleriyle entegre olur?",
+          "answer": "Öncelikli ve en kapsamlı entegrasyon DIA ERP ile sağlanır. Logo ve Türkiye'de yaygın kullanılan diğer ERP sistemleriyle de çalışır. Fatura, sipariş, üretim, stok ve finans hareketleri otomatik senkronize edilir."
+        },
+        {
+          "question": "Kurulum ne kadar sürer?",
+          "answer": "DIA ERP için hazır entegrasyon bağlantısı mevcuttur. Tipik kurulum birkaç iş günü içinde tamamlanır. 20 dakikalık ücretsiz canlı demo ile platformu kendi ihtiyaçlarınıza göre değerlendirebilirsiniz."
+        },
+        {
+          "question": "Mobil cihazlardan raporlara erişebilir miyim?",
+          "answer": "Evet. Gelir-gider tabloları, kârlılık analizi, cari riskler ve satış performansı raporlarına mobil cihazlardan anlık erişim sağlanır. Karar anı sizi ofiste beklemez."
+        },
+        {
+          "question": "Yapay zekâ asistanı ne işe yarar?",
+          "answer": "Strada Reports yapay zekâ asistanına doğal dilde sorular sorabilirsiniz — örneğin \"Bu ay kârlılığım neden düştü?\" Asistan verilerinizi tarar ve yanıtı sade bir dille açıklar."
+        },
+        {
+          "question": "Verilerim güvende mi?",
+          "answer": "Evet. Veriler TLS ile aktarım sırasında, AES-256 ile depolama sırasında şifrelenir. Rol bazlı erişim kontrolü, denetim izi ve KVKK uyumlu veri işleme uygulanır."
+        },
+        {
+          "question": "Demo ücretli mi?",
+          "answer": "Hayır. Demo talebi tamamen ücretsizdir. Ön ödeme veya taahhüt gerekmez. Formu doldurduktan sonra ekibimiz 1 iş günü içinde sizinle iletişime geçer."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "Çözümler Hakkında",
+      "title": "Raporlama ve entegrasyon soruları",
+      "subtitle": "DIA ERP bağlantısı, rapor modülleri ve otomasyon araçlarıyla ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "DIA ERP entegrasyonu nasıl çalışır?",
+          "answer": "Strada Reports, DIA ERP ile çift yönlü ve gerçek zamanlı bağlantı kurar. Fatura, sipariş, üretim ve finans verisi otomatik akar; Strada'da üretilen belgeler ERP'ye geri yazılır. Manuel veri girişi veya kopyala-yapıştır gerekmez."
+        },
+        {
+          "question": "Hangi rapor modülleri mevcut?",
+          "answer": "Kâr/Zarar, Gelir, Gider, Tahsilat, Cari, Satış, Sipariş ve Stok Yönetimi modülleri hazır olarak sunulur. Her modül DIA ERP verinizle gerçek zamanlı çalışır ve PDF veya Excel olarak dışa aktarılabilir."
+        },
+        {
+          "question": "Fatura Dönüştürücü ne işe yarar?",
+          "answer": "Tedarikçilerden gelen Excel formatındaki faturaları tek tıkla DIA ERP'ye aktarır. Satır bazlı doğrulama, cari ve stok eşleştirmesi ile muhasebe ekibinin manuel giriş yükünü azaltır."
+        },
+        {
+          "question": "Stok Dönüştürücü kimler için?",
+          "answer": "Farklı tedarikçi, müşteri veya eski sistemlerden gelen farklı stok kodlarını DIA ERP stok kartlarınızla otomatik eşleştirmek isteyen üretici ve inşaat firmaları için tasarlanmıştır."
+        },
+        {
+          "question": "Raporlar ne sıklıkla güncellenir?",
+          "answer": "ERP entegrasyonu gerçek zamanlıdır. Verileriniz senkronize edildiği anda raporlar güncellenir; 7/24 anlık raporlama imkânı sunulur."
+        },
+        {
+          "question": "Özel rapor veya dashboard oluşturabilir miyim?",
+          "answer": "Evet. Hazır modüllerin yanı sıra özel dashboard ve pivot analiz araçları ile işletmenize özel görünümler oluşturabilirsiniz. Demo sırasında ihtiyaçlarınızı birlikte değerlendiririz."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Güven & Uyumluluk",
+      "title": "Güvenlik ve şirket bilgileri",
+      "subtitle": "Strada'nın kurumsal yapısı, veri güvenliği ve uyumluluk standartları hakkında sorular.",
+      "items": [
+        {
+          "question": "Strada hangi şirket tarafından geliştiriliyor?",
+          "answer": "Strada Reports, İstanbul merkezli Strada Bilişim tarafından geliştirilmiş Türk bir teknoloji ürünüdür. Üretici ve inşaat şirketlerinin finansal görünürlük ihtiyaçlarına odaklanır."
+        },
+        {
+          "question": "KVKK uyumlu mu?",
+          "answer": "Evet. Kişisel veriler KVKK ilkelerine uygun işlenir. Veri işleme süreçleri, erişim kontrolleri ve saklama politikaları kurumsal standartlara göre yönetilir."
+        },
+        {
+          "question": "Veriler nerede saklanır?",
+          "answer": "Veriler izole mimaride, çok şirketli yapıda ayrıştırılmış katmanlarda saklanır. Aktarım sırasında TLS, depolama sırasında AES-256 şifreleme uygulanır."
+        },
+        {
+          "question": "Kimler verilere erişebilir?",
+          "answer": "Rol bazlı erişim kontrolü uygulanır. Her kullanıcı yalnızca yetkili olduğu veriyi görür. Tüm erişim ve değişiklikler denetim izinde kayıt altına alınır."
+        },
+        {
+          "question": "Felaket kurtarma planı var mı?",
+          "answer": "Evet. Düzenli yedekleme ve felaket kurtarma prosedürleri uygulanır. İş sürekliliği kurumsal güvenlik altyapısının temel bileşenlerinden biridir."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Demo & İletişim",
+      "title": "Demo ve satış süreci",
+      "subtitle": "Demo talebi, fiyatlandırma ve iletişim süreciyle ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Demo nasıl talep edilir?",
+          "answer": "strada.tr/iletisim sayfasındaki formu doldurmanız yeterlidir. Ad, iş e-postası, şirket adı ve telefon bilgilerinizi paylaştıktan sonra ekibimiz 1 iş günü içinde sizinle iletişime geçer."
+        },
+        {
+          "question": "Demo ne kadar sürer?",
+          "answer": "Canlı demo oturumu yaklaşık 20 dakika sürer. Bu sürede Strada Reports'un ERP verinizi nasıl anlık raporlara dönüştürdüğünü ve ilgili modülleri gösteririz."
+        },
+        {
+          "question": "Demo için ön ödeme gerekir mi?",
+          "answer": "Hayır. Demo tamamen ücretsizdir ve herhangi bir taahhüt veya ön ödeme gerektirmez."
+        },
+        {
+          "question": "Hangi sektörlere hizmet veriyorsunuz?",
+          "answer": "Öncelikli hedef kitlemiz üretici firmalar, inşaat şirketleri ve hazır beton operasyonlarıdır. DIA ERP kullanan KOBİ ve orta ölçekli kurumsal işletmeler için idealdir."
+        },
+        {
+          "question": "Doğrudan iletişim bilgileri nelerdir?",
+          "answer": "E-posta: info@stradabilisim.com · Telefon: +90 212 561 20 30 · Adres: Gayrettepe Mh. Barbaros Bulvarı No:161 D:9 Beşiktaş/İstanbul."
+        }
+      ]
+    }
+  },
+  "solutionFaq": {
+    "stok-yonetimi": {
+      "eyebrow": "Stok Yönetimi SSS",
+      "title": "Stok ve envanter hakkında sorular",
+      "subtitle": "DIA ERP entegre stok takibi, çoklu depo ve envanter raporlama ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Stok Yönetimi modülü ne işe yarar?",
+          "answer": "DIA ERP'deki depo ve envanter verilerinizi gerçek zamanlı görselleştirir. Hangi ürünün hangi depoda, ne kadar stokta olduğunu ve satış hızını tek ekrandan takip etmenizi sağlar."
+        },
+        {
+          "question": "Birden fazla depoyu aynı anda izleyebilir miyim?",
+          "answer": "Evet. Çoklu depo desteği ile tüm depolarınızdaki stok seviyelerini depo bazlı görünümde izleyebilir, dönemsel karşılaştırma yapabilirsiniz."
+        },
+        {
+          "question": "Stok verileri DIA ERP ile nasıl senkronize olur?",
+          "answer": "Stok hareketleri DIA ERP'den otomatik çekilir; manuel veri girişi gerekmez. Envanter değişiklikleri gerçek zamanlı olarak Strada Reports ekranlarına yansır."
+        },
+        {
+          "question": "Stok Yönetimi kimler için uygundur?",
+          "answer": "Çoklu depo kullanan üretici ve inşaat firmaları, hazır beton operasyonları ve sahadan güncel stok bilgisine ihtiyaç duyan satış ekipleri için idealdir."
+        }
+      ]
+    },
+    "stok-donusturucu": {
+      "eyebrow": "Stok Dönüştürücü SSS",
+      "title": "Stok kodu eşleştirme hakkında sorular",
+      "subtitle": "Farklı sistemlerdeki stok kodlarını DIA ERP ile otomatik eşleştirme süreciyle ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Stok Dönüştürücü ne problemi çözer?",
+          "answer": "Tedarikçi, müşteri veya eski sistemlerden gelen farklı stok kodlarını DIA ERP stok kartlarınızla otomatik eşleştirir. Manuel kod çevirme ve veri aktarım hatalarını ortadan kaldırır."
+        },
+        {
+          "question": "Toplu kod eşleştirmesi yapılabilir mi?",
+          "answer": "Evet. Esnek eşleştirme kuralları ve toplu import ile tekrarlayan kod çevirme işlemlerini otomatikleştirebilirsiniz. Barkod, SKU ve özel kod formatları desteklenir."
+        },
+        {
+          "question": "Eşleşmeyen kodlar ne olur?",
+          "answer": "Eşleşmeyen kodlar için öneri ve onay akışı sunulur. Tüm eşleştirme işlemleri denetim izinde kayıt altına alınır."
+        },
+        {
+          "question": "ERP geçişlerinde kullanılabilir mi?",
+          "answer": "Evet. Eski ERP'den DIA'ya geçiş sürecinde kod eşleştirme ve müşteri sipariş formlarındaki kodların otomatik çevrilmesi için sıklıkla kullanılır."
+        }
+      ]
+    },
+    "fatura-donusturucu": {
+      "eyebrow": "Fatura Dönüştürücü SSS",
+      "title": "Excel fatura aktarımı hakkında sorular",
+      "subtitle": "Excel faturalarını DIA ERP'ye otomatik aktarma süreciyle ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Fatura Dönüştürücü hangi formatları destekler?",
+          "answer": "Esnek Excel şablon desteği ve sütun eşleştirme sunar. Tedarikçilerden gelen standart Excel faturalarını okur, satırları doğrular ve DIA ERP'ye aktarır."
+        },
+        {
+          "question": "Aktarım öncesi hataları görebilir miyim?",
+          "answer": "Evet. Aktarım öncesi önizleme ve hata raporu ile sorunlu satırları ERP'ye göndermeden düzeltebilirsiniz. KDV ve tutar doğrulama kontrolleri uygulanır."
+        },
+        {
+          "question": "Cari ve stok eşleştirmesi otomatik mi?",
+          "answer": "Evet. Fatura satırlarındaki cari hesap ve stok kartı eşleştirmesi otomatik yapılır. Toplu aktarım ile yüzlerce faturayı tek seferde işleyebilirsiniz."
+        },
+        {
+          "question": "Kimler için en çok faydalı?",
+          "answer": "Aylık yüzlerce tedarikçi faturası işleyen muhasebe ekipleri, inşaat projelerinde alt yüklenici faturalarını hızlı işlemek isteyen firmalar için idealdir."
+        }
+      ]
+    },
+    "gider-raporu": {
+      "eyebrow": "Gider Raporu SSS",
+      "title": "Masraf analizi hakkında sorular",
+      "subtitle": "DIA ERP gider verilerini kategori ve dönem bazında analiz etme ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Gider Raporu hangi kırılımları sunar?",
+          "answer": "Masraf kalemlerini kategori, dönem, proje ve departman bazında gruplar. Trend grafikleri ve dönemsel karşılaştırma ile bütçe sapmalarını erken tespit etmenizi sağlar."
+        },
+        {
+          "question": "Gelir raporuyla birlikte görülebilir mi?",
+          "answer": "Evet. Gelir-gider dengesi ile entegre görünüm sunar. Gider trendlerini gelir verisiyle birlikte analiz edebilirsiniz."
+        },
+        {
+          "question": "Raporlar dışa aktarılabilir mi?",
+          "answer": "Evet. Filtrelenebilir tablolar, detay drill-down, PDF ve Excel dışa aktarım ile yönetim kuruluna sunulabilir raporlar oluşturabilirsiniz."
+        },
+        {
+          "question": "Proje bazlı maliyet takibi yapılabilir mi?",
+          "answer": "Evet. Proje bazlı gider gruplama ile inşaat ve üretim projelerinde maliyet takibi ve bütçe kontrolü yapılabilir."
+        }
+      ]
+    },
+    "gelir-raporu": {
+      "eyebrow": "Gelir Raporu SSS",
+      "title": "Gelir takibi hakkında sorular",
+      "subtitle": "DIA ERP satış ve tahsilat verilerinden anlık gelir analizi ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Gelir Raporu hangi verileri gösterir?",
+          "answer": "DIA ERP'deki satış faturaları, tahsilatlar ve gelir hareketlerini tek ekranda toplar. Gelir kaynağı, müşteri ve dönem bazlı kırılımlar sunar."
+        },
+        {
+          "question": "Tahsilat ve faturalanmış gelir ayrımı var mı?",
+          "answer": "Evet. Tahsilat durumu ile entegre gelir görünümü ile faturalanmış gelir ve tahsil edilen tutarları ayrı takip edebilirsiniz."
+        },
+        {
+          "question": "12 aylık gelir trendi görülebilir mi?",
+          "answer": "Evet. 12 aylık gelir trendi ve karşılaştırmalı grafikler ile büyüme fırsatlarını ve mevsimselliği analiz edebilirsiniz."
+        },
+        {
+          "question": "Satış ekibi hedef takibi yapabilir mi?",
+          "answer": "Evet. Dönem, proje ve bölge filtreleri ile satış ekibinin hedef gerçekleşme analizini gerçek zamanlı yapabilir."
+        }
+      ]
+    },
+    "satis-raporu": {
+      "eyebrow": "Satış Raporu SSS",
+      "title": "Satış analizi hakkında sorular",
+      "subtitle": "Bölge, personel ve ürün bazlı satış kırılımları ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Satış Raporu hangi kırılımları destekler?",
+          "answer": "Bölge, satış temsilcisi, müşteri ve ürün bazında detaylı kırılımlar sunar. Stok satışları ve müşteri dağılımı grafikleri ile performansı her açıdan görürsünüz."
+        },
+        {
+          "question": "12 aylık satış trendi analizi yapılabilir mi?",
+          "answer": "Evet. 12 aylık satış trendi ile mevsimsellik analizi, dönemsel karşılaştırma ve büyüme oranı hesaplaması yapılabilir."
+        },
+        {
+          "question": "Sahadan satış takibi mümkün mü?",
+          "answer": "Evet. Mobil erişim ile sahadan anlık satış performansını izleyebilir, filtrelenmiş tablolarla detay analiz yapabilirsiniz."
+        },
+        {
+          "question": "Ürün portföyü optimizasyonuna nasıl yardımcı olur?",
+          "answer": "Hangi ürünün nerede sattığını ve müşteri segmentasyonunu göstererek stok planlaması ve bölgesel büyüme stratejisi geliştirmenize veri sağlar."
+        }
+      ]
+    },
+    "siparis-raporu": {
+      "eyebrow": "Sipariş Raporu SSS",
+      "title": "Sipariş takibi hakkında sorular",
+      "subtitle": "Açık ve bekleyen siparişlerin DIA ERP üzerinden izlenmesi ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Sipariş Raporu hangi siparişleri listeler?",
+          "answer": "DIA ERP'deki açık, kısmi ve tamamlanan siparişleri durum, müşteri, teslimat tarihi ve ürün bazında listeler."
+        },
+        {
+          "question": "Teslimat gecikme riskleri nasıl izlenir?",
+          "answer": "Teslimat tarihi ve gecikme uyarıları ile riskli siparişleri erken tespit edebilir, müşteri memnuniyetini artırabilirsiniz."
+        },
+        {
+          "question": "Stok yeterliliği kontrol edilir mi?",
+          "answer": "Evet. Sipariş-stok entegrasyonu ile sipariş karşılanmadan önce stok yeterlilik kontrolü yapılabilir."
+        },
+        {
+          "question": "Operasyon ekibi günlük takip yapabilir mi?",
+          "answer": "Evet. Operasyon müdürleri günlük sipariş takibi, üretim planlamasında önceliklendirme ve müşteri ilişkileri ekibi teslimat sorgulaması için kullanır."
+        }
+      ]
+    },
+    "kar-zarar-raporu": {
+      "eyebrow": "Kâr/Zarar SSS",
+      "title": "Karlılık analizi hakkında sorular",
+      "subtitle": "Net kâr, kâr marjı ve finansal performans raporlama ile ilgili sık sorulan sorular.",
+      "items": [
+        {
+          "question": "Kâr/Zarar Raporu hangi metrikleri gösterir?",
+          "answer": "Gelir, gider, net kâr ve kâr marjı metriklerini gerçek zamanlı sunar. Aylık ve yıllık kâr/zarar trend grafikleri ile dönemsel karşılaştırma yapılabilir."
+        },
+        {
+          "question": "Detay drill-down yapılabilir mi?",
+          "answer": "Evet. Gelir-gider kırılımı ile detay drill-down, bütçe vs gerçekleşen karşılaştırması ve PDF rapor modu sunulur."
+        },
+        {
+          "question": "Yönetim kurulu sunumları için uygun mu?",
+          "answer": "Evet. Sunuma hazır finansal özetler ve PDF dışa aktarım ile yönetim kurulu toplantılarında doğrudan kullanılabilir."
+        },
+        {
+          "question": "Finans direktörleri nasıl kullanır?",
+          "answer": "Aylık kârlılık analizi, mevsimsellik değerlendirmesi ve yatırım/büyüme kararları için temel performans verisi olarak kullanılır."
+        }
+      ]
+    }
   }
 }

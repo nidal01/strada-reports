@@ -545,5 +545,317 @@
         "Performance data for investment and growth decisions"
       ]
     }
+  },
+  "faq": {
+    "home": {
+      "eyebrow": "Frequently Asked Questions",
+      "title": "What people ask about Strada Reports",
+      "subtitle": "Answers to the most common questions about financial reporting, ERP integration and the demo process.",
+      "items": [
+        {
+          "question": "What is Strada Reports?",
+          "answer": "Strada Reports is an enterprise financial reporting platform that automatically reads business data from DIA ERP and similar systems and turns it into profit/loss, income, expense, collections, accounts receivable, sales and inventory reports. It does not replace your ERP — it is a reporting layer on top of it."
+        },
+        {
+          "question": "Is Strada Reports an ERP?",
+          "answer": "No. Strada Reports is not an ERP and does not require you to change your existing ERP investment. It reads data from your ERP, turns it into meaningful reports and can write documents back to your ERP."
+        },
+        {
+          "question": "Which ERP systems does it integrate with?",
+          "answer": "The primary and most comprehensive integration is with DIA ERP. It also works with Logo and other widely used Turkish ERP systems. Invoices, orders, production, inventory and financial movements are synchronized automatically."
+        },
+        {
+          "question": "How long does setup take?",
+          "answer": "A ready-made integration connection is available for DIA ERP. Typical setup is completed within a few business days. You can evaluate the platform with a free 20-minute live demo tailored to your needs."
+        },
+        {
+          "question": "Can I access reports on mobile devices?",
+          "answer": "Yes. Income-expense tables, profitability analysis, receivable risk and sales performance reports are available instantly on mobile devices. The moment of decision won't wait for you to get back to the office."
+        },
+        {
+          "question": "What does the AI assistant do?",
+          "answer": "You can ask the Strada Reports AI assistant questions in natural language — for example, \"Why did profitability drop this month?\" The assistant scans your data and explains the answer in plain language."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes. Data is encrypted with TLS in transit and AES-256 at rest. Role-based access control, audit trails and KVKK-compliant data processing are applied."
+        },
+        {
+          "question": "Is the demo free?",
+          "answer": "Yes. Demo requests are completely free. No upfront payment or commitment is required. After you submit the form, our team will contact you within one business day."
+        }
+      ]
+    },
+    "solutions": {
+      "eyebrow": "About Solutions",
+      "title": "Reporting and integration questions",
+      "subtitle": "Frequently asked questions about DIA ERP connectivity, report modules and automation tools.",
+      "items": [
+        {
+          "question": "How does DIA ERP integration work?",
+          "answer": "Strada Reports establishes a bidirectional, real-time connection with DIA ERP. Invoices, orders, production and financial data flow automatically; documents created in Strada are written back to the ERP. No manual data entry or copy-paste is required."
+        },
+        {
+          "question": "Which report modules are available?",
+          "answer": "Profit/Loss, Income, Expense, Collections, Accounts, Sales, Orders and Inventory Management modules are available out of the box. Each module works in real time with your DIA ERP data and can be exported as PDF or Excel."
+        },
+        {
+          "question": "What does the Invoice Converter do?",
+          "answer": "It transfers supplier invoices in Excel format to DIA ERP with one click. Line-level validation and account and stock matching reduce the manual entry burden on the accounting team."
+        },
+        {
+          "question": "Who is the Stock Converter for?",
+          "answer": "It is designed for manufacturing and construction firms that want to automatically match different stock codes from suppliers, customers or legacy systems with their DIA ERP stock cards."
+        },
+        {
+          "question": "How often are reports updated?",
+          "answer": "ERP integration is real-time. Reports update as soon as your data is synchronized — 24/7 live reporting is available."
+        },
+        {
+          "question": "Can I create custom reports or dashboards?",
+          "answer": "Yes. In addition to ready-made modules, you can create custom views with dashboards and pivot analysis tools. We evaluate your needs together during the demo."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Trust & Compliance",
+      "title": "Security and company information",
+      "subtitle": "Questions about Strada's corporate structure, data security and compliance standards.",
+      "items": [
+        {
+          "question": "Which company develops Strada?",
+          "answer": "Strada Reports is a Turkish technology product developed by Istanbul-based Strada Bilişim. It focuses on the financial visibility needs of manufacturing and construction companies."
+        },
+        {
+          "question": "Is it KVKK compliant?",
+          "answer": "Yes. Personal data is processed in accordance with KVKK principles. Data processing procedures, access controls and retention policies are managed to corporate standards."
+        },
+        {
+          "question": "Where is data stored?",
+          "answer": "Data is stored in isolated layers within a multi-tenant architecture. TLS encryption is applied in transit and AES-256 encryption at rest."
+        },
+        {
+          "question": "Who can access the data?",
+          "answer": "Role-based access control is applied. Each user sees only the data they are authorized to access. All access and changes are recorded in an audit trail."
+        },
+        {
+          "question": "Is there a disaster recovery plan?",
+          "answer": "Yes. Regular backups and disaster recovery procedures are in place. Business continuity is a core component of the enterprise security infrastructure."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Demo & Contact",
+      "title": "Demo and sales process",
+      "subtitle": "Frequently asked questions about demo requests, pricing and the contact process.",
+      "items": [
+        {
+          "question": "How do I request a demo?",
+          "answer": "Fill out the form on strada.tr/contact. After sharing your name, work email, company name and phone number, our team will contact you within one business day."
+        },
+        {
+          "question": "How long does the demo take?",
+          "answer": "The live demo session takes approximately 20 minutes. During this time we show how Strada Reports turns your ERP data into instant reports and demonstrate the relevant modules."
+        },
+        {
+          "question": "Is upfront payment required for the demo?",
+          "answer": "No. The demo is completely free and does not require any commitment or upfront payment."
+        },
+        {
+          "question": "Which industries do you serve?",
+          "answer": "Our primary target audience is manufacturing firms, construction companies and ready-mix concrete operations. It is ideal for SMEs and mid-size enterprises using DIA ERP."
+        },
+        {
+          "question": "What are the direct contact details?",
+          "answer": "Email: info@stradabilisim.com · Phone: +90 212 561 20 30 · Address: Gayrettepe Mh. Barbaros Bulvarı No:161 D:9 Beşiktaş/İstanbul, Türkiye."
+        }
+      ]
+    }
+  },
+  "solutionFaq": {
+    "stok-yonetimi": {
+      "eyebrow": "Inventory Management FAQ",
+      "title": "Questions about stock and inventory",
+      "subtitle": "Frequently asked questions about DIA ERP integrated stock tracking, multi-warehouse and inventory reporting.",
+      "items": [
+        {
+          "question": "What does the Inventory Management module do?",
+          "answer": "It visualizes warehouse and inventory data from DIA ERP in real time. You can track which product is in which warehouse, stock levels and sales velocity from a single screen."
+        },
+        {
+          "question": "Can I monitor multiple warehouses at once?",
+          "answer": "Yes. Multi-warehouse support lets you track stock levels across all warehouses with warehouse-based views and period comparison."
+        },
+        {
+          "question": "How does stock data sync with DIA ERP?",
+          "answer": "Stock movements are pulled automatically from DIA ERP — no manual data entry required. Inventory changes are reflected on Strada Reports screens in real time."
+        },
+        {
+          "question": "Who is Inventory Management best for?",
+          "answer": "Ideal for manufacturing and construction firms with multiple warehouses, ready-mix concrete operations and sales teams that need current stock information in the field."
+        }
+      ]
+    },
+    "stok-donusturucu": {
+      "eyebrow": "Stock Converter FAQ",
+      "title": "Questions about stock code matching",
+      "subtitle": "Frequently asked questions about automatically matching stock codes from different systems with DIA ERP.",
+      "items": [
+        {
+          "question": "What problem does the Stock Converter solve?",
+          "answer": "It automatically matches different stock codes from suppliers, customers or legacy systems with your DIA ERP stock cards. It eliminates manual code conversion and data transfer errors."
+        },
+        {
+          "question": "Can bulk code matching be done?",
+          "answer": "Yes. Flexible matching rules and bulk import automate repetitive code conversion. Barcode, SKU and custom code formats are supported."
+        },
+        {
+          "question": "What happens to unmatched codes?",
+          "answer": "An suggestion and approval workflow is provided for unmatched codes. All matching operations are recorded in an audit trail."
+        },
+        {
+          "question": "Can it be used during ERP migrations?",
+          "answer": "Yes. It is commonly used for code matching when migrating from a legacy ERP to DIA and for automatically converting codes on customer order forms."
+        }
+      ]
+    },
+    "fatura-donusturucu": {
+      "eyebrow": "Invoice Converter FAQ",
+      "title": "Questions about Excel invoice import",
+      "subtitle": "Frequently asked questions about automatically transferring Excel invoices to DIA ERP.",
+      "items": [
+        {
+          "question": "Which formats does the Invoice Converter support?",
+          "answer": "It offers flexible Excel template support and column mapping. It reads standard Excel invoices from suppliers, validates rows and transfers them to DIA ERP."
+        },
+        {
+          "question": "Can I see errors before import?",
+          "answer": "Yes. Pre-import preview and error reports let you fix problematic rows before sending them to the ERP. VAT and amount validation checks are applied."
+        },
+        {
+          "question": "Is account and stock matching automatic?",
+          "answer": "Yes. Account and stock card matching on invoice lines is done automatically. You can process hundreds of invoices in bulk in a single operation."
+        },
+        {
+          "question": "Who benefits most?",
+          "answer": "Ideal for accounting teams processing hundreds of supplier invoices monthly and firms that need to quickly process subcontractor invoices on construction projects."
+        }
+      ]
+    },
+    "gider-raporu": {
+      "eyebrow": "Expense Report FAQ",
+      "title": "Questions about expense analysis",
+      "subtitle": "Frequently asked questions about analyzing DIA ERP expense data by category and period.",
+      "items": [
+        {
+          "question": "What breakdowns does the Expense Report offer?",
+          "answer": "It groups expense items by category, period, project and department. Trend charts and period comparison help you detect budget variances early."
+        },
+        {
+          "question": "Can it be viewed together with income reports?",
+          "answer": "Yes. An integrated income-expense view is available. You can analyze expense trends alongside income data."
+        },
+        {
+          "question": "Can reports be exported?",
+          "answer": "Yes. Filterable tables, detail drill-down, PDF and Excel export let you create board-ready reports."
+        },
+        {
+          "question": "Is project-based cost tracking possible?",
+          "answer": "Yes. Project-based expense grouping enables cost tracking and budget control on construction and manufacturing projects."
+        }
+      ]
+    },
+    "gelir-raporu": {
+      "eyebrow": "Income Report FAQ",
+      "title": "Questions about revenue tracking",
+      "subtitle": "Frequently asked questions about live income analysis from DIA ERP sales and collections data.",
+      "items": [
+        {
+          "question": "What data does the Income Report show?",
+          "answer": "It brings together sales invoices, collections and income movements from DIA ERP on one screen. It offers breakdowns by revenue source, customer and period."
+        },
+        {
+          "question": "Is there a split between collections and invoiced revenue?",
+          "answer": "Yes. An integrated income view with collection status lets you track invoiced revenue and collected amounts separately."
+        },
+        {
+          "question": "Can I see a 12-month revenue trend?",
+          "answer": "Yes. 12-month revenue trends and comparative charts help you analyze growth opportunities and seasonality."
+        },
+        {
+          "question": "Can the sales team track targets?",
+          "answer": "Yes. Period, project and region filters enable real-time target achievement analysis for the sales team."
+        }
+      ]
+    },
+    "satis-raporu": {
+      "eyebrow": "Sales Report FAQ",
+      "title": "Questions about sales analysis",
+      "subtitle": "Frequently asked questions about regional, staff and product-based sales breakdowns.",
+      "items": [
+        {
+          "question": "What breakdowns does the Sales Report support?",
+          "answer": "It offers detailed breakdowns by region, sales rep, customer and product. Stock sales and customer distribution charts let you see performance from every angle."
+        },
+        {
+          "question": "Can 12-month sales trend analysis be done?",
+          "answer": "Yes. 12-month sales trends enable seasonality analysis, period comparison and growth rate calculation."
+        },
+        {
+          "question": "Is field sales tracking possible?",
+          "answer": "Yes. Mobile access lets you monitor live sales performance from the field and run detailed analysis with filtered tables."
+        },
+        {
+          "question": "How does it help product portfolio optimization?",
+          "answer": "By showing which products sell where and customer segmentation, it provides data for stock planning and regional growth strategy."
+        }
+      ]
+    },
+    "siparis-raporu": {
+      "eyebrow": "Order Report FAQ",
+      "title": "Questions about order tracking",
+      "subtitle": "Frequently asked questions about tracking open and pending orders via DIA ERP.",
+      "items": [
+        {
+          "question": "Which orders does the Order Report list?",
+          "answer": "It lists open, partial and completed orders from DIA ERP by status, customer, delivery date and product."
+        },
+        {
+          "question": "How are delivery delay risks monitored?",
+          "answer": "Delivery date and delay alerts help you detect at-risk orders early and improve customer satisfaction."
+        },
+        {
+          "question": "Is stock sufficiency checked?",
+          "answer": "Yes. Order-stock integration enables stock sufficiency checks before orders are fulfilled."
+        },
+        {
+          "question": "Can operations teams do daily tracking?",
+          "answer": "Yes. Operations managers use it for daily order tracking and production prioritisation; customer relations teams use it for delivery status queries."
+        }
+      ]
+    },
+    "kar-zarar-raporu": {
+      "eyebrow": "P&L Report FAQ",
+      "title": "Questions about profitability analysis",
+      "subtitle": "Frequently asked questions about net profit, profit margin and financial performance reporting.",
+      "items": [
+        {
+          "question": "What metrics does the P&L Report show?",
+          "answer": "It delivers revenue, expense, net profit and profit margin metrics in real time. Monthly and annual P&L trend charts enable period comparison."
+        },
+        {
+          "question": "Is detail drill-down available?",
+          "answer": "Yes. Income-expense breakdown drill-down, budget vs actual comparison and PDF report mode are available."
+        },
+        {
+          "question": "Is it suitable for board presentations?",
+          "answer": "Yes. Board-ready financial summaries and PDF export can be used directly in board meetings."
+        },
+        {
+          "question": "How do finance directors use it?",
+          "answer": "As core performance data for monthly profitability analysis, seasonality assessment and investment/growth decisions."
+        }
+      ]
+    }
   }
 }

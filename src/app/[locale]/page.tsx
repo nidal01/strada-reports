@@ -1,5 +1,7 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/sections/hero";
+import { PageFaq } from "@/features/seo/faq-section";
+import { JsonLdScript, softwareApplicationSchema } from "@/features/seo/json-ld";
 import { SocialProof } from "@/components/sections/social-proof";
 import { FeaturesBento } from "@/components/sections/features-bento";
 import { ProductShowcase } from "@/components/sections/product-showcase";
@@ -23,9 +25,17 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
 
   return (
     <>
+      <JsonLdScript
+        data={softwareApplicationSchema({
+          name: "Strada Reports",
+          description: t("description"),
+          locale,
+        })}
+      />
       <Hero />
       <SocialProof />
       <FeaturesBento />
@@ -33,6 +43,7 @@ export default async function HomePage({
       <Modules />
       <BlogPreview locale={locale} />
       <Testimonials />
+      <PageFaq page="home" />
       <CtaBanner />
     </>
   );

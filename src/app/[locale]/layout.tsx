@@ -11,6 +11,7 @@ import { siteConfig } from "@/lib/site";
 import { themeInitScript } from "@/lib/theme";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { GlobalJsonLd } from "@/features/seo/global-json-ld";
 
 /** Pre-render every locale at build time. */
 export function generateStaticParams() {
@@ -62,6 +63,20 @@ export async function generateMetadata({
       images: [siteConfig.ogImage],
     },
     robots: { index: true, follow: true },
+    other: {
+      "geo.region": "TR-34",
+      "geo.placename": "İstanbul",
+      "geo.position": "41.0782;29.0064",
+      ICBM: "41.0782, 29.0064",
+    },
+    keywords: [
+      "Strada Reports",
+      "DIA ERP entegrasyonu",
+      "finansal raporlama",
+      "kâr zarar raporu",
+      "ERP raporlama",
+      "kurumsal raporlama",
+    ],
     icons: {
       icon: [{ url: siteConfig.favicon, type: "image/png", sizes: "64x64" }],
       apple: [{ url: siteConfig.favicon, type: "image/png", sizes: "64x64" }],
@@ -95,6 +110,8 @@ export default async function LocaleLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+        <GlobalJsonLd locale={locale} />
       </head>
       <body className="min-h-dvh antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>

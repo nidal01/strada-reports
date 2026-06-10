@@ -17,6 +17,8 @@ import {
   type SolutionSlug,
 } from "@/features/solutions/data";
 import { SolutionJsonLd } from "@/features/solutions/json-ld";
+import { JsonLdScript, breadcrumbSchema } from "@/features/seo/json-ld";
+import { SolutionFaq } from "@/features/seo/solution-faq";
 import { RelatedSolutions } from "@/features/solutions/solutions-grid";
 
 type Params = { params: Promise<{ locale: string; slug: string }> };
@@ -113,6 +115,11 @@ export default async function SolutionDetailPage({ params }: Params) {
     href: { pathname: "/solutions/[slug]", params: { slug } },
   })}`;
 
+  const solutionsUrl = `${siteConfig.url}${getPathname({
+    locale: locale as Locale,
+    href: "/solutions",
+  })}`;
+
   return (
     <>
       <SolutionJsonLd
@@ -120,6 +127,12 @@ export default async function SolutionDetailPage({ params }: Params) {
         name={content.title}
         description={content.meta.description}
         url={pageUrl}
+      />
+      <JsonLdScript
+        data={breadcrumbSchema([
+          { name: tDetail("breadcrumbSolutions"), url: solutionsUrl },
+          { name: content.title, url: pageUrl },
+        ])}
       />
 
       {/* Breadcrumb */}
@@ -240,6 +253,7 @@ export default async function SolutionDetailPage({ params }: Params) {
         </Container>
       </section>
 
+      <SolutionFaq slug={solution.slug} />
       <RelatedSolutions slugs={solution.related} />
       <CtaBanner />
     </>

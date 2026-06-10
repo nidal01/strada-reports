@@ -8,6 +8,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 import { Reveal } from "@/components/motion/reveal";
 import { cn } from "@/lib/utils";
 import { SolutionsGrid } from "@/features/solutions/solutions-grid";
+import { PageFaq } from "@/features/seo/faq-section";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -110,6 +111,7 @@ export default async function SolutionsPage({ params }: Params) {
         </Container>
       </div>
 
+      <PageFaq page="solutions" />
       <CtaBanner />
     </>
   );

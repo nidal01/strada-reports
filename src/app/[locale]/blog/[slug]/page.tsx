@@ -15,6 +15,7 @@ import { seedDemoPostsIfEmpty } from "@/features/blog/seed";
 import { BlogTableOfContents } from "@/features/blog/table-of-contents";
 import { extractHeadings } from "@/features/blog/toc";
 import { siteConfig } from "@/lib/site";
+import { JsonLdScript, articleSchema, breadcrumbSchema } from "@/features/seo/json-ld";
 
 type Params = { params: Promise<{ locale: string; slug: string }> };
 
@@ -97,8 +98,32 @@ export default async function BlogPostPage({ params }: Params) {
   const t = await getTranslations("blog");
   const headings = extractHeadings(post.content);
 
+  const pageUrl = `${siteConfig.url}${getPathname({
+    locale: locale as Locale,
+    href: { pathname: "/blog/[slug]", params: { slug } },
+  })}`;
+  const blogUrl = `${siteConfig.url}${getPathname({ locale: locale as Locale, href: "/blog" })}`;
+
   return (
     <>
+      <JsonLdScript
+        data={[
+          articleSchema({
+            title: post.title,
+            description: post.excerpt,
+            url: pageUrl,
+            image: post.coverImage ?? post.ogImage ?? undefined,
+            datePublished: post.publishedAt ?? post.createdAt,
+            dateModified: post.updatedAt ?? post.publishedAt ?? post.createdAt,
+            author: post.author,
+            locale,
+          }),
+          breadcrumbSchema([
+            { name: t("breadcrumb"), url: blogUrl },
+            { name: post.title, url: pageUrl },
+          ]),
+        ]}
+      />
       <BlogPostTracker postId={post.id} />
 
       <article className="pb-16 sm:pb-20">

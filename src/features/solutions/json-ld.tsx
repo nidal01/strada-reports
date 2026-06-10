@@ -18,11 +18,7 @@ export function SolutionJsonLd({ slug, name, description, url }: SolutionJsonLdP
     url,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    provider: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    provider: { "@id": `${siteConfig.url}/#organization` },
     offers: {
       "@type": "Offer",
       price: "0",

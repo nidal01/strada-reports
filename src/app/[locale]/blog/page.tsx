@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { Link, getPathname } from "@/i18n/navigation";
+import type { Locale } from "@/i18n/routing";
+import { siteConfig } from "@/lib/site";
+import { JsonLdScript, blogListingSchema, breadcrumbSchema } from "@/features/seo/json-ld";
 import { Calendar, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/sections/page-hero";
@@ -23,12 +26,43 @@ export default async function BlogPage({ params }: Params) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("blog");
+  const meta = await getTranslations({ locale, namespace: "metadata.blog" });
 
   await seedDemoPostsIfEmpty();
   const posts = await listPosts({ locale, status: "published", limit: 50 });
 
+  const blogUrl = `${siteConfig.url}${getPathname({ locale: locale as Locale, href: "/blog" })}`;
+  const homeUrl = `${siteConfig.url}${getPathname({ locale: locale as Locale, href: "/" })}`;
+
+  const schemaPosts = posts.map((post) => ({
+    title: post.title,
+    excerpt: post.excerpt,
+    url: `${siteConfig.url}${getPathname({
+      locale: locale as Locale,
+      href: { pathname: "/blog/[slug]", params: { slug: post.slug } },
+    })}`,
+    datePublished: post.publishedAt ?? post.createdAt,
+    author: post.author,
+    image: post.coverImage ?? post.ogImage,
+  }));
+
   return (
     <>
+      <JsonLdScript
+        data={[
+          blogListingSchema({
+            name: t("pageTitle"),
+            description: meta("description"),
+            url: blogUrl,
+            locale,
+            posts: schemaPosts,
+          }),
+          breadcrumbSchema([
+            { name: locale === "tr" ? "Ana Sayfa" : "Home", url: homeUrl },
+            { name: t("breadcrumb"), url: blogUrl },
+          ]),
+        ]}
+      />
       <PageHero eyebrow={t("eyebrow")} title={t("pageTitle")} subtitle={t("pageSubtitle")} />
 
       <section className="pb-20 sm:pb-28">

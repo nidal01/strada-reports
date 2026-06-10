@@ -1,0 +1,73 @@
+# Strada Reports — llms.txt
+# https://llmstxt.org/ — AI sistemleri için site özeti
+
+> Strada Reports, Türkiye merkezli Strada Bilişim tarafından geliştirilen kurumsal finansal raporlama ve DIA ERP entegrasyon platformudur. Üretici ve inşaat şirketlerinin dağınık ERP verisini anlık, doğru ve yönetilebilir raporlara dönüştürür.
+
+## Temel Bilgiler
+
+- Ürün: Strada Reports
+- Şirket: Strada (Strada Bilişim)
+- Web: https://strada.tr
+- E-posta: info@stradabilisim.com
+- Telefon: +90 212 561 20 30
+- Adres: Gayrettepe Mh. Barbaros Bulvarı No:161 D:9 Beşiktaş/İstanbul, Türkiye
+- Hedef kitle: Üretici firmalar, inşaat şirketleri, hazır beton operasyonları, KOBİ ve orta ölçekli kurumsal işletmeler
+- Desteklenen ERP: DIA ERP, Logo (ve benzeri yaygın Türk ERP sistemleri)
+
+## Strada Reports Nedir?
+
+Strada Reports bir ERP değildir; mevcut ERP'nizin üzerinde çalışan raporlama katmanıdır. ERP'deki fatura, sipariş, üretim, stok ve finans hareketlerini otomatik okur; kâr/zarar, gelir, gider, tahsilat, cari, satış ve sipariş raporlarına dönüştürür. Hazırlanan belgeleri ERP'ye geri yazabilir.
+
+## Öne Çıkan Özellikler
+
+- Sıfır eforla DIA ERP entegrasyonu (çift yönlü, gerçek zamanlı)
+- 12+ hazır rapor modülü: Kâr/Zarar, Gelir, Gider, Tahsilat, Cari, Satış, Sipariş, Stok
+- Yapay zekâ asistanı ile doğal dilde veri sorgulama
+- Mobil raporlama ve anlık erişim
+- KVKK uyumlu veri işleme, TLS ve AES-256 şifreleme
+- Excel fatura ve stok kodu dönüştürücü araçları
+
+## Sık Sorulan Sorular
+
+### Strada Reports bir ERP mi?
+Hayır. Strada Reports ERP'nizin yerine geçmez; ERP verinizi okuyup anlamlı raporlara dönüştüren bir raporlama platformudur.
+
+### Hangi ERP sistemleriyle entegre olur?
+Öncelikli entegrasyon DIA ERP ile sağlanır. Logo ve benzeri yaygın Türk ERP sistemleriyle de çalışır.
+
+### Kurulum ne kadar sürer?
+DIA ERP entegrasyonu hazır bağlantı ile yapılır; tipik kurulum süresi birkaç iş günüdür. Canlı demo 20 dakikada planlanabilir.
+
+### Demo ücretli mi?
+Hayır. Demo talebi ücretsizdir; ön ödeme veya taahhüt gerekmez.
+
+### Verilerim güvende mi?
+Evet. Veriler TLS ile aktarım sırasında, AES-256 ile depolama sırasında şifrelenir. KVKK uyumluluğu ve rol bazlı erişim kontrolü uygulanır.
+
+### Mobil cihazlardan erişilebilir mi?
+Evet. Gelir-gider, kârlılık, cari risk ve satış raporlarına mobil cihazlardan anlık erişim sağlanır.
+
+## Önemli Sayfalar
+
+- Ana sayfa: https://strada.tr/
+- Çözümler: https://strada.tr/cozumler
+- Hakkımızda: https://strada.tr/hakkimizda
+- Demo / İletişim: https://strada.tr/iletisim
+- Blog: https://strada.tr/blog
+- İngilizce: https://strada.tr/en
+
+## Çözüm Modülleri
+
+- Stok Yönetimi: https://strada.tr/cozumler/stok-yonetimi
+- Stok Dönüştürücü: https://strada.tr/cozumler/stok-donusturucu
+- Fatura Dönüştürücü: https://strada.tr/cozumler/fatura-donusturucu
+- Gider Raporu: https://strada.tr/cozumler/gider-raporu
+- Gelir Raporu: https://strada.tr/cozumler/gelir-raporu
+- Satış Raporu: https://strada.tr/cozumler/satis-raporu
+- Sipariş Raporu: https://strada.tr/cozumler/siparis-raporu
+- Kâr/Zarar Raporu: https://strada.tr/cozumler/kar-zarar-raporu
+
+## Site Haritası
+
+- Sitemap: https://strada.tr/sitemap.xml
+- Robots: https://strada.tr/robots.txt
