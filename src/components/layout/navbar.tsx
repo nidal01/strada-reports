@@ -89,16 +89,21 @@ export function Navbar() {
           </Button>
         </div>
 
-        {/* Mobile trigger */}
-        <button
-          type="button"
-          onClick={() => setMobileOpen((v) => !v)}
-          aria-expanded={mobileOpen}
-          aria-label={mobileOpen ? t("close") : t("menu")}
-          className="flex size-10 cursor-pointer items-center justify-center rounded-lg text-slate-200 transition-colors hover:bg-white/5 md:hidden"
-        >
-          {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        {/* Mobile actions */}
+        <div className="flex items-center gap-1.5 md:hidden">
+          <Button asChild variant="ghost" size="sm" className="px-3">
+            <a href={siteConfig.appUrl}>{t("login")}</a>
+          </Button>
+          <button
+            type="button"
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-expanded={mobileOpen}
+            aria-label={mobileOpen ? t("close") : t("menu")}
+            className="flex size-10 cursor-pointer items-center justify-center rounded-lg text-slate-200 transition-colors hover:bg-white/5"
+          >
+            {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile sheet */}
