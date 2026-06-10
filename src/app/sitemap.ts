@@ -1,81 +1,121 @@
 import type { MetadataRoute } from "next";
-import { routing } from "@/i18n/routing";
-import { siteConfig } from "@/lib/site";
-import { listPublishedSlugs } from "@/features/blog/posts";
-import { seedDemoPostsIfEmpty } from "@/features/blog/seed";
+import { getPathname } from "@/i18n/navigation";
+import { routing, type Locale } from "@/i18n/routing";
+import { listPosts } from "@/features/blog/posts";
 import { SOLUTION_SLUGS } from "@/features/solutions/data";
+import { siteConfig } from "@/lib/site";
 
-const PATHS = ["", "/cozumler", "/blog", "/hakkimizda", "/iletisim"] as const;
-const EN_PATHS: Record<string, string> = {
-  "": "",
-  "/cozumler": "/solutions",
-  "/blog": "/blog",
-  "/hakkimizda": "/about",
-  "/iletisim": "/contact",
+type StaticHref = "/" | "/solutions" | "/blog" | "/about" | "/contact";
+
+const STATIC_ROUTES: readonly StaticHref[] = [
+  "/",
+  "/solutions",
+  "/blog",
+  "/about",
+  "/contact",
+] as const;
+
+const STATIC_META: Record<
+  StaticHref,
+  { changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }
+> = {
+  "/": { changeFrequency: "weekly", priority: 1 },
+  "/solutions": { changeFrequency: "monthly", priority: 0.9 },
+  "/blog": { changeFrequency: "weekly", priority: 0.8 },
+  "/about": { changeFrequency: "monthly", priority: 0.7 },
+  "/contact": { changeFrequency: "monthly", priority: 0.8 },
 };
 
-function solutionEntry(slug: string): MetadataRoute.Sitemap[number] {
-  const base = siteConfig.url;
-  const trPath = `/cozumler/${slug}`;
-  const enPath = `/en/solutions/${slug}`;
-
-  return {
-    url: `${base}${trPath}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-    alternates: {
-      languages: {
-        tr: `${base}${trPath}`,
-        en: `${base}${enPath}`,
-      },
-    },
-  };
+/** Build absolute URL; homepage has no trailing slash. */
+function absoluteUrl(locale: Locale, href: StaticHref | { pathname: "/solutions/[slug]"; params: { slug: string } } | { pathname: "/blog/[slug]"; params: { slug: string } }): string {
+  const path = getPathname({ locale, href });
+  if (path === "/") return siteConfig.url;
+  return `${siteConfig.url}${path}`;
 }
 
-function blogEntry(slug: string, locale: string): MetadataRoute.Sitemap[number] {
-  const base = siteConfig.url;
-  const prefix = locale === "tr" ? "" : "/en";
-  const url = `${base}${prefix}/blog/${slug}`;
-
-  return {
-    url,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.6,
-    alternates: {
-      languages: { [locale]: url },
-    },
-  };
+/** hreflang alternates for all locales + x-default (Turkish). */
+function buildAlternates(
+  resolve: (locale: Locale) => string,
+): NonNullable<MetadataRoute.Sitemap[number]["alternates"]> {
+  const languages = Object.fromEntries(
+    routing.locales.map((locale) => [locale, resolve(locale)]),
+  ) as Record<string, string>;
+  languages["x-default"] = resolve(routing.defaultLocale);
+  return { languages };
 }
 
-/** Multilingual sitemap with hreflang alternates for every route. */
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = siteConfig.url;
+function staticEntries(): MetadataRoute.Sitemap {
+  return STATIC_ROUTES.flatMap((href) => {
+    const { changeFrequency, priority } = STATIC_META[href];
+    return routing.locales.map((locale) => ({
+      url: absoluteUrl(locale, href),
+      changeFrequency,
+      priority,
+      alternates: buildAlternates((loc) => absoluteUrl(loc, href)),
+    }));
+  });
+}
 
-  const staticPages = PATHS.map((trPath) => {
-    const enPath = `/en${EN_PATHS[trPath] ?? trPath}`;
-    return {
-      url: `${base}${trPath || "/"}`,
-      lastModified: new Date(),
+function solutionEntries(): MetadataRoute.Sitemap {
+  return SOLUTION_SLUGS.flatMap((slug) => {
+    const href = { pathname: "/solutions/[slug]" as const, params: { slug } };
+    return routing.locales.map((locale) => ({
+      url: absoluteUrl(locale, href),
       changeFrequency: "monthly" as const,
-      priority: trPath === "" ? 1 : 0.8,
-      alternates: {
-        languages: {
-          tr: `${base}${trPath || "/"}`,
-          en: `${base}${enPath}`,
-        },
-      },
+      priority: 0.7,
+      alternates: buildAlternates((loc) => absoluteUrl(loc, href)),
+    }));
+  });
+}
+
+function blogAlternates(
+  slug: string,
+  availableLocales: readonly Locale[],
+): NonNullable<MetadataRoute.Sitemap[number]["alternates"]> {
+  const href = { pathname: "/blog/[slug]" as const, params: { slug } };
+  const languages = Object.fromEntries(
+    availableLocales.map((locale) => [locale, absoluteUrl(locale, href)]),
+  ) as Record<string, string>;
+  const defaultLocale: Locale = availableLocales.includes(routing.defaultLocale)
+    ? routing.defaultLocale
+    : (availableLocales[0] ?? routing.defaultLocale);
+  languages["x-default"] = absoluteUrl(defaultLocale, href);
+  return { languages };
+}
+
+function blogEntries(
+  posts: Awaited<ReturnType<typeof listPosts>>,
+): MetadataRoute.Sitemap {
+  const slugLocales = new Map<string, Locale[]>();
+  for (const post of posts) {
+    const locales = slugLocales.get(post.slug) ?? [];
+    if (!locales.includes(post.locale)) locales.push(post.locale);
+    slugLocales.set(post.slug, locales);
+  }
+
+  const seen = new Set<string>();
+
+  return posts.flatMap((post) => {
+    const key = `${post.locale}:${post.slug}`;
+    if (seen.has(key)) return [];
+    seen.add(key);
+
+    const href = { pathname: "/blog/[slug]" as const, params: { slug: post.slug } };
+    const availableLocales = slugLocales.get(post.slug) ?? [post.locale];
+
+    return {
+      url: absoluteUrl(post.locale, href),
+      lastModified: new Date(post.updatedAt ?? post.publishedAt ?? post.createdAt),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+      alternates: blogAlternates(post.slug, availableLocales),
     };
   });
-
-  const solutionPages = SOLUTION_SLUGS.map(solutionEntry);
-
-  await seedDemoPostsIfEmpty();
-  const blogSlugs = await listPublishedSlugs();
-  const blogPages = blogSlugs.map(({ slug, locale }) => blogEntry(slug, locale));
-
-  return [...staticPages, ...solutionPages, ...blogPages];
 }
 
-void routing;
+/** Multilingual sitemap — TR + EN entries with hreflang alternates. */
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await listPosts({ status: "published", limit: 500 });
+
+  return [...staticEntries(), ...solutionEntries(), ...blogEntries(posts)];
+}
