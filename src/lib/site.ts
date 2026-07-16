@@ -11,7 +11,7 @@ export const siteConfig = {
   domain: "strada.tr",
   url: "https://strada.tr",
   /** Strada uygulama girişi (navbar "Giriş Yap"). */
-  appUrl: "https://staging.strada.tr/",
+  appUrl: "https://app.strada.tr/",
   email: "info@stradabilisim.com",
   phone: "+90 212 561 20 30",
   address: "Gayrettepe Mh. Barbaros Bulvarı No:161 D:9 Beşiktaş/İstanbul",
