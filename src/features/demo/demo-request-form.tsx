@@ -9,12 +9,12 @@ import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { siteConfig } from "@/lib/site";
 import {
   createDemoRequestSchema,
   type DemoProvisionResult,
   type DemoRequestFormValues,
 } from "@/features/demo/schema";
+import { DEFAULT_DEMO_APP_LOGIN_URL } from "@/lib/demo-provision";
 
 function Field({
   id,
@@ -122,7 +122,7 @@ export function DemoRequestForm() {
       tenant_code: json.data.tenant_code,
       username: json.data.username,
       password: json.data.password,
-      login_url: json.data.login_url ?? siteConfig.appUrl,
+      login_url: json.data.login_url ?? DEFAULT_DEMO_APP_LOGIN_URL,
       expires_at: json.data.expires_at,
     });
   }

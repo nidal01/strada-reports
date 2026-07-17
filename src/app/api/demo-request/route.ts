@@ -1,18 +1,17 @@
 import { NextResponse } from "next/server";
 import { ZodError } from "zod";
 import { demoRequestApiSchema } from "@/features/demo/schema";
-import { siteConfig } from "@/lib/site";
+import { getDemoProvisionConfig, isDemoProvisionConfigured } from "@/lib/demo-provision";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
   try {
     const body = demoRequestApiSchema.parse(await request.json());
-    const apiUrl = process.env.DEMO_PROVISION_API_URL?.replace(/\/$/, "");
-    const apiKey = process.env.DEMO_PROVISION_API_KEY;
+    const { apiUrl, apiKey, appLoginUrl } = getDemoProvisionConfig();
 
-    if (!apiUrl || !apiKey) {
-      console.error("[demo-request] DEMO_PROVISION_API_URL or DEMO_PROVISION_API_KEY missing");
+    if (!isDemoProvisionConfigured({ apiUrl, apiKey, appLoginUrl })) {
+      console.error("[demo-request] DEMO_PROVISION_API_KEY missing");
       return NextResponse.json({ error: "Demo servisi yapılandırılmamış" }, { status: 503 });
     }
 
@@ -53,7 +52,7 @@ export async function POST(request: Request) {
         tenant_code: json.data.tenant_code,
         username: json.data.username,
         password: json.data.password,
-        login_url: json.data.login_url ?? siteConfig.appUrl,
+        login_url: json.data.login_url ?? appLoginUrl,
         expires_at: json.data.expires_at,
       },
     });
