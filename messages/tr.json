@@ -275,12 +275,12 @@
   },
   "contactPage": {
     "eyebrow": "İletişim",
-    "title": "Şirketinize özel bir demo planlayalım",
-    "subtitle": "Formu doldurun, ekibimiz 1 iş günü içinde size dönsün. 20 dakikalık canlı oturumda Strada Reports raporlarını kendi verinizle görün.",
+    "title": "Strada Reports demo hesabınızı hemen oluşturun",
+    "subtitle": "Formu doldurun; birkaç saniye içinde size özel demo hesabınız hazır olsun. Tüm rapor modüllerini örnek verilerle keşfedin.",
     "highlights": [
-      "Canlı finansal raporlama demosu",
-      "Sıfır eforla ERP entegrasyon danışmanlığı",
-      "Yükümlülük yok, ön ödeme yok"
+      "Anında demo hesabı ve giriş bilgileri",
+      "Dolu örnek rapor verileri",
+      "3 gün boyunca ücretsiz deneme"
     ],
     "form": {
       "name": "Ad Soyad",
@@ -304,6 +304,46 @@
       "nameMin": "Lütfen adınızı ve soyadınızı girin.",
       "emailInvalid": "Geçerli bir iş e-postası girin.",
       "companyMin": "Lütfen şirket adını girin.",
+      "phoneInvalid": "Geçerli bir telefon numarası girin."
+    }
+  },
+  "demoRequest": {
+    "modal": {
+      "eyebrow": "Demo Talep Et",
+      "title": "Ücretsiz demo hesabınızı oluşturun",
+      "subtitle": "Bilgilerinizi girin; demo hesabınız ve giriş bilgileriniz anında hazır olsun.",
+      "close": "Kapat"
+    },
+    "form": {
+      "firstName": "Ad",
+      "firstNamePlaceholder": "Adınız",
+      "lastName": "Soyad",
+      "lastNamePlaceholder": "Soyadınız",
+      "email": "İş E-postası",
+      "emailPlaceholder": "ad@sirket.com",
+      "company": "Firma Adı",
+      "companyPlaceholder": "Şirketinizin adı",
+      "phone": "Telefon",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "submit": "Demo Hesabımı Oluştur",
+      "submitting": "Demo hesabı oluşturuluyor...",
+      "successTitle": "Demo hesabınız hazır",
+      "successBody": "Aşağıdaki bilgilerle Strada Reports'a giriş yapabilirsiniz. Bilgiler e-posta adresinize de gönderildi.",
+      "successReset": "Yeni demo talep et",
+      "submitError": "Demo hesabı oluşturulamadı. Lütfen tekrar deneyin.",
+      "activeDemoError": "Bu e-posta adresi için halihazırda aktif bir demo hesabınız var.",
+      "tenantCode": "Şirket kodu",
+      "username": "Kullanıcı adı",
+      "password": "Parola",
+      "copy": "Kopyala",
+      "loginCta": "Strada Reports'a giriş yap",
+      "expiresNote": "Demo hesabınız {date} tarihine kadar geçerlidir."
+    },
+    "errors": {
+      "firstNameMin": "Lütfen adınızı girin.",
+      "lastNameMin": "Lütfen soyadınızı girin.",
+      "emailInvalid": "Geçerli bir iş e-postası girin.",
+      "companyMin": "Lütfen firma adını girin.",
       "phoneInvalid": "Geçerli bir telefon numarası girin."
     }
   },

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { HeroPanel } from "@/components/sections/hero-panel";
 import { IntegrationLogos } from "@/components/brand/integration-logos";
+import { useDemoRequest } from "@/features/demo/demo-request-context";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
 /**
@@ -17,6 +18,7 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
  */
 export function Hero() {
   const t = useTranslations("hero");
+  const { open: openDemoRequest } = useDemoRequest();
 
   return (
     <section className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
@@ -60,11 +62,9 @@ export function Hero() {
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
-              <Button asChild size="lg">
-                <Link href="/contact">
-                  {t("ctaPrimary")}
-                  <ArrowRight className="size-4" />
-                </Link>
+              <Button size="lg" type="button" onClick={openDemoRequest}>
+                {t("ctaPrimary")}
+                <ArrowRight className="size-4" />
               </Button>
               <Button asChild size="lg" variant="secondary">
                 <Link href="/solutions">{t("ctaSecondary")}</Link>

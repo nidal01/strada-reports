@@ -11,6 +11,8 @@ import { siteConfig } from "@/lib/site";
 import { themeInitScript } from "@/lib/theme";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { DemoRequestProvider } from "@/features/demo/demo-request-context";
+import { DemoRequestModal } from "@/features/demo/demo-request-modal";
 import { GlobalJsonLd } from "@/features/seo/global-json-ld";
 
 /** Pre-render every locale at build time. */
@@ -115,18 +117,21 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-dvh antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* Skip link for keyboard / screen-reader users */}
-          <a
-            href="#main"
-            className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[var(--z-toast)] focus:rounded-lg focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-white"
-          >
-            İçeriğe geç
-          </a>
-          <Navbar />
-          <main id="main" className="relative">
-            {children}
-          </main>
-          <Footer />
+          <DemoRequestProvider>
+            {/* Skip link for keyboard / screen-reader users */}
+            <a
+              href="#main"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[var(--z-toast)] focus:rounded-lg focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-white"
+            >
+              İçeriğe geç
+            </a>
+            <Navbar />
+            <main id="main" className="relative">
+              {children}
+            </main>
+            <Footer />
+            <DemoRequestModal />
+          </DemoRequestProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -5,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 import { scaleIn } from "@/lib/motion";
+import { useDemoRequest } from "@/features/demo/demo-request-context";
 
 /**
  * High-converting closing CTA. A single bold panel with the brand gradient
@@ -13,6 +16,7 @@ import { scaleIn } from "@/lib/motion";
  */
 export function CtaBanner() {
   const t = useTranslations("ctaBanner");
+  const { open: openDemoRequest } = useDemoRequest();
 
   return (
     <section className="py-12 sm:py-20">
@@ -35,14 +39,12 @@ export function CtaBanner() {
           </p>
 
           <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
-            <Button asChild size="lg">
-              <Link href="/contact">
-                {t("primary")}
-                <ArrowRight className="size-4" />
-              </Link>
+            <Button size="lg" type="button" onClick={openDemoRequest}>
+              {t("primary")}
+              <ArrowRight className="size-4" />
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">{t("secondary")}</Link>
+              <Link href="/solutions">{t("secondary")}</Link>
             </Button>
           </div>
         </Reveal>

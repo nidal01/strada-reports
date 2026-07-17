@@ -275,12 +275,12 @@
   },
   "contactPage": {
     "eyebrow": "Contact",
-    "title": "Let's schedule a demo tailored to your company",
-    "subtitle": "Fill in the form and our team will get back to you within 1 business day. See Strada Reports with your own data in a 20-minute live session.",
+    "title": "Create your Strada Reports demo account instantly",
+    "subtitle": "Fill in the form and get a dedicated demo account within seconds. Explore all report modules with rich sample data.",
     "highlights": [
-      "Live financial reporting demo",
-      "Zero-effort ERP integration consulting",
-      "No obligation, no upfront payment"
+      "Instant demo account and login credentials",
+      "Rich sample report data",
+      "3 days of free trial access"
     ],
     "form": {
       "name": "Full Name",
@@ -304,6 +304,46 @@
       "nameMin": "Please enter your full name.",
       "emailInvalid": "Enter a valid work email.",
       "companyMin": "Please enter the company name.",
+      "phoneInvalid": "Enter a valid phone number."
+    }
+  },
+  "demoRequest": {
+    "modal": {
+      "eyebrow": "Request Demo",
+      "title": "Create your free demo account",
+      "subtitle": "Enter your details and receive demo credentials instantly.",
+      "close": "Close"
+    },
+    "form": {
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "email": "Work Email",
+      "emailPlaceholder": "name@company.com",
+      "company": "Company Name",
+      "companyPlaceholder": "Your company name",
+      "phone": "Phone",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "submit": "Create My Demo Account",
+      "submitting": "Creating demo account...",
+      "successTitle": "Your demo account is ready",
+      "successBody": "Use the credentials below to sign in to Strada Reports. We also emailed them to you.",
+      "successReset": "Request another demo",
+      "submitError": "Could not create your demo account. Please try again.",
+      "activeDemoError": "An active demo account already exists for this email address.",
+      "tenantCode": "Company code",
+      "username": "Username",
+      "password": "Password",
+      "copy": "Copy",
+      "loginCta": "Sign in to Strada Reports",
+      "expiresNote": "Your demo account is valid until {date}."
+    },
+    "errors": {
+      "firstNameMin": "Please enter your first name.",
+      "lastNameMin": "Please enter your last name.",
+      "emailInvalid": "Enter a valid work email.",
+      "companyMin": "Please enter your company name.",
       "phoneInvalid": "Enter a valid phone number."
     }
   },

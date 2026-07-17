@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { cn } from "@/lib/utils";
+import { useDemoRequest } from "@/features/demo/demo-request-context";
 
 /**
  * Floating, glassmorphic navigation bar.
@@ -24,6 +25,7 @@ export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { open: openDemoRequest } = useDemoRequest();
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -84,8 +86,8 @@ export function Navbar() {
           <Button asChild variant="ghost" size="sm">
             <a href={siteConfig.appUrl}>{t("login")}</a>
           </Button>
-          <Button asChild size="sm">
-            <Link href="/contact">{t("requestDemo")}</Link>
+          <Button size="sm" type="button" onClick={openDemoRequest}>
+            {t("requestDemo")}
           </Button>
         </div>
 
@@ -145,8 +147,15 @@ export function Navbar() {
                   <ThemeToggle />
                   <LanguageSwitcher className="self-start" />
                 </div>
-                <Button asChild className="w-full" onClick={() => setMobileOpen(false)}>
-                  <Link href="/contact">{t("requestDemo")}</Link>
+                <Button
+                  className="w-full"
+                  type="button"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    openDemoRequest();
+                  }}
+                >
+                  {t("requestDemo")}
                 </Button>
               </div>
             </motion.div>

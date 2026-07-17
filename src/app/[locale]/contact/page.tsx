@@ -4,7 +4,7 @@ import { Check, Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/motion/reveal";
-import { ContactForm } from "@/features/contact/contact-form";
+import { DemoRequestForm } from "@/features/demo/demo-request-form";
 import { PageFaq } from "@/features/seo/faq-section";
 import { JsonLdScript, contactPageSchema } from "@/features/seo/json-ld";
 import { siteConfig } from "@/lib/site";
@@ -75,7 +75,9 @@ export default async function ContactPage({ params }: Params) {
 
             {/* Form column */}
             <Reveal delay={0.1} className="lg:col-span-7">
-              <ContactForm />
+              <div className="glass-strong gradient-border relative overflow-hidden rounded-3xl p-6 sm:p-8">
+                <DemoRequestForm />
+              </div>
             </Reveal>
           </div>
         </Container>

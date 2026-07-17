@@ -5,6 +5,7 @@ import { Logo } from "@/components/brand/logo";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/lib/site";
 import { NewsletterForm } from "@/components/layout/newsletter-form";
+import { FooterDemoLink } from "@/components/layout/footer-demo-link";
 
 /**
  * Structural corporate footer: brand + tagline, three link columns, a
@@ -100,12 +101,16 @@ export function Footer() {
                 <ul className="mt-4 space-y-3">
                   {col.links.map((link, i) => (
                     <li key={`${col.heading}-${i}`}>
-                      <Link
-                        href={link.href}
-                        className="text-sm text-slate-400 transition-colors duration-200 hover:text-white"
-                      >
-                        {link.label}
-                      </Link>
+                      {link.href === "/contact" && link.label === t("links.demo") ? (
+                        <FooterDemoLink label={link.label} />
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className="text-sm text-slate-400 transition-colors duration-200 hover:text-white"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
