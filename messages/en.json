@@ -68,7 +68,7 @@
     "ctaPrimary": "Request a Free Demo",
     "ctaSecondary": "Explore Report Modules",
     "trustNote": "Zero-effort ERP integration · DIA & Logo · KVKK compliant",
-    "panelTitle": "Financial Position",
+    "panelTitle": "Overview",
     "panelSubtitle": "Overview of cash and bank accounts",
     "metricRevenue": "Total Revenue",
     "metricCollections": "Collections",
@@ -146,19 +146,19 @@
         "quote": "Before Strada Reports, collecting reports took days. Now the data in DIA lands on our management screen instantly. Our decision speed has completely changed.",
         "author": "Mehmet Y.",
         "role": "Finance Director",
-        "company": "İnebolu Yapı İnşaat"
+        "company": "Construction"
       },
       {
         "quote": "In a ready-mix concrete operation, seeing sales per customer and product in one table is priceless. Collections tracking alone paid for the investment.",
         "author": "Ayşe K.",
         "role": "General Manager",
-        "company": "Boyran Beton A.Ş."
+        "company": "Ready-mix concrete"
       },
       {
         "quote": "The mobile side changed our team's game. A manager in the field approves a quote and finance sees it at the same moment. We reached enterprise discipline with a small team.",
         "author": "Burak D.",
         "role": "Operations Manager",
-        "company": "Dörtyol Limited"
+        "company": "Construction"
       }
     ]
   },

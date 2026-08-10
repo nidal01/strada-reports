@@ -2,21 +2,8 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 
-/** Customer names drawn from the real Strada reference dashboards. */
-const CUSTOMERS = [
-  "İnebolu Yapı İnşaat",
-  "Dörtyol Limited",
-  "Boyran Beton A.Ş.",
-  "Belen İnşaat",
-  "İskenderun Beton",
-  "Antakya Beton",
-  "Örtyol Limited",
-] as const;
-
 /**
- * Enterprise social proof: a four-up animated stats band over a continuous,
- * accessibility-friendly logo marquee (duplicated track, CSS-driven, paused for
- * reduced-motion users via the global media query).
+ * Enterprise social proof: a four-up animated stats band.
  */
 export function SocialProof() {
   const t = useTranslations("socialProof");
@@ -31,7 +18,6 @@ export function SocialProof() {
           </p>
         </Reveal>
 
-        {/* Stats */}
         <dl className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
           {stats.map((s, i) => (
             <Reveal as="div" key={s.label} delay={i * 0.08} className="text-center">
@@ -45,29 +31,6 @@ export function SocialProof() {
             </Reveal>
           ))}
         </dl>
-
-        {/* Marquee */}
-        <div
-          className="relative mt-14 overflow-hidden"
-          style={{
-            maskImage:
-              "linear-gradient(to right, transparent, #000 12%, #000 88%, transparent)",
-            WebkitMaskImage:
-              "linear-gradient(to right, transparent, #000 12%, #000 88%, transparent)",
-          }}
-        >
-          <div className="flex w-max animate-[marquee_38s_linear_infinite] gap-12">
-            {[...CUSTOMERS, ...CUSTOMERS].map((name, i) => (
-              <span
-                key={`${name}-${i}`}
-                aria-hidden={i >= CUSTOMERS.length}
-                className="whitespace-nowrap text-base font-medium text-slate-600 transition-colors hover:text-slate-300"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-        </div>
       </Container>
     </section>
   );

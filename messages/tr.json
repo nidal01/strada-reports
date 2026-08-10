@@ -68,7 +68,7 @@
     "ctaPrimary": "Ücretsiz Demo Talep Et",
     "ctaSecondary": "Rapor Modüllerini Keşfet",
     "trustNote": "Sıfır eforla ERP entegrasyonu · DIA & Logo · KVKK uyumlu",
-    "panelTitle": "Finansal Durum",
+    "panelTitle": "Genel bakış",
     "panelSubtitle": "Kasa ve banka hesaplarına genel bakış",
     "metricRevenue": "Toplam Gelir",
     "metricCollections": "Tahsilat",
@@ -146,19 +146,19 @@
         "quote": "Strada Reports'tan önce raporları toplamak günler alıyordu. Artık DIA'daki veri anında yönetim ekranımıza düşüyor. Karar hızımız tamamen değişti.",
         "author": "Mehmet Y.",
         "role": "Finans Direktörü",
-        "company": "İnebolu Yapı İnşaat"
+        "company": "İnşaat sektörü"
       },
       {
         "quote": "Hazır beton operasyonunda her müşteri ve stok bazında satışı tek tabloda görmek paha biçilemez. Tahsilat takibi başlı başına yatırımı geri ödedi.",
         "author": "Ayşe K.",
         "role": "Genel Müdür",
-        "company": "Boyran Beton A.Ş."
+        "company": "Hazır beton"
       },
       {
         "quote": "Mobil tarafı ekibimizin oyununu değiştirdi. Sahadaki yönetici teklifi onaylıyor, finans aynı anda görüyor. Kurumsal disiplini küçük ekiple yakaladık.",
         "author": "Burak D.",
         "role": "Operasyon Müdürü",
-        "company": "Dörtyol Limited"
+        "company": "İnşaat sektörü"
       }
     ]
   },

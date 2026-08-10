@@ -200,7 +200,7 @@ export default async function SolutionDetailPage({ params }: Params) {
                   width={solution.image.w}
                   height={solution.image.h}
                   sizes="(max-width: 1024px) 100vw, 560px"
-                  className="w-full"
+                  className="w-full max-h-[28rem] object-cover object-top sm:max-h-[32rem]"
                   priority
                 />
               </div>

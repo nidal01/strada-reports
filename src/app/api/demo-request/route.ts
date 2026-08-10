@@ -52,7 +52,7 @@ export async function POST(request: Request) {
         tenant_code: json.data.tenant_code,
         username: json.data.username,
         password: json.data.password,
-        login_url: json.data.login_url ?? appLoginUrl,
+        login_url: appLoginUrl,
         expires_at: json.data.expires_at,
       },
     });

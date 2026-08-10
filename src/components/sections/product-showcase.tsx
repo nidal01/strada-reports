@@ -37,10 +37,10 @@ export function ProductShowcase() {
             <Image
               src="/product/gelir-gider-trendi.png"
               alt={t("alt.main")}
-              width={1400}
-              height={863}
+              width={2272}
+              height={3656}
               sizes="(max-width: 1280px) 100vw, 1200px"
-              className="w-full"
+              className="w-full max-h-[36rem] object-cover object-top"
               priority={false}
             />
           </figure>
@@ -53,8 +53,8 @@ export function ProductShowcase() {
           className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2"
         >
           {[
-            { src: "/product/satis-trendi.png", alt: t("alt.sales"), w: 1400, h: 740, cap: t("cap.sales") },
-            { src: "/product/cariler.png", alt: t("alt.ledger"), w: 1400, h: 980, cap: t("cap.ledger") },
+            { src: "/product/satis-trendi.png", alt: t("alt.sales"), w: 2272, h: 3306, cap: t("cap.sales") },
+            { src: "/product/cariler.png", alt: t("alt.ledger"), w: 2272, h: 3022, cap: t("cap.ledger") },
           ].map((img) => (
             <Reveal
               key={img.src}
@@ -68,7 +68,7 @@ export function ProductShowcase() {
                   width={img.w}
                   height={img.h}
                   sizes="(max-width: 768px) 100vw, 600px"
-                  className="w-full"
+                  className="w-full max-h-[24rem] object-cover object-top"
                 />
                 <figcaption className="border-t border-[var(--border)] px-5 py-3 text-sm text-slate-400">
                   {img.cap}

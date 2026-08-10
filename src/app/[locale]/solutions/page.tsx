@@ -25,10 +25,10 @@ const SECTION_MEDIA: Record<
   (typeof SECTION_KEYS)[number],
   { src: string; w: number; h: number }
 > = {
-  integrations: { src: "/product/finansal-durum.png", w: 1400, h: 910 },
-  sync: { src: "/product/musteri-dagilimi.png", w: 1400, h: 749 },
-  reporting: { src: "/product/stok-satislari.png", w: 1400, h: 1665 },
-  erp: { src: "/product/cariler.png", w: 1400, h: 980 },
+  integrations: { src: "/product/finansal-durum.png", w: 2272, h: 4310 },
+  sync: { src: "/product/musteri-dagilimi.png", w: 2272, h: 5086 },
+  reporting: { src: "/product/stok-satislari.png", w: 2272, h: 1768 },
+  erp: { src: "/product/cariler.png", w: 2272, h: 3022 },
 };
 
 /**
@@ -102,7 +102,7 @@ export default async function SolutionsPage({ params }: Params) {
                     width={SECTION_MEDIA[key].w}
                     height={SECTION_MEDIA[key].h}
                     sizes="(max-width: 1024px) 100vw, 560px"
-                    className="w-full"
+                    className="w-full max-h-[28rem] object-cover object-top sm:max-h-[32rem]"
                   />
                 </Reveal>
               </article>

@@ -40,12 +40,12 @@ export interface SolutionMeta {
 }
 
 const IMG = {
-  stok: { src: "/product/stok-satislari.png", w: 1400, h: 1665 },
-  satis: { src: "/product/satis-trendi.png", w: 1400, h: 740 },
-  gelirGider: { src: "/product/gelir-gider-trendi.png", w: 1400, h: 863 },
-  cariler: { src: "/product/cariler.png", w: 1400, h: 980 },
-  musteri: { src: "/product/musteri-dagilimi.png", w: 1400, h: 749 },
-  finansal: { src: "/product/finansal-durum.png", w: 1400, h: 910 },
+  stok: { src: "/product/stok-satislari.png", w: 2272, h: 1768 },
+  satis: { src: "/product/satis-trendi.png", w: 2272, h: 3306 },
+  gelirGider: { src: "/product/gelir-gider-trendi.png", w: 2272, h: 3656 },
+  cariler: { src: "/product/cariler.png", w: 2272, h: 3022 },
+  musteri: { src: "/product/musteri-dagilimi.png", w: 2272, h: 5086 },
+  finansal: { src: "/product/finansal-durum.png", w: 2272, h: 4310 },
 } as const;
 
 export const SOLUTIONS: readonly SolutionMeta[] = [

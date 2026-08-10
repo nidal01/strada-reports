@@ -1,4 +1,4 @@
-const DEFAULT_DEMO_PROVISION_API_URL = "https://staging.strada.tr";
+const DEFAULT_DEMO_PROVISION_API_URL = "https://app.strada.tr";
 
 export const DEFAULT_DEMO_APP_LOGIN_URL = `${DEFAULT_DEMO_PROVISION_API_URL}/login`;
 
@@ -11,16 +11,7 @@ export type DemoProvisionConfig = {
 function resolveDemoProvisionApiUrl(): string {
   const configured = process.env.DEMO_PROVISION_API_URL?.trim().replace(/\/$/, "");
 
-  // Local/dev can override (e.g. http://127.0.0.1:8000)
-  if (process.env.NODE_ENV === "development" && configured) {
-    return configured;
-  }
-
-  // Production marketing site always provisions demos on staging entegre
-  if (process.env.VERCEL_ENV === "production" || process.env.VERCEL === "1") {
-    return DEFAULT_DEMO_PROVISION_API_URL;
-  }
-
+  // Prefer explicit env (Vercel / local). Falls back to production app.
   return configured || DEFAULT_DEMO_PROVISION_API_URL;
 }
 

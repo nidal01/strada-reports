@@ -12,3 +12,4 @@ next-env.d.ts
 
 # Raw/source design assets — kept locally, not tracked or served
 /assets/source
+.superpowers/
