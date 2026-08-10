@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
 
 import "@/app/globals.css";
 import { routing, type Locale } from "@/i18n/routing";
@@ -133,6 +134,7 @@ export default async function LocaleLayout({
             <DemoRequestModal />
           </DemoRequestProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
