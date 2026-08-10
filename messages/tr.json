@@ -114,16 +114,26 @@
   "showcase": {
     "eyebrow": "Canlı Raporlar",
     "title": "Gerçek veriniz, anında rapor",
-    "subtitle": "Strada Reports'un canlı arayüzünden ekran görüntüleri. Gelir-gider trendinden satış seyrine, cari bakiyelerinden kâr marjına — yönetimin ihtiyaç duyduğu tüm metrikler tek yerde.",
+    "subtitle": "Strada Reports'un canlı arayüzünden ekran görüntüleri. Gelir-gider trendi, satış seyri, cari bakiyeler, müşteri pasta grafikleri ve stok satışları — yönetimin ihtiyaç duyduğu tüm metrikler tek yerde.",
     "alt": {
       "main": "Strada Reports Aylık Gelir–Gider Trendi raporu: gelir, gider, net kâr ve kâr marjı metrikleri ile aylık bar grafiği",
       "sales": "Strada Reports Satış Trendi raporu: 12 aylık gelir seyrini gösteren bar grafiği",
-      "ledger": "Strada Reports Tüm Cariler raporu: borçlu ve alacaklı cari hesaplar tablosu"
+      "ledger": "Strada Reports Tüm Cariler raporu: borçlu ve alacaklı cari hesaplar tablosu",
+      "customers": "Strada Reports Gelir Raporlama: müşteri dağılımı pasta/donut grafiği ve en çok satış yapılan müşteriler",
+      "stock": "Strada Reports Stok Raporu: stok satışları ve miktar kırılımları"
     },
     "cap": {
+      "main": "Kâr / Zarar · aylık gelir–gider trendi",
       "sales": "Satış Trendi · 12 aylık gelir seyri",
-      "ledger": "Tüm Cariler · borç ve alacak bakiyeleri"
-    }
+      "ledger": "Tüm Cariler · borç ve alacak bakiyeleri",
+      "customers": "Müşteri Dağılımı · pasta grafik kırılımı",
+      "stock": "Stok Satışları · ürün ve miktar analizi"
+    },
+    "expand": "Büyüt",
+    "close": "Kapat",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "carouselLabel": "Rapor ekran görüntüleri"
   },
   "modules": {
     "eyebrow": "Rapor Modülleri",

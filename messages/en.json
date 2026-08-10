@@ -114,16 +114,26 @@
   "showcase": {
     "eyebrow": "Live Reports",
     "title": "Your real data, instant reports",
-    "subtitle": "Screenshots from Strada Reports' live interface. From income-expense trends to sales trajectory, account balances to profit margin — every metric management needs in one place.",
+    "subtitle": "Screenshots from Strada Reports' live interface. Income-expense trends, sales trajectory, account balances, customer pie charts, and stock sales — every metric management needs in one place.",
     "alt": {
       "main": "Strada Reports Monthly Income–Expense Trend report: monthly bar chart with revenue, expense, net profit and profit-margin metrics",
       "sales": "Strada Reports Sales Trend report: bar chart showing 12-month revenue trajectory",
-      "ledger": "Strada Reports Accounts report: table of debit and credit account balances"
+      "ledger": "Strada Reports Accounts report: table of debit and credit account balances",
+      "customers": "Strada Reports Income Reporting: customer distribution pie/donut chart and top customers by sales",
+      "stock": "Strada Reports Stock Report: stock sales and quantity breakdowns"
     },
     "cap": {
+      "main": "Profit / Loss · monthly income–expense trend",
       "sales": "Sales Trend · 12-month revenue trajectory",
-      "ledger": "Accounts · debit and credit balances"
-    }
+      "ledger": "Accounts · debit and credit balances",
+      "customers": "Customer Mix · pie chart breakdown",
+      "stock": "Stock Sales · product and quantity analysis"
+    },
+    "expand": "Expand",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "carouselLabel": "Report screenshots"
   },
   "modules": {
     "eyebrow": "Report Modules",
