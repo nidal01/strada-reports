@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { BlogPreview } from "@/components/sections/blog-preview";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { SolutionsGrid } from "@/features/solutions/solutions-grid";
+import { SolutionsPillars } from "@/features/solutions/solutions-pillars";
 
 /** Blog önizlemesi Supabase'den canlı çekilsin (SSG önbelleğine takılmasın). */
 export const dynamic = "force-dynamic";
@@ -16,7 +17,7 @@ export const dynamic = "force-dynamic";
 /**
  * Home — the Enterprise Gateway landing page.
  * Section order follows the recommended conversion flow:
- * Hero → Solutions → Bento Features → Report Modules → Testimonials → CTA.
+ * Hero → Solutions → Pillars → Bento Features → Report Modules → Testimonials → CTA.
  */
 export default async function HomePage({
   params,
@@ -38,6 +39,7 @@ export default async function HomePage({
       />
       <Hero />
       <SolutionsGrid />
+      <SolutionsPillars />
       <FeaturesBento />
       <ProductShowcase />
       <Modules />
