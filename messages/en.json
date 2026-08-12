@@ -68,21 +68,13 @@
     "ctaPrimary": "Request a Free Demo",
     "ctaSecondary": "Explore Report Modules",
     "trustNote": "Zero-effort ERP integration · DIA & Logo · KVKK compliant",
+    "partnerLabel": "DIA Solution Partner",
     "panelTitle": "Overview",
     "panelSubtitle": "Overview of cash and bank accounts",
     "metricRevenue": "Total Revenue",
     "metricCollections": "Collections",
     "metricProfit": "Net Profit",
     "syncTag": "Last sync · just now"
-  },
-  "socialProof": {
-    "title": "Manufacturing and construction firms achieve financial visibility with Strada Reports",
-    "stats": [
-      { "value": "₺8.1M+", "label": "Monthly revenue reported" },
-      { "value": "99.9%", "label": "Report data accuracy" },
-      { "value": "12+", "label": "Ready-made report modules" },
-      { "value": "24/7", "label": "Live reporting" }
-    ]
   },
   "features": {
     "eyebrow": "Reporting Platform",
@@ -259,6 +251,14 @@
       "eyebrow": "About",
       "title": "The shortest path from data to decision",
       "subtitle": "Strada is a Turkish technology company that turns scattered ERP data from manufacturing and construction firms into reliable, instant and actionable reports."
+    },
+    "product": {
+      "eyebrow": "Product & partnership",
+      "title": "A Strada Bilişim product",
+      "body": "Strada Reports is the enterprise reporting product of Strada Bilişim. Visit our main site to learn more about our company and other solutions.",
+      "companyLinkLabel": "stradabilisim.com.tr",
+      "partnerTitle": "DIA Solution Partner",
+      "partnerBody": "We are an official DIA Yazılım Evi solution partner. We turn your DIA ERP data into instant, reliable and actionable reports with Strada Reports."
     },
     "vision": {
       "title": "Our vision",

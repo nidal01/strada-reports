@@ -7,6 +7,7 @@ import {
   FileSearch,
   DatabaseBackup,
   Boxes,
+  ArrowUpRight,
   type LucideIcon,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -16,6 +17,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageFaq } from "@/features/seo/faq-section";
 import { Reveal } from "@/components/motion/reveal";
 import { staggerContainer } from "@/lib/motion";
+import { siteConfig } from "@/lib/site";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -53,6 +55,49 @@ export default async function AboutPage({ params }: Params) {
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
       />
+
+      {/* Product & partnership */}
+      <section className="border-b border-[var(--border)] py-16 sm:py-20">
+        <Container>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <Reveal>
+              <span className="text-sm font-semibold text-brand-300">
+                {t("product.eyebrow")}
+              </span>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                {t("product.title")}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-slate-400">
+                {t("product.body")}
+              </p>
+              <a
+                href={siteConfig.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand-300 transition-colors hover:text-brand-200"
+              >
+                {t("product.companyLinkLabel")}
+                <ArrowUpRight className="size-4" />
+              </a>
+              <h3 className="mt-10 text-lg font-semibold text-white">
+                {t("product.partnerTitle")}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                {t("product.partnerBody")}
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.08} className="flex justify-center lg:justify-end">
+              {/* eslint-disable-next-line @next/next/no-img-element -- partner badge aspect varies; match hero treatment */}
+              <img
+                src="/brand/dia-cozum-ortagi.png"
+                alt={t("product.partnerTitle")}
+                className="h-16 w-auto sm:h-20"
+              />
+            </Reveal>
+          </div>
+        </Container>
+      </section>
 
       {/* Vision + values */}
       <section className="py-16 sm:py-20">

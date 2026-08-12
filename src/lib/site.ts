@@ -10,6 +10,8 @@ export const siteConfig = {
   productName: "Strada Reports",
   domain: "strada.tr",
   url: "https://strada.tr",
+  /** Ana şirket sitesi (Strada Bilişim). */
+  companyUrl: "https://stradabilisim.com.tr",
   /** Strada uygulama girişi (navbar "Giriş Yap"). */
   appUrl: "https://app.strada.tr/",
   email: "info@stradabilisim.com",
@@ -19,9 +21,9 @@ export const siteConfig = {
   ogImage: "/og.png",
   favicon: "/favicon.png",
   social: {
-    linkedin: "https://www.linkedin.com/company/strada",
+    linkedin: "https://www.linkedin.com/company/stradabilisim/",
     x: "https://x.com/strada",
-    instagram: "https://www.instagram.com/strada",
+    instagram: "https://www.instagram.com/stradabilisim/",
   },
 } as const;
 

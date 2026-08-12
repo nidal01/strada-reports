@@ -68,21 +68,13 @@
     "ctaPrimary": "Ücretsiz Demo Talep Et",
     "ctaSecondary": "Rapor Modüllerini Keşfet",
     "trustNote": "Sıfır eforla ERP entegrasyonu · DIA & Logo · KVKK uyumlu",
+    "partnerLabel": "DIA Çözüm Ortağı",
     "panelTitle": "Genel bakış",
     "panelSubtitle": "Kasa ve banka hesaplarına genel bakış",
     "metricRevenue": "Toplam Gelir",
     "metricCollections": "Tahsilat",
     "metricProfit": "Net Kâr",
     "syncTag": "Son senkron · az önce"
-  },
-  "socialProof": {
-    "title": "Üretici ve inşaat şirketleri finansal görünürlüklerini Strada Reports ile sağlıyor",
-    "stats": [
-      { "value": "₺8,1M+", "label": "Aylık raporlanan ciro" },
-      { "value": "%99,9", "label": "Rapor verisi doğruluğu" },
-      { "value": "12+", "label": "Hazır rapor modülü" },
-      { "value": "7/24", "label": "Anlık raporlama" }
-    ]
   },
   "features": {
     "eyebrow": "Raporlama Platformu",
@@ -259,6 +251,14 @@
       "eyebrow": "Hakkımızda",
       "title": "Veriden karara giden en kısa yol",
       "subtitle": "Strada, üretici ve inşaat şirketlerinin dağınık ERP verisini güvenilir, anlık ve eyleme dönüştürülebilir raporlara çeviren bir Türk teknoloji şirketidir."
+    },
+    "product": {
+      "eyebrow": "Ürün & ortaklık",
+      "title": "Strada Bilişim ürünü",
+      "body": "Strada Reports, Strada Bilişim'in kurumsal raporlama ürünüdür. Ana sitemizi ziyaret ederek şirketimizi ve diğer çözümlerimizi inceleyebilirsiniz.",
+      "companyLinkLabel": "stradabilisim.com.tr",
+      "partnerTitle": "DIA Çözüm Ortağı",
+      "partnerBody": "DIA Yazılım Evi resmi çözüm ortağıyız. DIA ERP verinizi Strada Reports ile anlık, güvenilir ve yönetilebilir raporlara dönüştürüyoruz."
     },
     "vision": {
       "title": "Vizyonumuz",

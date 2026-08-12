@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { HeroPanel } from "@/components/sections/hero-panel";
 import { IntegrationLogos } from "@/components/brand/integration-logos";
+import { DiaPartnerBadge } from "@/components/brand/dia-partner-badge";
 import { useDemoRequest } from "@/features/demo/demo-request-context";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
@@ -60,6 +61,10 @@ export function Hero() {
             >
               {t("subtitle")}
             </motion.p>
+
+            <motion.div variants={fadeUp} className="mt-6">
+              <DiaPartnerBadge />
+            </motion.div>
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
               <Button size="lg" type="button" onClick={openDemoRequest}>
