@@ -1,7 +1,7 @@
 {
   "nav": {
     "solutions": "Çözümler",
-    "blog": "Blog",
+    "media": "Medya",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "login": "Giriş Yap",
@@ -41,6 +41,36 @@
     "blog": {
       "title": "Blog — ERP, finansal raporlama ve dijital dönüşüm",
       "description": "DIA ERP entegrasyonu, finansal raporlama, stok yönetimi ve kurumsal dijital dönüşüm üzerine Strada blog yazıları."
+    },
+    "media": {
+      "title": "Medya — Strada Reports ürün görselleri ve rapor galerisi",
+      "description": "Strada Reports'un canlı rapor ekranlarından ürün görselleri. Finans, satış, stok ve cari raporlarını keşfedin."
+    }
+  },
+  "media": {
+    "eyebrow": "Medya",
+    "title": "Ürün Galerisi",
+    "subtitle": "Strada Reports arayüzünden canlı rapor ekran görüntüleri.",
+    "pageTitle": "Medya Galerisi",
+    "pageSubtitle": "Tüm rapor ekranlarını keşfedin — finans, satış, stok ve cari.",
+    "filterAll": "Tümü",
+    "filterFinance": "Finans",
+    "filterSales": "Satış",
+    "filterStock": "Stok",
+    "filterLedger": "Cari",
+    "filterConcept": "Konsept",
+    "filterVideo": "Video",
+    "viewAll": "Tüm görselleri gör",
+    "playVideo": "Videoyu oynat",
+    "videos": {
+      "stradaReports": {
+        "title": "Strada Reports Tanıtım",
+        "description": "Strada Reports ürün tanıtım videosu"
+      },
+      "akılliStok": {
+        "title": "Akıllı Stok & Üretim Yönetimi",
+        "description": "Stok ve üretim yönetimi modülü tanıtımı"
+      }
     }
   },
   "blog": {
@@ -106,20 +136,94 @@
   "showcase": {
     "eyebrow": "Canlı Raporlar",
     "title": "Gerçek veriniz, anında rapor",
-    "subtitle": "Strada Reports'un canlı arayüzünden ekran görüntüleri. Gelir-gider trendi, satış seyri, cari bakiyeler, müşteri pasta grafikleri ve stok satışları — yönetimin ihtiyaç duyduğu tüm metrikler tek yerde.",
-    "alt": {
-      "main": "Strada Reports Aylık Gelir–Gider Trendi raporu: gelir, gider, net kâr ve kâr marjı metrikleri ile aylık bar grafiği",
-      "sales": "Strada Reports Satış Trendi raporu: 12 aylık gelir seyrini gösteren bar grafiği",
-      "ledger": "Strada Reports Tüm Cariler raporu: borçlu ve alacaklı cari hesaplar tablosu",
-      "customers": "Strada Reports Gelir Raporlama: müşteri dağılımı pasta/donut grafiği ve en çok satış yapılan müşteriler",
-      "stock": "Strada Reports Stok Raporu: stok satışları ve miktar kırılımları"
+    "subtitle": "Strada Reports'un canlı arayüzünden ekran görüntüleri. IT'ye ticket açmadan finans, satış, stok ve cari raporlarına birkaç tıkla ulaşın — DIA ERP verinizden doğrudan.",
+    "filterLabel": "Rapor kategorisi",
+    "filters": {
+      "all": "Tümü",
+      "finance": "Finans",
+      "sales": "Satış",
+      "stock": "Stok",
+      "ledger": "Cari"
     },
-    "cap": {
-      "main": "Kâr / Zarar · aylık gelir–gider trendi",
-      "sales": "Satış Trendi · 12 aylık gelir seyri",
-      "ledger": "Tüm Cariler · borç ve alacak bakiyeleri",
-      "customers": "Müşteri Dağılımı · pasta grafik kırılımı",
-      "stock": "Stok Satışları · ürün ve miktar analizi"
+    "emptyFilter": "Bu kategoride rapor bulunamadı.",
+    "reportCount": "{count} canlı rapor ekranı",
+    "items": {
+      "incomeExpenseTrend": {
+        "alt": "Strada Reports Aylık Gelir–Gider Trendi: gelir, gider, net kâr ve kâr marjı metrikleri",
+        "cap": "Kâr / Zarar · aylık gelir–gider trendi"
+      },
+      "profitLoss": {
+        "alt": "Strada Reports Kâr/Zarar raporu: dönemsel kârlılık özeti ve trend",
+        "cap": "Kâr / Zarar · dönemsel özet"
+      },
+      "income": {
+        "alt": "Strada Reports Gelir Raporu: gelir kaynakları ve trend analizi",
+        "cap": "Gelir Raporu · kaynak ve trend kırılımı"
+      },
+      "expense": {
+        "alt": "Strada Reports Gider Raporu: masraf kalemleri ve bütçe sapması",
+        "cap": "Gider Raporu · masraf analizi"
+      },
+      "financialStatus": {
+        "alt": "Strada Reports Finansal Durum: kasa, banka ve genel bakış",
+        "cap": "Finansal Durum · kasa ve banka özeti"
+      },
+      "salesTrend": {
+        "alt": "Strada Reports Satış Trendi: 12 aylık gelir seyri",
+        "cap": "Satış Trendi · aylık gelir seyri"
+      },
+      "salesReport": {
+        "alt": "Strada Reports Satış Raporu: bölge ve ürün kırılımları",
+        "cap": "Satış Raporu · performans kırılımları"
+      },
+      "orders": {
+        "alt": "Strada Reports Sipariş Raporu: sipariş pipeline ve özet",
+        "cap": "Sipariş Raporu · pipeline özeti"
+      },
+      "customerMix": {
+        "alt": "Strada Reports Müşteri Dağılımı: pasta grafik ve en çok satış yapılan müşteriler",
+        "cap": "Müşteri Dağılımı · pasta grafik kırılımı"
+      },
+      "stockSales": {
+        "alt": "Strada Reports Stok Satışları: ürün ve miktar analizi",
+        "cap": "Stok Satışları · ürün ve miktar analizi"
+      },
+      "accounts": {
+        "alt": "Strada Reports Tüm Cariler: borçlu ve alacaklı cari hesaplar tablosu",
+        "cap": "Tüm Cariler · borç ve alacak bakiyeleri"
+      },
+      "dashboardOverview": {
+        "alt": "Veri görselleştirme ve grafikler gösteren laptop ekranı",
+        "cap": "Canlı dashboard ile anlık veri takibi"
+      },
+      "financialGraphs": {
+        "alt": "Finansal grafikler ve analiz dökümanları ile çalışma ortamı",
+        "cap": "Finansal raporlama ve analiz süreci"
+      },
+      "multiMonitor": {
+        "alt": "Çoklu monitörde dashboard ve veri analizi",
+        "cap": "Profesyonel veri izleme ve raporlama ortamı"
+      },
+      "analystCharts": {
+        "alt": "Laptop üzerinde finansal grafik ve rapor analizi",
+        "cap": "Veriye dayalı karar alma süreci"
+      },
+      "financialAnalytics": {
+        "alt": "Finansal analiz ve raporlama çalışma ortamı",
+        "cap": "Gerçek zamanlı finansal dashboard'lar ile veri odaklı kararlar"
+      },
+      "erpSync": {
+        "alt": "ERP veri senkronizasyonu ve entegrasyon altyapısı",
+        "cap": "Sistemler arası kesintisiz veri akışı"
+      },
+      "workspace": {
+        "alt": "Modern iş analizi çalışma masası",
+        "cap": "Strada Reports ile finansal raporlama iş akışı"
+      },
+      "dataViz": {
+        "alt": "3D veri görselleştirme ve büyüme analizi",
+        "cap": "Holografik grafik ve trend analizi"
+      }
     },
     "expand": "Büyüt",
     "close": "Kapat",
@@ -140,27 +244,61 @@
       { "name": "Satış Raporu", "desc": "Bölge, ürün ve müşteri bazlı satış kırılımları." }
     ]
   },
-  "testimonials": {
-    "eyebrow": "Müşterilerimiz",
-    "title": "Sahada test edilmiş, yönetim tarafından sevilen",
+  "videoShowcase": {
+    "eyebrow": "Ürün Tanıtımı",
+    "title": "Strada Reports'u keşfedin",
+    "subtitle": "Ürünümüzün temel özelliklerini kısa videolarla tanıyın.",
+    "sections": {
+      "stradaReports": {
+        "tag": "Genel Tanıtım",
+        "title": "Strada Reports — Veriden Karara",
+        "description": "ERP verinizi anlamlı raporlara dönüştürün. Strada Reports'un sunduğu finansal raporlama, kârlılık analizi ve yönetim panellerini keşfedin.",
+        "points": [
+          "DIA ERP ile tam entegrasyon",
+          "Anlık finansal raporlar ve dashboard'lar",
+          "Mobil uyumlu yönetim paneli",
+          "Yapay zekâ destekli veri analizi"
+        ]
+      },
+      "akılliStok": {
+        "tag": "Stok & Üretim",
+        "title": "Akıllı Stok & Üretim Yönetimi",
+        "description": "Çoklu depo, üretim takibi ve stok optimizasyonunu tek platformdan yönetin. Gerçek zamanlı stok hareketleri ve üretim planlaması.",
+        "points": [
+          "Çoklu depo ve lokasyon yönetimi",
+          "Gerçek zamanlı stok hareketleri",
+          "Üretim planlaması ve takibi",
+          "Kritik stok seviyesi uyarıları"
+        ]
+      }
+    }
+  },
+  "useCases": {
+    "eyebrow": "Kullanım Senaryoları",
+    "title": "Hazır raporlar, gerçek iş sonuçları",
+    "subtitle": "Logo Mind Navigator tarzı hazır şablonlar ve OzBI tarzı hızlı erişim — Strada Reports ile DIA ERP verinizden birkaç tıkla yönetim raporuna ulaşın.",
+    "cta": "Canlı demo talep et",
     "items": [
       {
-        "quote": "Strada Reports'tan önce raporları toplamak günler alıyordu. Artık DIA'daki veri anında yönetim ekranımıza düşüyor. Karar hızımız tamamen değişti.",
-        "author": "Mehmet Y.",
-        "role": "Finans Direktörü",
-        "company": "İnşaat sektörü"
+        "title": "Aylık finansal kapanış",
+        "outcome": "Gelir, gider ve kâr/zarar raporlarını aynı oturumda görün. IT'ye ticket açmadan kapanış tablolarını hazırlayın.",
+        "image": "/product/kar-zarar-raporu.png",
+        "imageAlt": "Strada Reports kâr/zarar ve gelir-gider rapor ekranı",
+        "tags": ["Gelir", "Gider", "Kâr/Zarar"]
       },
       {
-        "quote": "Hazır beton operasyonunda her müşteri ve stok bazında satışı tek tabloda görmek paha biçilemez. Tahsilat takibi başlı başına yatırımı geri ödedi.",
-        "author": "Ayşe K.",
-        "role": "Genel Müdür",
-        "company": "Hazır beton"
+        "title": "Satış performansı takibi",
+        "outcome": "Satış trendi, sipariş pipeline ve müşteri dağılımını tek akışta izleyin. Bölge ve ürün kırılımlarıyla karar verin.",
+        "image": "/product/satis-trendi.png",
+        "imageAlt": "Strada Reports satış trendi ve sipariş rapor ekranı",
+        "tags": ["Satış", "Sipariş", "Müşteri"]
       },
       {
-        "quote": "Mobil tarafı ekibimizin oyununu değiştirdi. Sahadaki yönetici teklifi onaylıyor, finans aynı anda görüyor. Kurumsal disiplini küçük ekiple yakaladık.",
-        "author": "Burak D.",
-        "role": "Operasyon Müdürü",
-        "company": "İnşaat sektörü"
+        "title": "Stok ve cari görünürlük",
+        "outcome": "Stok satışları, cari bakiyeler ve tahsilat risklerini anlık görün. Operasyon ve finans aynı veri dilinde konuşsun.",
+        "image": "/product/cariler.png",
+        "imageAlt": "Strada Reports cari hesaplar ve stok satışları ekranı",
+        "tags": ["Stok", "Cari", "Tahsilat"]
       }
     ]
   },

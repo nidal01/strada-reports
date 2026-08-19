@@ -8,13 +8,14 @@ import { siteConfig } from "@/lib/site";
 export type SitemapHref =
   | "/"
   | "/solutions"
+  | "/media"
   | "/blog"
   | "/about"
   | "/contact"
   | { pathname: "/solutions/[slug]"; params: { slug: string } }
   | { pathname: "/blog/[slug]"; params: { slug: string } };
 
-const STATIC_ROUTES = ["/", "/solutions", "/blog", "/about", "/contact"] as const;
+const STATIC_ROUTES = ["/", "/solutions", "/media", "/blog", "/about", "/contact"] as const;
 
 const STATIC_META: Record<
   (typeof STATIC_ROUTES)[number],
@@ -22,6 +23,7 @@ const STATIC_META: Record<
 > = {
   "/": { changeFrequency: "weekly", priority: 1 },
   "/solutions": { changeFrequency: "monthly", priority: 0.9 },
+  "/media": { changeFrequency: "monthly", priority: 0.7 },
   "/blog": { changeFrequency: "weekly", priority: 0.8 },
   "/about": { changeFrequency: "monthly", priority: 0.7 },
   "/contact": { changeFrequency: "monthly", priority: 0.8 },

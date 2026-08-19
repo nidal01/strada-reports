@@ -40,12 +40,14 @@ export interface SolutionMeta {
 }
 
 const IMG = {
-  stok: { src: "/product/stok-satislari.png", w: 2272, h: 1768 },
-  satis: { src: "/product/satis-trendi.png", w: 2272, h: 3306 },
-  gelirGider: { src: "/product/gelir-gider-trendi.png", w: 2272, h: 3656 },
-  cariler: { src: "/product/cariler.png", w: 2272, h: 3022 },
-  musteri: { src: "/product/musteri-dagilimi.png", w: 2272, h: 5086 },
-  finansal: { src: "/product/finansal-durum.png", w: 2272, h: 4310 },
+  stok: { src: "/product/stok-satislari-v2.png", w: 2880, h: 1800 },
+  stokTool: { src: "/product/stok-satislari-v2.png", w: 2880, h: 1800 },
+  faturaTool: { src: "/product/fatura-donusturucu.png", w: 1024, h: 576 },
+  gider: { src: "/product/gider-raporu.png", w: 2880, h: 3668 },
+  gelir: { src: "/product/gelir-raporu.png", w: 2880, h: 5118 },
+  satis: { src: "/product/satis-raporu.png", w: 2880, h: 3338 },
+  siparis: { src: "/product/siparis-raporu.png", w: 2880, h: 1800 },
+  karZarar: { src: "/product/kar-zarar-raporu.png", w: 2880, h: 3338 },
 } as const;
 
 export const SOLUTIONS: readonly SolutionMeta[] = [
@@ -60,28 +62,28 @@ export const SOLUTIONS: readonly SolutionMeta[] = [
     slug: "stok-donusturucu",
     icon: Replace,
     category: "tools",
-    image: IMG.musteri,
+    image: IMG.stokTool,
     related: ["stok-yonetimi", "fatura-donusturucu", "satis-raporu"],
   },
   {
     slug: "fatura-donusturucu",
     icon: FileSpreadsheet,
     category: "tools",
-    image: IMG.cariler,
+    image: IMG.faturaTool,
     related: ["gider-raporu", "stok-donusturucu", "gelir-raporu"],
   },
   {
     slug: "gider-raporu",
     icon: Receipt,
     category: "reports",
-    image: IMG.gelirGider,
+    image: IMG.gider,
     related: ["gelir-raporu", "kar-zarar-raporu", "fatura-donusturucu"],
   },
   {
     slug: "gelir-raporu",
     icon: Wallet,
     category: "reports",
-    image: IMG.gelirGider,
+    image: IMG.gelir,
     related: ["gider-raporu", "kar-zarar-raporu", "satis-raporu"],
   },
   {
@@ -95,14 +97,14 @@ export const SOLUTIONS: readonly SolutionMeta[] = [
     slug: "siparis-raporu",
     icon: ClipboardList,
     category: "reports",
-    image: IMG.finansal,
+    image: IMG.siparis,
     related: ["satis-raporu", "stok-yonetimi", "kar-zarar-raporu"],
   },
   {
     slug: "kar-zarar-raporu",
     icon: Scale,
     category: "reports",
-    image: IMG.gelirGider,
+    image: IMG.karZarar,
     related: ["gelir-raporu", "gider-raporu", "satis-raporu"],
   },
 ] as const;

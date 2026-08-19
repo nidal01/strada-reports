@@ -330,6 +330,25 @@
     border: 1px solid var(--border-strong);
   }
 
+  /* Premium-clear: lighter content surfaces on dark foundation */
+  .surface-clear {
+    background: color-mix(in oklab, var(--color-surface-2) 88%, #f8fafc 12%);
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+  }
+
+  .screenshot-frame {
+    border: 1px solid var(--border-strong);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+      0 24px 64px -32px rgba(2, 6, 23, 0.85);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .screenshot-frame:hover {
+    border-color: color-mix(in oklab, var(--color-brand-500) 35%, transparent);
+  }
+
   /* Gradient text (brand → sky → emerald accents) */
   .text-gradient {
     background: linear-gradient(

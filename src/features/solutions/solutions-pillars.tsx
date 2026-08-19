@@ -13,8 +13,8 @@ const SECTION_MEDIA: Record<
   { src: string; w: number; h: number }
 > = {
   integrations: { src: "/product/finansal-durum.png", w: 2272, h: 4310 },
-  sync: { src: "/product/musteri-dagilimi.png", w: 2272, h: 5086 },
-  reporting: { src: "/product/stok-satislari.png", w: 2272, h: 1768 },
+  sync: { src: "/product/satis-raporu-v2.png", w: 1024, h: 576 },
+  reporting: { src: "/product/stok-satislari-v2.png", w: 2880, h: 1800 },
   erp: { src: "/product/cariler.png", w: 2272, h: 3022 },
 };
 

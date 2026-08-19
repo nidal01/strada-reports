@@ -4,20 +4,18 @@ import { PageFaq } from "@/features/seo/faq-section";
 import { JsonLdScript, softwareApplicationSchema } from "@/features/seo/json-ld";
 import { FeaturesBento } from "@/components/sections/features-bento";
 import { ProductShowcase } from "@/components/sections/product-showcase";
+import { ReportUseCases } from "@/components/sections/report-use-cases";
 import { Modules } from "@/components/sections/modules";
-import { Testimonials } from "@/components/sections/testimonials";
-import { BlogPreview } from "@/components/sections/blog-preview";
+import { MediaGallery } from "@/components/sections/media-gallery";
+import { VideoShowcase } from "@/components/sections/video-showcase";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { SolutionsGrid } from "@/features/solutions/solutions-grid";
 import { SolutionsPillars } from "@/features/solutions/solutions-pillars";
 
-/** Blog önizlemesi Supabase'den canlı çekilsin (SSG önbelleğine takılmasın). */
-export const dynamic = "force-dynamic";
 
 /**
  * Home — the Enterprise Gateway landing page.
- * Section order follows the recommended conversion flow:
- * Hero → Solutions → Pillars → Bento Features → Report Modules → Testimonials → CTA.
+ * Section order: Hero → Solutions → Pillars → Showcase → Use Cases → Features → Modules → Media → FAQ → CTA.
  */
 export default async function HomePage({
   params,
@@ -40,11 +38,12 @@ export default async function HomePage({
       <Hero />
       <SolutionsGrid />
       <SolutionsPillars />
-      <FeaturesBento />
       <ProductShowcase />
+      <ReportUseCases />
+      <FeaturesBento />
       <Modules />
-      <BlogPreview locale={locale} />
-      <Testimonials />
+      <VideoShowcase />
+      <MediaGallery />
       <PageFaq page="home" />
       <CtaBanner />
     </>

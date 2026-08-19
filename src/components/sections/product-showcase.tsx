@@ -10,49 +10,56 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { scaleIn } from "@/lib/motion";
 import { cn } from "@/lib/utils";
+import {
+  PRODUCT_SCREENSHOTS,
+  REPORT_CATEGORIES,
+  SHOWCASE_HERO_ID,
+  getScreenshot,
+  getScreenshotsByCategory,
+  type ProductScreenshot,
+  type ReportCategory,
+} from "@/features/product/screenshots";
 
-type ShowcaseImage = {
-  src: string;
+type ShowcaseImage = ProductScreenshot & {
   alt: string;
-  w: number;
-  h: number;
   cap: string;
-  /** Tailwind object-position for cropped preview (lightbox always shows full). */
-  previewPosition?: string;
 };
 
+type FilterKey = ReportCategory | "all";
+
 const AUTOPLAY_MS = 6000;
+const PAIRS_PER_VIEW = 2;
 
 /**
- * Product showcase: framed hero report + a 2-up carousel of supporting
- * screenshots. Cards preview the top of each shot; click opens a scrollable
- * lightbox so the full live capture is visible without cropping.
+ * Product showcase: hero report + category-filtered gallery with lightbox.
+ * Screenshots are sourced from the canonical product registry.
  */
 export function ProductShowcase() {
   const t = useTranslations("showcase");
-
-  const supporting = useMemo<ShowcaseImage[]>(
-    () => [
-      {
-        src: "/product/musteri-dagilimi.png",
-        alt: t("alt.customers"),
-        w: 2272,
-        h: 5086,
-        cap: t("cap.customers"),
-        // Pie/donut is in the upper content band (below filters).
-        previewPosition: "object-[center_18%]",
-      },
-      { src: "/product/stok-satislari.png", alt: t("alt.stock"), w: 2272, h: 1768, cap: t("cap.stock") },
-      { src: "/product/satis-trendi.png", alt: t("alt.sales"), w: 2272, h: 3306, cap: t("cap.sales") },
-      { src: "/product/cariler.png", alt: t("alt.ledger"), w: 2272, h: 3022, cap: t("cap.ledger") },
-    ],
-    [t],
-  );
-
-  const pairCount = Math.ceil(supporting.length / 2);
+  const [filter, setFilter] = useState<FilterKey>("all");
   const [[pairIndex, direction], setPair] = useState<[number, number]>([0, 0]);
   const [paused, setPaused] = useState(false);
   const [lightbox, setLightbox] = useState<ShowcaseImage | null>(null);
+
+  const hero = getScreenshot(SHOWCASE_HERO_ID)!;
+
+  const toShowcaseImage = useCallback(
+    (shot: ProductScreenshot): ShowcaseImage => ({
+      ...shot,
+      alt: t(`items.${shot.i18nKey}.alt`),
+      cap: t(`items.${shot.i18nKey}.cap`),
+    }),
+    [t],
+  );
+
+  const heroImage = useMemo(() => toShowcaseImage(hero), [hero, toShowcaseImage]);
+
+  const filtered = useMemo(() => {
+    const shots = getScreenshotsByCategory(filter).filter((s) => s.id !== SHOWCASE_HERO_ID);
+    return shots.map(toShowcaseImage);
+  }, [filter, toShowcaseImage]);
+
+  const pairCount = Math.max(1, Math.ceil(filtered.length / PAIRS_PER_VIEW));
 
   const paginate = useCallback(
     (dir: number) => {
@@ -66,10 +73,14 @@ export function ProductShowcase() {
   }, []);
 
   useEffect(() => {
-    if (paused || lightbox) return;
+    setPair([0, 0]);
+  }, [filter]);
+
+  useEffect(() => {
+    if (paused || lightbox || filtered.length <= PAIRS_PER_VIEW) return;
     const id = setTimeout(() => paginate(1), AUTOPLAY_MS);
     return () => clearTimeout(id);
-  }, [pairIndex, paused, lightbox, paginate]);
+  }, [pairIndex, paused, lightbox, paginate, filtered.length]);
 
   useEffect(() => {
     if (!lightbox) return;
@@ -84,13 +95,21 @@ export function ProductShowcase() {
     };
   }, [lightbox]);
 
-  const visiblePair = supporting.slice(pairIndex * 2, pairIndex * 2 + 2);
+  const visiblePair = filtered.slice(pairIndex * PAIRS_PER_VIEW, pairIndex * PAIRS_PER_VIEW + PAIRS_PER_VIEW);
+
+  const filters: { key: FilterKey; label: string }[] = [
+    { key: "all", label: t("filters.all") },
+    ...REPORT_CATEGORIES.map((cat) => ({
+      key: cat,
+      label: t(`filters.${cat}`),
+    })),
+  ];
 
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/4 -z-10 h-[32rem] w-[64rem] -translate-x-1/2 rounded-full bg-brand-700/10 blur-[130px]"
+        className="pointer-events-none absolute left-1/2 top-1/4 -z-10 h-[28rem] w-[56rem] -translate-x-1/2 rounded-full bg-brand-700/8 blur-[100px]"
       />
       <Container>
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
@@ -98,35 +117,27 @@ export function ProductShowcase() {
         <Reveal variants={scaleIn} className="mt-16">
           <button
             type="button"
-            onClick={() =>
-              setLightbox({
-                src: "/product/gelir-gider-trendi.png",
-                alt: t("alt.main"),
-                w: 2272,
-                h: 3656,
-                cap: t("cap.main"),
-              })
-            }
-            className="group glass-strong gradient-border block w-full cursor-zoom-in overflow-hidden rounded-2xl text-left shadow-[0_40px_120px_-30px_rgba(2,6,23,0.9)]"
+            onClick={() => setLightbox(heroImage)}
+            className="group surface-clear screenshot-frame block w-full cursor-zoom-in overflow-hidden rounded-2xl text-left"
             aria-label={t("expand")}
           >
-            <div className="flex items-center gap-2 border-b border-[var(--border)] bg-surface-2/60 px-4 py-3">
-              <span className="size-3 rounded-full bg-slate-400/40" />
-              <span className="size-3 rounded-full bg-slate-400/40" />
-              <span className="size-3 rounded-full bg-slate-400/40" />
-              <span className="ml-3 hidden rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400 sm:block">
+            <div className="flex items-center gap-2 border-b border-[var(--border)] bg-surface-2/80 px-4 py-3">
+              <span className="size-3 rounded-full bg-slate-400/50" />
+              <span className="size-3 rounded-full bg-slate-400/50" />
+              <span className="size-3 rounded-full bg-slate-400/50" />
+              <span className="ml-3 hidden rounded-md bg-white/8 px-3 py-1 text-xs text-slate-300 sm:block">
                 app.strada.tr / finansal-raporlar
               </span>
-              <span className="ml-auto inline-flex items-center gap-1 text-xs text-slate-500 opacity-0 transition-opacity group-hover:opacity-100">
+              <span className="ml-auto inline-flex items-center gap-1 text-xs text-slate-400 opacity-0 transition-opacity group-hover:opacity-100">
                 <Expand className="size-3.5" />
                 {t("expand")}
               </span>
             </div>
             <Image
-              src="/product/gelir-gider-trendi.png"
-              alt={t("alt.main")}
-              width={2272}
-              height={3656}
+              src={heroImage.src}
+              alt={heroImage.alt}
+              width={heroImage.w}
+              height={heroImage.h}
               sizes="(max-width: 1280px) 100vw, 1200px"
               className="w-full max-h-[36rem] object-cover object-top"
               priority={false}
@@ -134,7 +145,32 @@ export function ProductShowcase() {
           </button>
         </Reveal>
 
-        {/* 2-up carousel */}
+        {/* Category filters */}
+        <div
+          className="mt-8 flex flex-wrap justify-center gap-2"
+          role="tablist"
+          aria-label={t("filterLabel")}
+        >
+          {filters.map(({ key, label }) => (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              aria-selected={filter === key}
+              onClick={() => setFilter(key)}
+              className={cn(
+                "cursor-pointer rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200",
+                filter === key
+                  ? "bg-brand-500/15 text-brand-300 ring-1 ring-brand-500/30"
+                  : "bg-white/5 text-slate-400 hover:bg-white/8 hover:text-slate-200",
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        {/* Gallery carousel */}
         <div
           className="relative mt-6"
           onMouseEnter={() => setPaused(true)}
@@ -145,93 +181,106 @@ export function ProductShowcase() {
           aria-roledescription="carousel"
           aria-label={t("carouselLabel")}
         >
-          <div className="relative overflow-hidden">
-            <AnimatePresence mode="wait" custom={direction}>
-              <motion.div
-                key={pairIndex}
-                custom={direction}
-                initial={{ opacity: 0, x: direction >= 0 ? 48 : -48 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: direction >= 0 ? -48 : 48 }}
-                transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                className="grid grid-cols-1 gap-6 md:grid-cols-2"
-              >
-                {visiblePair.map((img) => (
-                  <button
-                    key={img.src}
-                    type="button"
-                    onClick={() => setLightbox(img)}
-                    className="group glass cursor-zoom-in overflow-hidden rounded-2xl border border-[var(--border)] text-left transition-colors hover:border-brand-500/40"
-                    aria-label={`${t("expand")}: ${img.cap}`}
+          {filtered.length === 0 ? (
+            <p className="py-12 text-center text-sm text-slate-400">{t("emptyFilter")}</p>
+          ) : (
+            <>
+              <div className="relative overflow-hidden">
+                <AnimatePresence mode="wait" custom={direction}>
+                  <motion.div
+                    key={`${filter}-${pairIndex}`}
+                    custom={direction}
+                    initial={{ opacity: 0, x: direction >= 0 ? 48 : -48 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: direction >= 0 ? -48 : 48 }}
+                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                    className="grid grid-cols-1 gap-6 md:grid-cols-2"
                   >
-                    <figure>
-                      <div className="relative">
-                        <Image
-                          src={img.src}
-                          alt={img.alt}
-                          width={img.w}
-                          height={img.h}
-                          sizes="(max-width: 768px) 100vw, 600px"
-                          className={cn(
-                            "w-full max-h-[24rem] object-cover",
-                            img.previewPosition ?? "object-top",
-                          )}
-                        />
-                        <span className="pointer-events-none absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-base/70 px-2 py-1 text-[0.65rem] font-medium text-slate-200 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
-                          <Expand className="size-3" />
-                          {t("expand")}
-                        </span>
-                      </div>
-                      <figcaption className="border-t border-[var(--border)] px-5 py-3 text-sm text-slate-400">
-                        {img.cap}
-                      </figcaption>
-                    </figure>
+                    {visiblePair.map((img) => (
+                      <button
+                        key={img.id}
+                        type="button"
+                        onClick={() => setLightbox(img)}
+                        className="group surface-clear screenshot-frame cursor-zoom-in overflow-hidden rounded-2xl text-left transition-colors hover:border-brand-500/35"
+                        aria-label={`${t("expand")}: ${img.cap}`}
+                      >
+                        <figure>
+                          <div className="relative">
+                            <Image
+                              src={img.src}
+                              alt={img.alt}
+                              width={img.w}
+                              height={img.h}
+                              sizes="(max-width: 768px) 100vw, 600px"
+                              loading="lazy"
+                              className={cn(
+                                "w-full max-h-[24rem] object-cover",
+                                img.previewPosition ?? "object-top",
+                              )}
+                            />
+                            <span className="pointer-events-none absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-base/75 px-2 py-1 text-[0.65rem] font-medium text-slate-200 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                              <Expand className="size-3" />
+                              {t("expand")}
+                            </span>
+                          </div>
+                          <figcaption className="border-t border-[var(--border)] px-5 py-3 text-sm text-slate-300">
+                            {img.cap}
+                          </figcaption>
+                        </figure>
+                      </button>
+                    ))}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+
+              {pairCount > 1 ? (
+                <div className="mt-6 flex items-center justify-center gap-4">
+                  <button
+                    type="button"
+                    onClick={() => paginate(-1)}
+                    aria-label={t("prev")}
+                    className="flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-slate-300 transition-colors hover:border-brand-500/40 hover:text-white"
+                  >
+                    <ChevronLeft className="size-5" />
                   </button>
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          </div>
 
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <button
-              type="button"
-              onClick={() => paginate(-1)}
-              aria-label={t("prev")}
-              className="flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-slate-300 transition-colors hover:border-brand-500/40 hover:text-white"
-            >
-              <ChevronLeft className="size-5" />
-            </button>
+                  <div className="flex items-center gap-2" role="tablist" aria-label={t("carouselLabel")}>
+                    {Array.from({ length: pairCount }, (_, i) => (
+                      <button
+                        key={i}
+                        type="button"
+                        role="tab"
+                        aria-selected={i === pairIndex}
+                        aria-label={`${i + 1}`}
+                        onClick={() => goTo(i)}
+                        className={cn(
+                          "h-2 cursor-pointer rounded-full transition-all duration-300",
+                          i === pairIndex ? "w-6 bg-brand-400" : "w-2 bg-slate-600 hover:bg-slate-400",
+                        )}
+                      />
+                    ))}
+                  </div>
 
-            <div className="flex items-center gap-2" role="tablist" aria-label={t("carouselLabel")}>
-              {Array.from({ length: pairCount }, (_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  role="tab"
-                  aria-selected={i === pairIndex}
-                  aria-label={`${i + 1}`}
-                  onClick={() => goTo(i)}
-                  className={cn(
-                    "h-2 cursor-pointer rounded-full transition-all duration-300",
-                    i === pairIndex ? "w-6 bg-brand-400" : "w-2 bg-slate-600 hover:bg-slate-400",
-                  )}
-                />
-              ))}
-            </div>
-
-            <button
-              type="button"
-              onClick={() => paginate(1)}
-              aria-label={t("next")}
-              className="flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-slate-300 transition-colors hover:border-brand-500/40 hover:text-white"
-            >
-              <ChevronRight className="size-5" />
-            </button>
-          </div>
+                  <button
+                    type="button"
+                    onClick={() => paginate(1)}
+                    aria-label={t("next")}
+                    className="flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-slate-300 transition-colors hover:border-brand-500/40 hover:text-white"
+                  >
+                    <ChevronRight className="size-5" />
+                  </button>
+                </div>
+              ) : null}
+            </>
+          )}
         </div>
+
+        <p className="mt-8 text-center text-sm text-slate-400">
+          {t("reportCount", { count: PRODUCT_SCREENSHOTS.length })}
+        </p>
       </Container>
 
-      {/* Full-size lightbox — no crop */}
+      {/* Full-size lightbox */}
       <AnimatePresence>
         {lightbox ? (
           <motion.div
@@ -255,7 +304,7 @@ export function ProductShowcase() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 12, scale: 0.98 }}
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              className="glass-strong gradient-border relative z-10 flex max-h-[92vh] w-full max-w-6xl flex-col overflow-hidden rounded-2xl"
+              className="surface-clear relative z-10 flex max-h-[92vh] w-full max-w-6xl flex-col overflow-hidden rounded-2xl"
             >
               <div className="flex shrink-0 items-center justify-between gap-3 border-b border-[var(--border)] px-4 py-3 sm:px-5">
                 <p className="truncate text-sm font-medium text-slate-200">{lightbox.cap}</p>

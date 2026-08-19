@@ -28,6 +28,10 @@ export const routing = defineRouting({
       tr: "/iletisim",
       en: "/contact",
     },
+    "/media": {
+      tr: "/medya",
+      en: "/media",
+    },
     "/blog": {
       tr: "/blog",
       en: "/blog",

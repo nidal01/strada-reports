@@ -1,7 +1,7 @@
 {
   "nav": {
     "solutions": "Solutions",
-    "blog": "Blog",
+    "media": "Media",
     "about": "About",
     "contact": "Contact",
     "login": "Log in",
@@ -41,6 +41,36 @@
     "blog": {
       "title": "Blog — ERP, financial reporting and digital transformation",
       "description": "Strada blog posts on DIA ERP integration, financial reporting, inventory management and enterprise digital transformation."
+    },
+    "media": {
+      "title": "Media — Strada Reports product visuals and report gallery",
+      "description": "Product screenshots from Strada Reports live report screens. Explore finance, sales, stock and ledger reports."
+    }
+  },
+  "media": {
+    "eyebrow": "Media",
+    "title": "Product Gallery",
+    "subtitle": "Live report screenshots from the Strada Reports interface.",
+    "pageTitle": "Media Gallery",
+    "pageSubtitle": "Explore all report screens — finance, sales, stock and ledger.",
+    "filterAll": "All",
+    "filterFinance": "Finance",
+    "filterSales": "Sales",
+    "filterStock": "Stock",
+    "filterLedger": "Ledger",
+    "filterConcept": "Concept",
+    "filterVideo": "Video",
+    "viewAll": "View all visuals",
+    "playVideo": "Play video",
+    "videos": {
+      "stradaReports": {
+        "title": "Strada Reports Introduction",
+        "description": "Strada Reports product introduction video"
+      },
+      "akılliStok": {
+        "title": "Smart Stock & Production Management",
+        "description": "Stock and production management module introduction"
+      }
     }
   },
   "blog": {
@@ -106,20 +136,94 @@
   "showcase": {
     "eyebrow": "Live Reports",
     "title": "Your real data, instant reports",
-    "subtitle": "Screenshots from Strada Reports' live interface. Income-expense trends, sales trajectory, account balances, customer pie charts, and stock sales — every metric management needs in one place.",
-    "alt": {
-      "main": "Strada Reports Monthly Income–Expense Trend report: monthly bar chart with revenue, expense, net profit and profit-margin metrics",
-      "sales": "Strada Reports Sales Trend report: bar chart showing 12-month revenue trajectory",
-      "ledger": "Strada Reports Accounts report: table of debit and credit account balances",
-      "customers": "Strada Reports Income Reporting: customer distribution pie/donut chart and top customers by sales",
-      "stock": "Strada Reports Stock Report: stock sales and quantity breakdowns"
+    "subtitle": "Screenshots from Strada Reports' live interface. Reach finance, sales, stock and ledger reports in a few clicks — no IT tickets — directly from your DIA ERP data.",
+    "filterLabel": "Report category",
+    "filters": {
+      "all": "All",
+      "finance": "Finance",
+      "sales": "Sales",
+      "stock": "Stock",
+      "ledger": "Accounts"
     },
-    "cap": {
-      "main": "Profit / Loss · monthly income–expense trend",
-      "sales": "Sales Trend · 12-month revenue trajectory",
-      "ledger": "Accounts · debit and credit balances",
-      "customers": "Customer Mix · pie chart breakdown",
-      "stock": "Stock Sales · product and quantity analysis"
+    "emptyFilter": "No reports found in this category.",
+    "reportCount": "{count} live report screens",
+    "items": {
+      "incomeExpenseTrend": {
+        "alt": "Strada Reports Monthly Income–Expense Trend: revenue, expense, net profit and margin metrics",
+        "cap": "Profit / Loss · monthly income–expense trend"
+      },
+      "profitLoss": {
+        "alt": "Strada Reports Profit/Loss report: period profitability summary and trend",
+        "cap": "Profit / Loss · period summary"
+      },
+      "income": {
+        "alt": "Strada Reports Income Report: revenue sources and trend analysis",
+        "cap": "Income Report · source and trend breakdown"
+      },
+      "expense": {
+        "alt": "Strada Reports Expense Report: expense items and budget variance",
+        "cap": "Expense Report · spend analysis"
+      },
+      "financialStatus": {
+        "alt": "Strada Reports Financial Status: cash, bank and overview",
+        "cap": "Financial Status · cash and bank summary"
+      },
+      "salesTrend": {
+        "alt": "Strada Reports Sales Trend: 12-month revenue trajectory",
+        "cap": "Sales Trend · monthly revenue trajectory"
+      },
+      "salesReport": {
+        "alt": "Strada Reports Sales Report: regional and product breakdowns",
+        "cap": "Sales Report · performance breakdowns"
+      },
+      "orders": {
+        "alt": "Strada Reports Orders Report: order pipeline and summary",
+        "cap": "Orders Report · pipeline summary"
+      },
+      "customerMix": {
+        "alt": "Strada Reports Customer Mix: pie chart and top customers by sales",
+        "cap": "Customer Mix · pie chart breakdown"
+      },
+      "stockSales": {
+        "alt": "Strada Reports Stock Sales: product and quantity analysis",
+        "cap": "Stock Sales · product and quantity analysis"
+      },
+      "accounts": {
+        "alt": "Strada Reports Accounts: debit and credit account balances table",
+        "cap": "Accounts · debit and credit balances"
+      },
+      "dashboardOverview": {
+        "alt": "Laptop screen showing data visualizations and charts",
+        "cap": "Real-time data tracking with live dashboards"
+      },
+      "financialGraphs": {
+        "alt": "Financial graphs and analysis documents workspace",
+        "cap": "Financial reporting and analysis workflow"
+      },
+      "multiMonitor": {
+        "alt": "Multi-monitor dashboard and data analytics setup",
+        "cap": "Professional data monitoring and reporting environment"
+      },
+      "analystCharts": {
+        "alt": "Financial chart and report analysis on laptop",
+        "cap": "Data-driven decision making process"
+      },
+      "financialAnalytics": {
+        "alt": "Financial analytics and reporting workspace",
+        "cap": "Data-driven decisions with real-time financial dashboards"
+      },
+      "erpSync": {
+        "alt": "ERP data synchronization and integration infrastructure",
+        "cap": "Seamless data flow between systems"
+      },
+      "workspace": {
+        "alt": "Modern business analysis workspace",
+        "cap": "Financial reporting workflow with Strada Reports"
+      },
+      "dataViz": {
+        "alt": "3D data visualization and growth analysis",
+        "cap": "Holographic charting and trend analysis"
+      }
     },
     "expand": "Expand",
     "close": "Close",
@@ -140,27 +244,61 @@
       { "name": "Sales Report", "desc": "Regional, product and customer breakdowns." }
     ]
   },
-  "testimonials": {
-    "eyebrow": "Customers",
-    "title": "Field-tested, loved by management",
+  "videoShowcase": {
+    "eyebrow": "Product Tour",
+    "title": "Discover Strada Reports",
+    "subtitle": "Explore our core features through short product videos.",
+    "sections": {
+      "stradaReports": {
+        "tag": "Overview",
+        "title": "Strada Reports — From Data to Decision",
+        "description": "Transform your ERP data into meaningful reports. Discover financial reporting, profitability analysis and management dashboards powered by Strada Reports.",
+        "points": [
+          "Full integration with DIA ERP",
+          "Instant financial reports and dashboards",
+          "Mobile-friendly management panel",
+          "AI-powered data analysis"
+        ]
+      },
+      "akılliStok": {
+        "tag": "Stock & Production",
+        "title": "Smart Stock & Production Management",
+        "description": "Manage multi-warehouse operations, production tracking and stock optimization from a single platform. Real-time stock movements and production planning.",
+        "points": [
+          "Multi-warehouse and location management",
+          "Real-time stock movements",
+          "Production planning and tracking",
+          "Critical stock level alerts"
+        ]
+      }
+    }
+  },
+  "useCases": {
+    "eyebrow": "Use Cases",
+    "title": "Ready-made reports, real business outcomes",
+    "subtitle": "Logo Mind Navigator-style templates and OzBI-style fast access — reach management reports from your DIA ERP data in a few clicks with Strada Reports.",
+    "cta": "Request a live demo",
     "items": [
       {
-        "quote": "Before Strada Reports, collecting reports took days. Now the data in DIA lands on our management screen instantly. Our decision speed has completely changed.",
-        "author": "Mehmet Y.",
-        "role": "Finance Director",
-        "company": "Construction"
+        "title": "Monthly financial close",
+        "outcome": "View income, expense and profit/loss reports in one session. Prepare close tables without opening an IT ticket.",
+        "image": "/product/kar-zarar-raporu.png",
+        "imageAlt": "Strada Reports profit/loss and income-expense report screen",
+        "tags": ["Income", "Expense", "P&L"]
       },
       {
-        "quote": "In a ready-mix concrete operation, seeing sales per customer and product in one table is priceless. Collections tracking alone paid for the investment.",
-        "author": "Ayşe K.",
-        "role": "General Manager",
-        "company": "Ready-mix concrete"
+        "title": "Sales performance tracking",
+        "outcome": "Track sales trends, order pipeline and customer mix in one flow. Decide with regional and product breakdowns.",
+        "image": "/product/satis-trendi.png",
+        "imageAlt": "Strada Reports sales trend and orders report screen",
+        "tags": ["Sales", "Orders", "Customers"]
       },
       {
-        "quote": "The mobile side changed our team's game. A manager in the field approves a quote and finance sees it at the same moment. We reached enterprise discipline with a small team.",
-        "author": "Burak D.",
-        "role": "Operations Manager",
-        "company": "Construction"
+        "title": "Stock and ledger visibility",
+        "outcome": "See stock sales, account balances and collection risk instantly. Operations and finance speak the same data language.",
+        "image": "/product/cariler.png",
+        "imageAlt": "Strada Reports accounts and stock sales screen",
+        "tags": ["Stock", "Accounts", "Collections"]
       }
     ]
   },

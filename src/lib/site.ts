@@ -28,15 +28,15 @@ export const siteConfig = {
 } as const;
 
 /** Static routes used in the primary navigation (excludes dynamic segments). */
-export type NavPathname = "/" | "/solutions" | "/blog" | "/about" | "/contact";
+export type NavPathname = "/" | "/solutions" | "/media" | "/blog" | "/about" | "/contact";
 
 /** Primary navigation — labels resolve from the `nav` message namespace. */
 export const primaryNav: ReadonlyArray<{
-  key: "solutions" | "blog" | "about" | "contact";
+  key: "solutions" | "media" | "about" | "contact";
   href: NavPathname;
 }> = [
   { key: "solutions", href: "/solutions" },
-  { key: "blog", href: "/blog" },
+  { key: "media", href: "/media" },
   { key: "about", href: "/about" },
   { key: "contact", href: "/contact" },
 ];

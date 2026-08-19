@@ -13,7 +13,9 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    // `framer-motion` is already tree-shakeable, and forcing package-import
+    // optimization here breaks Webpack vendor chunk generation in Next 15 dev.
+    optimizePackageImports: ["lucide-react"],
   },
 };
 

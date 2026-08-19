@@ -50,8 +50,8 @@ src/
 │   ├── ui/                    # Button, Badge, Input, Card, Skeleton…
 │   ├── layout/                # Navbar (glass), Footer, LanguageSwitcher
 │   ├── motion/                # Reveal (scroll-triggered)
-│   └── sections/              # Hero, SocialProof, FeaturesBento, Modules,
-│                              # Testimonials, CtaBanner, PageHero
+│   └── sections/              # Hero, FeaturesBento, Modules,
+│                              # ProductShowcase, ReportUseCases, CtaBanner, PageHero
 ├── features/
 │   └── contact/               # schema (Zod) + contact-form (RHF, animated)
 ├── i18n/                      # routing · request · navigation
