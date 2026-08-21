@@ -12,6 +12,7 @@ import {
   REPORT_CATEGORIES,
   type ReportCategory,
 } from "@/features/product/screenshots";
+import { PRODUCT_VIDEOS } from "@/features/product/videos";
 import { cn } from "@/lib/utils";
 
 type FilterKey = ReportCategory | "all" | "video";
@@ -25,11 +26,6 @@ const FILTER_KEYS: Record<FilterKey, string> = {
   concept: "filterConcept",
   video: "filterVideo",
 };
-
-const VIDEOS = [
-  { id: "strada-reports", src: "/product/strada-reports-tanitim.mp4", i18nKey: "stradaReports" },
-  { id: "akilli-stok", src: "/product/akilli-stok-uretim.mp4", i18nKey: "akılliStok" },
-] as const;
 
 export function MediaPageGallery() {
   const t = useTranslations("media");
@@ -76,7 +72,7 @@ export function MediaPageGallery() {
         >
           {/* Videos first */}
           {showVideos &&
-            VIDEOS.map((video) => (
+            PRODUCT_VIDEOS.map((video) => (
               <Reveal
                 key={video.id}
                 variants={fadeUp}

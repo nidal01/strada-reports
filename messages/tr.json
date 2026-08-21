@@ -63,13 +63,21 @@
     "viewAll": "Tüm görselleri gör",
     "playVideo": "Videoyu oynat",
     "videos": {
-      "stradaReports": {
-        "title": "Strada Reports Tanıtım",
-        "description": "Strada Reports ürün tanıtım videosu"
+      "reportsOverview": {
+        "title": "Veriyi anlamlı hale getirin",
+        "description": "Strada Reports genel bakış ve rapor merkezi"
       },
-      "akılliStok": {
-        "title": "Akıllı Stok & Üretim Yönetimi",
-        "description": "Stok ve üretim yönetimi modülü tanıtımı"
+      "salesAnalysis": {
+        "title": "Satış & ürün performansı",
+        "description": "Ürün ve gelir kaynak analizi"
+      },
+      "executiveDashboard": {
+        "title": "Yönetici paneli",
+        "description": "Nakit akışı ve operasyonel performans"
+      },
+      "profitability": {
+        "title": "Kârlılık analizi",
+        "description": "Gelir ve gideri birlikte değerlendirin"
       }
     }
   },
@@ -247,28 +255,50 @@
   "videoShowcase": {
     "eyebrow": "Ürün Tanıtımı",
     "title": "Strada Reports'u keşfedin",
-    "subtitle": "Ürünümüzün temel özelliklerini kısa videolarla tanıyın.",
+    "subtitle": "Genel bakıştan yönetici paneline, satış analizinden kârlılığa — ürünü kısa videolarla tanıyın.",
     "sections": {
-      "stradaReports": {
-        "tag": "Genel Tanıtım",
-        "title": "Strada Reports — Veriden Karara",
-        "description": "ERP verinizi anlamlı raporlara dönüştürün. Strada Reports'un sunduğu finansal raporlama, kârlılık analizi ve yönetim panellerini keşfedin.",
+      "reportsOverview": {
+        "tag": "Genel Bakış",
+        "title": "Veriyi anlamlı hale getirin",
+        "description": "Gelir, gider, sipariş ve cari raporlarına tek merkezden ulaşın. Strada Reports, ERP verinizi yönetim kararlarına dönüştürür.",
         "points": [
-          "DIA ERP ile tam entegrasyon",
-          "Anlık finansal raporlar ve dashboard'lar",
-          "Mobil uyumlu yönetim paneli",
-          "Yapay zekâ destekli veri analizi"
+          "Gelir, gider, cari ve sipariş raporları",
+          "Kâr/zarar, özel raporlar ve pivot tablolar",
+          "DIA ERP çözüm ortağı entegrasyonu",
+          "Dağınık veriyi tek rapor diline çevirme"
         ]
       },
-      "akılliStok": {
-        "tag": "Stok & Üretim",
-        "title": "Akıllı Stok & Üretim Yönetimi",
-        "description": "Çoklu depo, üretim takibi ve stok optimizasyonunu tek platformdan yönetin. Gerçek zamanlı stok hareketleri ve üretim planlaması.",
+      "salesAnalysis": {
+        "tag": "Satış & Ürün",
+        "title": "Sadece satış rakamı değil, performans",
+        "description": "Ürün performans analizi, gelir kaynakları ve bölgesel dağılımla satışın arkasındaki gerçek hikâyeyi görün.",
         "points": [
-          "Çoklu depo ve lokasyon yönetimi",
-          "Gerçek zamanlı stok hareketleri",
-          "Üretim planlaması ve takibi",
-          "Kritik stok seviyesi uyarıları"
+          "Ürün bazlı satış ve büyüme analizi",
+          "Gelir kaynakları ve kanal dağılımı",
+          "Bölgesel ciro görünürlüğü",
+          "Trend ve katkı oranlarıyla karar desteği"
+        ]
+      },
+      "executiveDashboard": {
+        "tag": "Yönetici Paneli",
+        "title": "Nakit akışından operasyonel performansa",
+        "description": "Yöneticiler için tek ekranda brüt/net kâr, nakit akışı, tahsilat ve operasyon göstergeleri.",
+        "points": [
+          "Nakit akışı ve nakit dağılımı",
+          "Yaklaşan ödemeler ve tahsilat performansı",
+          "Bölge ve kategori satış görünümü",
+          "Yönetim paneli ile anlık karar alma"
+        ]
+      },
+      "profitability": {
+        "tag": "Kârlılık",
+        "title": "Gelir ve gideri birlikte okuyun",
+        "description": "Yüksek hacim her zaman yüksek kâr demek değildir. Ürün ve müşteri kârlılığını maliyetlerle birlikte değerlendirin.",
+        "points": [
+          "Ürün kârlılık ve maliyet analizi",
+          "Ciro ile net kârı birlikte izleme",
+          "Müşteri ve ürün bazlı marj görünürlüğü",
+          "Finansal özet raporlarıyla net tablo"
         ]
       }
     }

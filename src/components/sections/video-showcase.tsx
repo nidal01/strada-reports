@@ -2,23 +2,17 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Play, Pause } from "lucide-react";
+import { Play } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
+import { PRODUCT_VIDEOS } from "@/features/product/videos";
 import { cn } from "@/lib/utils";
 
-interface VideoSection {
-  id: string;
-  src: string;
-  i18nKey: string;
-}
-
-const SECTIONS: VideoSection[] = [
-  { id: "strada-reports", src: "/product/strada-reports-tanitim.mp4", i18nKey: "stradaReports" },
-  { id: "akilli-stok", src: "/product/akilli-stok-uretim.mp4", i18nKey: "akılliStok" },
-];
-
+/**
+ * Alternating product-tour sections driven by the shared video registry.
+ * Old homepage videos are intentionally excluded — only PRODUCT_VIDEOS appear here.
+ */
 export function VideoShowcase() {
   const t = useTranslations("videoShowcase");
 
@@ -32,7 +26,7 @@ export function VideoShowcase() {
         />
 
         <div className="mt-16 flex flex-col gap-20 sm:gap-28">
-          {SECTIONS.map((section, i) => {
+          {PRODUCT_VIDEOS.map((section, i) => {
             const reversed = i % 2 === 1;
             return (
               <article
@@ -54,7 +48,11 @@ export function VideoShowcase() {
                       <li key={point} className="flex items-start gap-3 text-slate-300">
                         <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-positive-500/15 text-positive-400">
                           <svg className="size-3.5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            <path
+                              fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                         </span>
                         <span className="text-sm leading-relaxed">{point}</span>

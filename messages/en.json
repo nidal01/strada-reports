@@ -63,13 +63,21 @@
     "viewAll": "View all visuals",
     "playVideo": "Play video",
     "videos": {
-      "stradaReports": {
-        "title": "Strada Reports Introduction",
-        "description": "Strada Reports product introduction video"
+      "reportsOverview": {
+        "title": "Make your data meaningful",
+        "description": "Strada Reports overview and report hub"
       },
-      "akılliStok": {
-        "title": "Smart Stock & Production Management",
-        "description": "Stock and production management module introduction"
+      "salesAnalysis": {
+        "title": "Sales & product performance",
+        "description": "Product and revenue source analysis"
+      },
+      "executiveDashboard": {
+        "title": "Executive dashboard",
+        "description": "Cash flow and operational performance"
+      },
+      "profitability": {
+        "title": "Profitability analysis",
+        "description": "Evaluate income and expense together"
       }
     }
   },
@@ -247,28 +255,50 @@
   "videoShowcase": {
     "eyebrow": "Product Tour",
     "title": "Discover Strada Reports",
-    "subtitle": "Explore our core features through short product videos.",
+    "subtitle": "From overview to executive dashboards, sales analysis to profitability — explore the product in short videos.",
     "sections": {
-      "stradaReports": {
+      "reportsOverview": {
         "tag": "Overview",
-        "title": "Strada Reports — From Data to Decision",
-        "description": "Transform your ERP data into meaningful reports. Discover financial reporting, profitability analysis and management dashboards powered by Strada Reports.",
+        "title": "Make your data meaningful",
+        "description": "Access income, expense, order and ledger reports from one hub. Strada Reports turns ERP data into management decisions.",
         "points": [
-          "Full integration with DIA ERP",
-          "Instant financial reports and dashboards",
-          "Mobile-friendly management panel",
-          "AI-powered data analysis"
+          "Income, expense, ledger and order reports",
+          "P&L, custom reports and pivot tables",
+          "DIA ERP solution-partner integration",
+          "One reporting language for scattered data"
         ]
       },
-      "akılliStok": {
-        "tag": "Stock & Production",
-        "title": "Smart Stock & Production Management",
-        "description": "Manage multi-warehouse operations, production tracking and stock optimization from a single platform. Real-time stock movements and production planning.",
+      "salesAnalysis": {
+        "tag": "Sales & Products",
+        "title": "Not just sales figures — performance",
+        "description": "See the real story behind sales with product performance, revenue sources and regional distribution.",
         "points": [
-          "Multi-warehouse and location management",
-          "Real-time stock movements",
-          "Production planning and tracking",
-          "Critical stock level alerts"
+          "Product-level sales and growth analysis",
+          "Revenue sources and channel mix",
+          "Regional revenue visibility",
+          "Decision support with trends and contribution rates"
+        ]
+      },
+      "executiveDashboard": {
+        "tag": "Executive Dashboard",
+        "title": "From cash flow to operational performance",
+        "description": "Gross/net profit, cash flow, collections and operational KPIs for managers — all on one screen.",
+        "points": [
+          "Cash flow and cash distribution",
+          "Upcoming payments and collection performance",
+          "Regional and category sales views",
+          "Instant decisions from the management panel"
+        ]
+      },
+      "profitability": {
+        "tag": "Profitability",
+        "title": "Read income and expense together",
+        "description": "High volume is not always high profit. Evaluate product and customer profitability alongside costs.",
+        "points": [
+          "Product profitability and cost analysis",
+          "Track revenue with net profit side by side",
+          "Customer and product margin visibility",
+          "Clear picture with financial summary reports"
         ]
       }
     }
